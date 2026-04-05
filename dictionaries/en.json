@@ -1,0 +1,14 @@
+{
+  "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "knowledgeHub": "Knowledge Hub",
+    "biCenter": "BI Center",
+    "legislationLibrary": "Legislation Library",
+    "successStories": "Success Stories"
+  },
+  "common": {
+    "language": "English",
+    "switchLanguage": "Arabic"
+  }
+}

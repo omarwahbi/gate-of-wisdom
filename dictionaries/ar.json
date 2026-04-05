@@ -1,0 +1,14 @@
+{
+  "navigation": {
+    "home": "الرئيسية",
+    "services": "الخدمات",
+    "knowledgeHub": "مركز المعرفة",
+    "biCenter": "مركز ذكاء الأعمال",
+    "legislationLibrary": "مكتبة التشريعات",
+    "successStories": "قصص النجاح"
+  },
+  "common": {
+    "language": "العربية",
+    "switchLanguage": "English"
+  }
+}

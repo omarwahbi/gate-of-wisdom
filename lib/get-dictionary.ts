@@ -1,0 +1,10 @@
+import type en from "@/dictionaries/en.json";
+export type Dictionary = typeof en;
+
+const dictionaries = {
+  en: () => import("@/dictionaries/en.json").then((module) => module.default),
+  ar: () => import("@/dictionaries/ar.json").then((module) => module.default),
+};
+
+export const getDictionary = async (locale: "en" | "ar") => 
+  dictionaries[locale]();
