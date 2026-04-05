@@ -10,5 +10,52 @@
   "common": {
     "language": "English",
     "switchLanguage": "Arabic"
+  },
+  "home": {
+    "hero": {
+      "companyName": "GATE OF WISDOM CONSULTING ENGINEERS",
+      "slogan": "Iraqi Engineering Expertise, Global Solutions"
+    },
+    "about": {
+      "title": "GATE OF WISDOM CONSULTING ENGINEERS, Iraqi Engineering Expertise, Global Solutions",
+      "subtitle": "Establishment",
+      "p1": "“GATE OF WISDOM CONSULTING ENGINEERS”, is an Iraqi Limited Liability Company established in 2024. We don’t start from scratch; we build upon an extensive knowledge, legacy and accumulated scientific expertise in the field of engineering and industrial studies.",
+      "p2": "This heritage stems from a wide network of reputable national and international relationships dating back to 2004.",
+      "p3": "Today, we leverage this deep experience to offer our customers a comprehensive suite of innovative, integrated consulting services and solutions. Our mission is to work side-by-side with our customers in both public and private sectors, helping them to make the best investment decisions and execute the most complex projects smoothly and professionally.",
+      "p4": "We forge genuine partnerships that share tasks and confront challenges, aiming to redefine excellence within the Iraqi market. The success of our partners is our compass, and their achievement is our true measure of success."
+    },
+    "vision": {
+      "title": "Our Vision: Leading Engineering Consultancy in Iraq & the Region",
+      "p1": "At “GATE OF WISDOM CONSULTING ENGINEERS”, we aspire to be the leading and preferred consulting partner for customers seeking engineering excellence and innovative solutions in Iraq and the broader region.",
+      "p2": "Our vision goes beyond simply meeting our customers' needs; we aim to exceed their expectations by adhering to the highest international standards of quality and professionalism. We believe that continuous innovation is key to success, so we constantly strive to develop our team's skills and leverage the latest engineering knowledge to deliver tangible added value that boosts our customers' growth and supports the development of our industry towards a sustainable and prosperous future."
+    },
+    "mission": {
+      "title": "Our Mission: Turning Our Clients' Potential into Tangible Success",
+      "p1": "Our mission at “GATE OF WISDOM CONSULTING ENGINEERS”, is to be the most trusted consulting entity in Iraq, committed to providing innovative, results-oriented engineering services and solutions.",
+      "p2": "We work closely with individuals and companies to transform the full potential of their projects into concrete achievements. Our goal is to accelerate their business growth and enhance their individual successes, thereby directly contributing to national development programs and bringing prosperity and progress to Iraqi society as a whole."
+    },
+    "values": {
+      "title": "Our Core Values",
+      "subtitle": "Our Compass for Serving You with Excellence",
+      "description": "We are driven by rigorous scientific and professional principles that guide our conduct and relationships with our customers and partners:",
+      "list": [
+        {
+          "title": "Commitment",
+          "description": "We are dedicated to supporting our customers' success with total devotion, striving to build long-term partnerships based on trust, mutual respect, and shared results."
+        },
+        {
+          "title": "Integrity",
+          "description": "We act with absolute honesty and transparency in all our dealings, taking responsibility for our decisions and actions to ensure our customers' peace of mind without compromise."
+        },
+        {
+          "title": "Trustworthiness",
+          "description": "We perform our work with dedication and high reliability, maintaining customers data confidentiality and the highest ethical standards in every project we undertake."
+        },
+        {
+          "title": "Methodology",
+          "description": "We adopt a structured work approach built on meticulous planning and scientific foundations to ensure the achievement of optimal results with efficiency and effectiveness."
+        }
+      ]
+    }
   }
 }
