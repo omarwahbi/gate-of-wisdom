@@ -57,5 +57,54 @@
         }
       ]
     }
+  },
+  "services_hub": {
+    "title": "Our Integrated Consulting Services",
+    "subtitle": "Your Compass for Sound Decisions & Tangible Results.",
+    "intro": "At “GATE OF WISDOM CONSULTING ENGINEERS”, we don't just offer advice; we provide a comprehensive suite of innovative solutions designed to help you make sound, informed decisions. Whether you are launching a new venture, planning an expansion of an existing project, or seeking to restructure an underperforming business, our engineering expertise ensures your success. Our key services include:",
+    "services": [
+      {
+        "id": "service-1",
+        "slug": "project-management",
+        "title": "Project Management Consulting",
+        "description": "From Idea to Successful, Profitable Launch."
+      },
+      {
+        "id": "service-2",
+        "slug": "market-studies",
+        "title": "Market Studies",
+        "description": "Precise Insights to Stay Ahead of the Competition & Uncover Opportunities."
+      },
+      {
+        "id": "service-3",
+        "slug": "feasibility-studies",
+        "title": "Technical & Economic Feasibility Studies",
+        "description": "Invest with Confidence, Avoid the Pitfalls: Why a Feasibility Study is Your Investment Compass."
+      },
+      {
+        "id": "service-4",
+        "slug": "performance-efficiency",
+        "title": "Performance Efficiency Assessment & Companies Restructuring",
+        "description": "Assessing Your Company's Economic Performance Efficiency: Reclaim Your Profits."
+      },
+      {
+        "id": "service-5",
+        "slug": "human-resources",
+        "title": "Human Resources Management (HRM)",
+        "description": "Building a Strong & Committed Team: Why Effective HR Management is No Longer an Option, but a Business Imperative Today."
+      },
+      {
+        "id": "service-6",
+        "slug": "marketing-sales",
+        "title": "Marketing & Sales",
+        "description": "Integrated Marketing & Sales Strategy: Engineering Growth for Your Business."
+      },
+      {
+        "id": "service-7",
+        "slug": "crm",
+        "title": "Customer Relationship Management (CRM)",
+        "description": "Sustainable Growth Starts Here: Why CRM is No Longer an Option, but a Necessity for Your Business."
+      }
+    ]
   }
 }
