@@ -101,7 +101,7 @@ export function Navbar({ lang, dictionary }: NavbarProps) {
                                     <NavigationMenuLink
                                       render={
                                         <Link
-                                          href={`${item.href}/service-${i + 1}`}
+                                          href={`${item.href}/${subItem.slug}`}
                                           className="block select-none rounded-md px-4 py-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
                                         />
                                       }

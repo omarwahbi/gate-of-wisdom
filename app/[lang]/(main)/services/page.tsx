@@ -61,7 +61,7 @@ export default async function ServicesPage(props: ServicesPageProps) {
             return (
               <Link
                 key={service.slug}
-                href={`/${lang}/services/service-${index + 1}`}
+                href={`/${lang}/services/${service.slug}`}
                 className="group relative flex aspect-square w-full items-center justify-center overflow-hidden rounded-3xl border border-primary/20 bg-card p-6 shadow-sm transition-all duration-500 hover:shadow-xl hover:border-transparent"
               >
                 {/* 

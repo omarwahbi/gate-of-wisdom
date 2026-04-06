@@ -106,5 +106,144 @@
         "description": "Sustainable Growth Starts Here: Why CRM is No Longer an Option, but a Necessity for Your Business."
       }
     ]
+  },
+  "project_management": {
+    "hero": {
+      "title": "Project Management Consulting",
+      "subtitle": "From Idea to Successful, Profitable Launch."
+    },
+    "intro": {
+      "paragraphs": [
+        "The statistics are daunting: many promising ventures fail shortly after launch, not due to lack of funding, but because of poor management and inadequate risk planning.",
+        "At “GATE OF WISDOM CONSULTING ENGINEERS”, we offer more than just guidance; we provide a comprehensive engineering framework for project management that ensures your resources are directed correctly.",
+        "We help you execute a step-by-step action plan, from initial planning and performance measurement to proactive risk management. The result? A significant reduction in failure rates and the assurance of achieving desired objectives and profitability, so you can launch your next project with total confidence."
+      ],
+      "services_intro": "We provide you with our engineering and management expertise to ensure the soundness of your investment decisions through our integrated project management consulting services:",
+      "services": [
+        {
+          "title": "Investment Analysis & Opportunities",
+          "description": "Precise diagnosis of the current situation, identification of viable investment opportunities, and ensuring decisions are not based purely on personal desires."
+        },
+        {
+          "title": "Comprehensive & Systematic Planning",
+          "description": "Defining the legal form of the project, its objectives, size, location, and required material and human resources."
+        },
+        {
+          "title": "Funding & Execution Management",
+          "description": "Estimating the volume of investments and funding sources, and supervising implementation stages to ensure adherence to budget and quality standards."
+        },
+        {
+          "title": "Monitoring & Risk Management",
+          "description": "Continuous technical and economic evaluation, ongoing training, and enhancement of performance efficiency to ensure continuity and risk avoidance."
+        }
+      ]
+    },
+    "target_audience": {
+      "title": "Target Audience & Key Attractors",
+      "subtitle": "Who is this for?",
+      "intro": "Our service is designed for investors (individuals and institutions) and entrepreneurs who are planning to establish or launch new projects and are looking for a reliable partner to provide precise scientific and engineering guidance to minimize the risks of failure and increase the chances of success.",
+      "ideal_audience_intro": "Our ideal audience includes:",
+      "audiences": [
+        {
+          "title": "New Investors (Individuals or Groups)",
+          "description": "Those who have capital and are seeking a clear and well-studied investment opportunity and need professional management for their project from the idea stage to launch."
+        },
+        {
+          "title": "Entrepreneurs & Startups",
+          "description": "Those with innovative ideas but lack the administrative and engineering expertise to plan and execute the project properly."
+        },
+        {
+          "title": "Governmental or Sectoral Bodies",
+          "description": "Entities that launch development or infrastructure projects and require specialized consulting in project management and supervision."
+        },
+        {
+          "title": "Existing Companies Expanding",
+          "description": "Companies launching new subsidiary projects that require independent management to ensure operational efficiency."
+        },
+        {
+          "title": "Capital Owners",
+          "description": "Individuals seeking guarantees for the soundness of their investment decisions and financial returns (ROI)."
+        },
+        {
+          "title": "Executives",
+          "description": "Leaders looking for efficiency in execution, risk management, and adherence to budgets and timelines."
+        },
+        {
+          "title": "Project Managers within Large Corporations",
+          "description": "Professionals who may need specialized technical support in specific aspects of planning, execution, or risk management."
+        }
+      ]
+    },
+    "cases": {
+      "title": "Real-World Stories",
+      "subtitle": "Evidence that embodies the transition of strategy from paper to the field.",
+      "items": [
+        {
+          "title": "Berlin Airport Lessons",
+          "subtitle": "Berlin Brandenburg Airport (The Cost of Poor Supervision)",
+          "issue": "A 9-year delay and a €4 billion budget overrun due to conflicting Variation Orders and the lack of a unified consulting oversight.",
+          "lesson": "Project success requires Independent Consulting Supervision to govern changes and protect the budget."
+        },
+        {
+          "title": "The Secret of Perfect Timing",
+          "subtitle": "Dubai Metro (The Power of the Critical Path)",
+          "issue": "Completing the world’s longest automated metro on time (09/09/09) by mastering Time Engineering and strictly monitoring the Critical Path.",
+          "lesson": "On-time delivery is not luck; it is the result of rigorous Strategic Scheduling and proactive risk management."
+        },
+        {
+          "title": "Case Study - Baghdad International Airport",
+          "subtitle": "When Management Fails the Infrastructure.",
+          "issue": "A vital facility with massive infrastructure, yet struggling with service quality decline, frequent technical failures, and a chaotic passenger experience.",
+          "lesson": "Major projects don't fail just due to lack of funds, but due to the absence of Professional Project Management that ensures sustained efficiency. At “Gate of Wisdom Consulting Engineers” we ensure your assets remain assets, not operational burdens."
+        }
+      ]
+    },
+    "checklist": {
+      "title": "Project Launch Readiness Checklist",
+      "headers": [
+        "Phase",
+        "Questions",
+        "Yes",
+        "No"
+      ],
+      "items": [
+        {
+          "phase": "Planning & Feasibility",
+          "question": "Is the project scale optimized based on actual market demand?"
+        },
+        {
+          "phase": "Planning & Feasibility",
+          "question": "Is there a detailed list of physical assets and human resource requirements?"
+        },
+        {
+          "phase": "Planning & Feasibility",
+          "question": "Has an updated feasibility study been conducted reflecting current market prices?"
+        },
+        {
+          "phase": "Engineering & Contracting",
+          "question": "Do the technical specifications meet international standards?"
+        },
+        {
+          "phase": "Engineering & Contracting",
+          "question": "Are the contracts inclusive of 'Delay Penalties' and 'Maintenance Guarantees'?"
+        },
+        {
+          "phase": "Engineering & Contracting",
+          "question": "Were bids evaluated on technical merit (Quality) rather than just the lowest price?"
+        },
+        {
+          "phase": "Execution & Installation",
+          "question": "Is the ERP system ready to integrate with production lines?"
+        },
+        {
+          "phase": "Execution & Installation",
+          "question": "Is there a training schedule for the operational staff prior to equipment arrival?"
+        },
+        {
+          "phase": "Execution & Installation",
+          "question": "Is there a contingency plan for raw material supply delays?"
+        }
+      ]
+    }
   }
 }
