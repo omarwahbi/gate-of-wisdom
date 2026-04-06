@@ -245,5 +245,216 @@
         }
       ]
     }
+  },
+  "market_studies": {
+    "hero": {
+      "title": "Market Studies",
+      "subtitle": "Precise Insights to Stay Ahead of the Competition & Uncover Opportunities"
+    },
+    "intro": {
+      "paragraphs": [
+        "Before entering any market or launching a new product, you need more than just guesswork; you need reliable data.",
+        "At “GATE OF WISDOM CONSULTING ENGINEERS”, we provide you with precise market insights built on a comprehensive analysis of market dynamics, consumer behavior, and competitors.",
+        "Our mission is to help you uncover hidden opportunities, mitigate risks, and develop effective marketing strategies. The result? You make informed investment decisions, meet your customers' immediate needs, and secure a leadership position in the market."
+      ],
+      "services_intro": "Our market study services ensure you receive:",
+      "services": [
+        {
+          "title": "Precise Quantitative Market Analysis",
+          "description": "Estimating market size, annual growth rate, future demand forecasts, and analyzing the surplus/deficit between local production and imports."
+        },
+        {
+          "title": "Understanding Consumer Behavior & Competitors",
+          "description": "A study of consumer behavior and preferences, identification of market gaps, and a comprehensive survey of competitors and their market shares."
+        },
+        {
+          "title": "Comprehensive SWOT Analysis",
+          "description": "A thorough analysis of success factors (price, quality, promotion, location, logistics) and the identification of opportunities and threats."
+        },
+        {
+          "title": "Actionable Strategic Recommendations",
+          "description": "Providing clear conclusions and recommendations to enhance your capabilities to meet local demand and ensure leadership."
+        }
+      ]
+    },
+    "target_audience": {
+      "title": "Target Audience & Key Attractors",
+      "subtitle": "Who is this for?",
+      "intro": "Our service is designed for existing production and service companies, as well as new investors and entrepreneurs planning to enter a specific market. All require reliable, data-driven information to understand the market environment they operate in or plan to enter.",
+      "ideal_audience_intro": "Our ideal audience includes:",
+      "audiences": [
+        {
+          "title": "Companies Planning New Launches",
+          "description": "Entities needing to verify market gaps, understand consumer preferences, and estimate future demand for new products or services."
+        },
+        {
+          "title": "Companies Facing Competitive Challenges",
+          "description": "Organizations requiring a detailed analysis of competitors' strengths and weaknesses to develop new pricing and promotion strategies."
+        },
+        {
+          "title": "Companies Seeking Market Positioning",
+          "description": "Firms needing to evaluate their current market share and relative position against competitors."
+        },
+        {
+          "title": "New Investors",
+          "description": "Individuals who require a reliable market study as part of a project feasibility study to assess investment viability."
+        },
+        {
+          "title": "Company Owners & General Managers",
+          "description": "Leaders looking for growth opportunities and making strategic decisions based on market facts."
+        },
+        {
+          "title": "Marketing & Sales Managers",
+          "description": "Professionals needing accurate data on consumer behavior and market size to design effective marketing campaigns."
+        },
+        {
+          "title": "Business Development Managers",
+          "description": "Individuals looking for annual growth rates and future demand forecasts to define expansion paths."
+        }
+      ]
+    },
+    "cases": {
+      "title": "Real-World Stories",
+      "subtitle": "Evidence that embodies the transition of strategy from paper to the field.",
+      "items": [
+        {
+          "title": "Case Study: Aramex",
+          "subtitle": "The Missing Address Challenge: How Innovative Local Solutions defeated logistics giants.",
+          "issue": "When global courier giants like DHL and FedEx entered the Middle East, they encountered a significant challenge: the absence of precise postal addressing systems in many Arab cities.",
+          "analysis": [
+            "Aramex's Response: Instead of waiting for governments to regulate addressing systems, Aramex conducted an in-depth, on-the-ground market study. They innovated localized solutions such as \"Cash on Delivery\" and developed a deep understanding of narrow alleyways and unnamed streets."
+          ],
+          "lesson": "Excellence does not stem from merely replicating Western models, but from engineering and adapting logistical solutions to fit the local reality"
+        },
+        {
+          "title": "Case Study: Vertical Housing Complexes in Iraq",
+          "subtitle": "When Analysis is Absent, Projects Fail",
+          "issue": "In recent years, high-cost vertical housing projects have proliferated in Iraqi city centers, yet many have struggled to achieve their social and economic goals.",
+          "analysis": [
+            "Ignoring Purchasing Power: These projects targeted a luxury segment while the real market demand lies in affordable housing.",
+            "Infrastructure Strain: Lack of technical and environmental feasibility studies turned these complexes into burdens on electricity, water, and traffic networks.",
+            "Planning Chaos: Investing in the wrong locations without integrated urban analysis led to unsustainable outcomes."
+          ],
+          "lesson": "The primary lesson is that building \"luxury\" units in a market starving for \"affordable\" housing is a strategic error. It is vital to conduct an Affordability Analysis to ensure the end product meets actual market demand. At “Gate of Wisdom Consulting Engineers”, we believe that building walls is easy, but building sustainable projects requires market and technical feasibility studies that ensure social acceptance and investment success."
+        }
+      ]
+    },
+    "checklist": {
+      "title": "The Market Entry Readiness Checklist",
+      "headers": [
+        "Phase",
+        "Questions",
+        "Yes",
+        "No"
+      ],
+      "items": [
+        {
+          "phase": "Market & Consumer Analysis",
+          "question": "Do you have reliable, up-to-date data on the number of potential customers in your target geographical area?"
+        },
+        {
+          "phase": "Market & Consumer Analysis",
+          "question": "Have you precisely defined the \"Competitive Advantage\" that makes customers choose you over existing rivals?"
+        },
+        {
+          "phase": "Market & Consumer Analysis",
+          "question": "Do you know the exact \"average spending\" of your target customer on the service/product you will offer?"
+        },
+        {
+          "phase": "Market & Consumer Analysis",
+          "question": "Have you mapped your \"Ideal Buyer Persona,\" including their purchasing motives and pain points?"
+        },
+        {
+          "phase": "Competition & Distribution",
+          "question": "Have you conducted a comprehensive analysis of the risks of new competitors entering the market in the next two years?"
+        },
+        {
+          "phase": "Competition & Distribution",
+          "question": "Is your pricing strategy aligned with the real purchasing power of the current market?"
+        },
+        {
+          "phase": "Competition & Distribution",
+          "question": "Have you identified the optimal distribution channels (retail, wholesale, online) to ensure smooth product flow?"
+        },
+        {
+          "phase": "Competition & Distribution",
+          "question": "Do you have a clear plan for navigating the logistical or legal barriers in the local market?"
+        }
+      ]
+    },
+    "market_entry_guide": {
+      "title": "Market Entry Guide: How to Decode Opportunities and Risks Before Launching Your Project?",
+      "phases": [
+        {
+          "title": "Market Size & Opportunity Analysis Phase",
+          "points": [
+            {
+              "title": "Target Market Identification",
+              "desc": "Distinguishing between Total Addressable Market (TAM) and Serviceable Obtainable Market (SOM)."
+            },
+            {
+              "title": "Trend Analysis",
+              "desc": "Monitoring economic and social variables impacting purchasing power."
+            },
+            {
+              "title": "Market Gaps",
+              "desc": "Discovering unmet needs that your project can strategically fulfill."
+            }
+          ]
+        },
+        {
+          "title": "Competitor Dissection",
+          "points": [
+            {
+              "title": "Competition Mapping",
+              "desc": "Identifying direct and indirect competitors within the landscape."
+            },
+            {
+              "title": "SWOT Analysis",
+              "desc": "Understanding competitors' pricing and distribution strategies."
+            },
+            {
+              "title": "Market Share",
+              "desc": "Estimating the weight of current rivals and strategizing how to capture a market foothold."
+            }
+          ]
+        },
+        {
+          "title": "Understanding Consumer Behavior",
+          "points": [
+            {
+              "title": "Buyer Persona Mapping",
+              "desc": "Defining purchasing motives, habits, and the pain points faced by the customer."
+            },
+            {
+              "title": "Customer Journey",
+              "desc": "Tracking the path from product awareness to the final purchase decision."
+            },
+            {
+              "title": "Response Testing",
+              "desc": "Measuring target audience acceptance of proposed pricing and features."
+            }
+          ]
+        },
+        {
+          "title": "Distribution Channels & Supply Chain Analysis",
+          "points": [
+            {
+              "title": "Market Access",
+              "desc": "Identifying optimal channels (Retail, Wholesale, or E-commerce platforms)."
+            },
+            {
+              "title": "Entry Barriers",
+              "desc": "Studying logistical or legal challenges that may hinder product flow."
+            }
+          ]
+        }
+      ]
+    },
+    "cta": {
+      "title": "Your Next Project Deserves Certainty.",
+      "description": "Our services do not end with the delivery of a study. We don't just hand you a report and leave; instead, we conduct a (Final Simulation Session) with you to discuss all financial and technical scenarios, ensuring you understand exactly where every Dinar will be spent and how it will return.",
+      "button": "Book a Free Initial Consultation"
+    }
   }
 }

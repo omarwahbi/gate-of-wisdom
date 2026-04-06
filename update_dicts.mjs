@@ -9,48 +9,48 @@ const arJson = JSON.parse(fs.readFileSync(arPath, 'utf8'));
 
 const enDict = {
   hero: {
-    title: "Project Management Consulting",
-    subtitle: "From Idea to Successful, Profitable Launch."
+    title: "Market Studies",
+    subtitle: "Precise Insights to Stay Ahead of the Competition & Uncover Opportunities"
   },
   intro: {
     paragraphs: [
-      "The statistics are daunting: many promising ventures fail shortly after launch, not due to lack of funding, but because of poor management and inadequate risk planning.",
-      "At “GATE OF WISDOM CONSULTING ENGINEERS”, we offer more than just guidance; we provide a comprehensive engineering framework for project management that ensures your resources are directed correctly.",
-      "We help you execute a step-by-step action plan, from initial planning and performance measurement to proactive risk management. The result? A significant reduction in failure rates and the assurance of achieving desired objectives and profitability, so you can launch your next project with total confidence."
+      "Before entering any market or launching a new product, you need more than just guesswork; you need reliable data.",
+      "At “GATE OF WISDOM CONSULTING ENGINEERS”, we provide you with precise market insights built on a comprehensive analysis of market dynamics, consumer behavior, and competitors.",
+      "Our mission is to help you uncover hidden opportunities, mitigate risks, and develop effective marketing strategies. The result? You make informed investment decisions, meet your customers' immediate needs, and secure a leadership position in the market."
     ],
-    services_intro: "We provide you with our engineering and management expertise to ensure the soundness of your investment decisions through our integrated project management consulting services:",
+    services_intro: "Our market study services ensure you receive:",
     services: [
       {
-        "title": "Investment Analysis & Opportunities",
-        "description": "Precise diagnosis of the current situation, identification of viable investment opportunities, and ensuring decisions are not based purely on personal desires."
+        "title": "Precise Quantitative Market Analysis",
+        "description": "Estimating market size, annual growth rate, future demand forecasts, and analyzing the surplus/deficit between local production and imports."
       },
       {
-        "title": "Comprehensive & Systematic Planning",
-        "description": "Defining the legal form of the project, its objectives, size, location, and required material and human resources."
+        "title": "Understanding Consumer Behavior & Competitors",
+        "description": "A study of consumer behavior and preferences, identification of market gaps, and a comprehensive survey of competitors and their market shares."
       },
       {
-        "title": "Funding & Execution Management",
-        "description": "Estimating the volume of investments and funding sources, and supervising implementation stages to ensure adherence to budget and quality standards."
+        "title": "Comprehensive SWOT Analysis",
+        "description": "A thorough analysis of success factors (price, quality, promotion, location, logistics) and the identification of opportunities and threats."
       },
       {
-        "title": "Monitoring & Risk Management",
-        "description": "Continuous technical and economic evaluation, ongoing training, and enhancement of performance efficiency to ensure continuity and risk avoidance."
+        "title": "Actionable Strategic Recommendations",
+        "description": "Providing clear conclusions and recommendations to enhance your capabilities to meet local demand and ensure leadership."
       }
     ]
   },
   target_audience: {
     title: "Target Audience & Key Attractors",
     subtitle: "Who is this for?",
-    intro: "Our service is designed for investors (individuals and institutions) and entrepreneurs who are planning to establish or launch new projects and are looking for a reliable partner to provide precise scientific and engineering guidance to minimize the risks of failure and increase the chances of success.",
+    intro: "Our service is designed for existing production and service companies, as well as new investors and entrepreneurs planning to enter a specific market. All require reliable, data-driven information to understand the market environment they operate in or plan to enter.",
     ideal_audience_intro: "Our ideal audience includes:",
     audiences: [
-      { "title": "New Investors (Individuals or Groups)", "description": "Those who have capital and are seeking a clear and well-studied investment opportunity and need professional management for their project from the idea stage to launch." },
-      { "title": "Entrepreneurs & Startups", "description": "Those with innovative ideas but lack the administrative and engineering expertise to plan and execute the project properly." },
-      { "title": "Governmental or Sectoral Bodies", "description": "Entities that launch development or infrastructure projects and require specialized consulting in project management and supervision." },
-      { "title": "Existing Companies Expanding", "description": "Companies launching new subsidiary projects that require independent management to ensure operational efficiency." },
-      { "title": "Capital Owners", "description": "Individuals seeking guarantees for the soundness of their investment decisions and financial returns (ROI)." },
-      { "title": "Executives", "description": "Leaders looking for efficiency in execution, risk management, and adherence to budgets and timelines." },
-      { "title": "Project Managers within Large Corporations", "description": "Professionals who may need specialized technical support in specific aspects of planning, execution, or risk management." }
+      { "title": "Companies Planning New Launches", "description": "Entities needing to verify market gaps, understand consumer preferences, and estimate future demand for new products or services." },
+      { "title": "Companies Facing Competitive Challenges", "description": "Organizations requiring a detailed analysis of competitors' strengths and weaknesses to develop new pricing and promotion strategies." },
+      { "title": "Companies Seeking Market Positioning", "description": "Firms needing to evaluate their current market share and relative position against competitors." },
+      { "title": "New Investors", "description": "Individuals who require a reliable market study as part of a project feasibility study to assess investment viability." },
+      { "title": "Company Owners & General Managers", "description": "Leaders looking for growth opportunities and making strategic decisions based on market facts." },
+      { "title": "Marketing & Sales Managers", "description": "Professionals needing accurate data on consumer behavior and market size to design effective marketing campaigns." },
+      { "title": "Business Development Managers", "description": "Individuals looking for annual growth rates and future demand forecasts to define expansion paths." }
     ]
   },
   cases: {
@@ -58,86 +58,128 @@ const enDict = {
     subtitle: "Evidence that embodies the transition of strategy from paper to the field.",
     items: [
       {
-        "title": "Berlin Airport Lessons",
-        "subtitle": "Berlin Brandenburg Airport (The Cost of Poor Supervision)",
-        "issue": "A 9-year delay and a €4 billion budget overrun due to conflicting Variation Orders and the lack of a unified consulting oversight.",
-        "lesson": "Project success requires Independent Consulting Supervision to govern changes and protect the budget."
+        "title": "Case Study: Aramex",
+        "subtitle": "The Missing Address Challenge: How Innovative Local Solutions defeated logistics giants.",
+        "issue": "When global courier giants like DHL and FedEx entered the Middle East, they encountered a significant challenge: the absence of precise postal addressing systems in many Arab cities.",
+        "analysis": [
+          "Aramex's Response: Instead of waiting for governments to regulate addressing systems, Aramex conducted an in-depth, on-the-ground market study. They innovated localized solutions such as \"Cash on Delivery\" and developed a deep understanding of narrow alleyways and unnamed streets."
+        ],
+        "lesson": "Excellence does not stem from merely replicating Western models, but from engineering and adapting logistical solutions to fit the local reality"
       },
       {
-        "title": "The Secret of Perfect Timing",
-        "subtitle": "Dubai Metro (The Power of the Critical Path)",
-        "issue": "Completing the world’s longest automated metro on time (09/09/09) by mastering Time Engineering and strictly monitoring the Critical Path.",
-        "lesson": "On-time delivery is not luck; it is the result of rigorous Strategic Scheduling and proactive risk management."
-      },
-      {
-        "title": "Case Study - Baghdad International Airport",
-        "subtitle": "When Management Fails the Infrastructure.",
-        "issue": "A vital facility with massive infrastructure, yet struggling with service quality decline, frequent technical failures, and a chaotic passenger experience.",
-        "lesson": "Major projects don't fail just due to lack of funds, but due to the absence of Professional Project Management that ensures sustained efficiency. At “Gate of Wisdom Consulting Engineers” we ensure your assets remain assets, not operational burdens."
+        "title": "Case Study: Vertical Housing Complexes in Iraq",
+        "subtitle": "When Analysis is Absent, Projects Fail",
+        "issue": "In recent years, high-cost vertical housing projects have proliferated in Iraqi city centers, yet many have struggled to achieve their social and economic goals.",
+        "analysis": [
+          "Ignoring Purchasing Power: These projects targeted a luxury segment while the real market demand lies in affordable housing.",
+          "Infrastructure Strain: Lack of technical and environmental feasibility studies turned these complexes into burdens on electricity, water, and traffic networks.",
+          "Planning Chaos: Investing in the wrong locations without integrated urban analysis led to unsustainable outcomes."
+        ],
+        "lesson": "The primary lesson is that building \"luxury\" units in a market starving for \"affordable\" housing is a strategic error. It is vital to conduct an Affordability Analysis to ensure the end product meets actual market demand. At “Gate of Wisdom Consulting Engineers”, we believe that building walls is easy, but building sustainable projects requires market and technical feasibility studies that ensure social acceptance and investment success."
       }
     ]
   },
   checklist: {
-    title: "Project Launch Readiness Checklist",
+    title: "The Market Entry Readiness Checklist",
     headers: ["Phase", "Questions", "Yes", "No"],
     items: [
-      { phase: "Planning & Feasibility", question: "Is the project scale optimized based on actual market demand?" },
-      { phase: "Planning & Feasibility", question: "Is there a detailed list of physical assets and human resource requirements?" },
-      { phase: "Planning & Feasibility", question: "Has an updated feasibility study been conducted reflecting current market prices?" },
-      { phase: "Engineering & Contracting", question: "Do the technical specifications meet international standards?" },
-      { phase: "Engineering & Contracting", question: "Are the contracts inclusive of 'Delay Penalties' and 'Maintenance Guarantees'?" },
-      { phase: "Engineering & Contracting", question: "Were bids evaluated on technical merit (Quality) rather than just the lowest price?" },
-      { phase: "Execution & Installation", question: "Is the ERP system ready to integrate with production lines?" },
-      { phase: "Execution & Installation", question: "Is there a training schedule for the operational staff prior to equipment arrival?" },
-      { phase: "Execution & Installation", question: "Is there a contingency plan for raw material supply delays?" }
+      { "phase": "Market & Consumer Analysis", "question": "Do you have reliable, up-to-date data on the number of potential customers in your target geographical area?" },
+      { "phase": "Market & Consumer Analysis", "question": "Have you precisely defined the \"Competitive Advantage\" that makes customers choose you over existing rivals?" },
+      { "phase": "Market & Consumer Analysis", "question": "Do you know the exact \"average spending\" of your target customer on the service/product you will offer?" },
+      { "phase": "Market & Consumer Analysis", "question": "Have you mapped your \"Ideal Buyer Persona,\" including their purchasing motives and pain points?" },
+      { "phase": "Competition & Distribution", "question": "Have you conducted a comprehensive analysis of the risks of new competitors entering the market in the next two years?" },
+      { "phase": "Competition & Distribution", "question": "Is your pricing strategy aligned with the real purchasing power of the current market?" },
+      { "phase": "Competition & Distribution", "question": "Have you identified the optimal distribution channels (retail, wholesale, online) to ensure smooth product flow?" },
+      { "phase": "Competition & Distribution", "question": "Do you have a clear plan for navigating the logistical or legal barriers in the local market?" }
     ]
+  },
+  market_entry_guide: {
+    title: "Market Entry Guide: How to Decode Opportunities and Risks Before Launching Your Project?",
+    phases: [
+      {
+        title: "Market Size & Opportunity Analysis Phase",
+        points: [
+          {"title": "Target Market Identification", "desc": "Distinguishing between Total Addressable Market (TAM) and Serviceable Obtainable Market (SOM)."},
+          {"title": "Trend Analysis", "desc": "Monitoring economic and social variables impacting purchasing power."},
+          {"title": "Market Gaps", "desc": "Discovering unmet needs that your project can strategically fulfill."}
+        ]
+      },
+      {
+        title: "Competitor Dissection",
+        points: [
+          {"title": "Competition Mapping", "desc": "Identifying direct and indirect competitors within the landscape."},
+          {"title": "SWOT Analysis", "desc": "Understanding competitors' pricing and distribution strategies."},
+          {"title": "Market Share", "desc": "Estimating the weight of current rivals and strategizing how to capture a market foothold."}
+        ]
+      },
+      {
+        title: "Understanding Consumer Behavior",
+        points: [
+          {"title": "Buyer Persona Mapping", "desc": "Defining purchasing motives, habits, and the pain points faced by the customer."},
+          {"title": "Customer Journey", "desc": "Tracking the path from product awareness to the final purchase decision."},
+          {"title": "Response Testing", "desc": "Measuring target audience acceptance of proposed pricing and features."}
+        ]
+      },
+      {
+        title: "Distribution Channels & Supply Chain Analysis",
+        points: [
+          {"title": "Market Access", "desc": "Identifying optimal channels (Retail, Wholesale, or E-commerce platforms)."},
+          {"title": "Entry Barriers", "desc": "Studying logistical or legal challenges that may hinder product flow."}
+        ]
+      }
+    ]
+  },
+  cta: {
+    title: "Your Next Project Deserves Certainty.",
+    description: "Our services do not end with the delivery of a study. We don't just hand you a report and leave; instead, we conduct a (Final Simulation Session) with you to discuss all financial and technical scenarios, ensuring you understand exactly where every Dinar will be spent and how it will return.",
+    button: "Book a Free Initial Consultation"
   }
 };
 
 const arDict = {
   hero: {
-    title: "استشارات إدارة المشاريع",
-    subtitle: "من الفكرة إلى الاطلاق الناجح والمربح"
+    title: "دراسة السوق",
+    subtitle: "رؤى دقيقة لاستباق المنافسة واكتشاف الفرص"
   },
   intro: {
     paragraphs: [
-      "الإحصائيات مخيفة: العديد من المشاريع الواعدة تفشل بعد وقت قصير من إطلاقها، ليس بسبب نقص التمويل، بل بسبب سوء الإدارة والتخطيط للمخاطر.",
-      "في \"بوابة الحكمة للإستشارات الهندسية\"، نقدم لك أكثر من مجرد إرشادات؛ نقدم لك إطار عمل هندسي متكامل لإدارة المشاريع يضمن توجيه مواردك في الاتجاه الصحيح.",
-      "نحن نساعدك على تنفيذ خطة عمل خطوة بخطوة، من التخطيط الأولي وقياس الأداء إلى إدارة المخاطر. النتيجة؟ تقليل كبير لمعدلات الفشل وضمان تحقيق الأهداف المرجوة والربحية، حتى تتمكن من إطلاق مشروعك القادم بثقة تامة."
+      "قبل دخول أي سوق أو إطلاق منتج جديد، تحتاج إلى أكثر من مجرد التخمين؛ تحتاج إلى بيانات موثوقة.",
+      "نحن في \"بوابة الحكمة للإستشارات الهندسية\" نقدم لك رؤى سوقية دقيقة مبنية على تحليل شامل لديناميكيات السوق، سلوك المستهلكين، والمنافسين.",
+      "مهمتنا هي مساعدتك في اكتشاف الفرص المخفية، تقليل المخاطر، وتطوير استراتيجيات تسويق فعالة. النتيجة؟ تتخذ قرارات استثمارية مدروسة، تلبي احتياجات زبائنك المباشرة، وتضمن لنفسك موقعاً ريادياً في السوق."
     ],
-    services_intro: "نحن نوفر لكم خبرتنا الهندسية والإدارية لضمان سلامة قراركم الاستثماري عبر خدمات استشارات إدارة المشاريع المتكاملة:",
+    services_intro: "خدماتنا في دراسات السوق تضمن لكم:",
     services: [
       {
-        "title": "تحليل وفرص الاستثمار",
-        "description": "تشخيص دقيق للوضع الراهن، وتحديد الفرصة الاستثمارية المجدية، وضمان عدم الاستناد إلى الرغبات الشخصية."
+        "title": "تحليل كمي دقيق للسوق",
+        "description": "تقدير حجم السوق، معدل نموه السنوي، توقعات الطلب المستقبلية، تحليل الفائض والعجز بين الإنتاج والاستيراد."
       },
       {
-        "title": "تخطيط شامل ومنهجي",
-        "description": "تحديد الشكل القانوني للمشروع، أهدافه، حجمه، موقعه، ومستلزماته المادية والبشرية المطلوبة."
+        "title": "فهم سلوك المستهلك والمنافسين",
+        "description": "دراسة سلوك وتفضيلات المستهلكين، تحديد الفجوة السوقية، واستطلاع شامل للمنافسين وحصصهم السوقية."
       },
       {
-        "title": "إدارة التمويل والتنفيذ",
-        "description": "تخمين حجم الاستثمارات ومصادر التمويل، والإشراف على مراحل التنفيذ لضمان الالتزام بالميزانية والجودة."
+        "title": "تقييم شامل لنقاط القوة والضعف",
+        "description": "تحليل شامل لعوامل النجاح (السعر، الجودة، الترويج، الموقع، اللوجستيات) وتحديد الفرص والتهديدات."
       },
       {
-        "title": "المراقبة وإدارة المخاطر",
-        "description": "تقييم فني واقتصادي مستمر، تدريب مستمر، ورفع كفاءة الأداء لضمان الاستمرارية وتجنب المخاطر."
+        "title": "توصيات استراتيجية قابلة للتنفيذ",
+        "description": "تقديم استنتاجات وتوصيات واضحة لرفع قدراتكم لتلبية الطلب المحلي وضمان الريادة."
       }
     ]
   },
   target_audience: {
     title: "جمهورنا المستهدف",
-    subtitle: "",
-    intro: "المستثمرون (أفراداً ومؤسسات) ورواد الأعمال الذين يخططون لتأسيس أو إطلاق مشاريع جديدة ويبحثون عن شريك موثوق يقدم لهم التوجيه العلمي والهندسي الدقيق لتقليل مخاطر الفشل وزيادة فرص النجاح.",
+    subtitle: "لمن هذه الخدمة؟",
+    intro: "الشركات الإنتاجية والخدمية القائمة، بالإضافة إلى المستثمرين ورواد الأعمال الجدد الذين يخططون لدخول سوق معين. جميعهم يحتاجون إلى معلومات موثوقة ومبنية على البيانات لفهم بيئة السوق التي يعملون فيها أو يخططون لدخولها.",
     ideal_audience_intro: "يشمل جمهورنا المستهدف:",
     audiences: [
-      { "title": "المستثمرون الجدد (أفراد أو مجموعات)", "description": "الذين يمتلكون رأس مال ويبحثون عن فرصة استثمارية واضحة ومدروسة، ويحتاجون إلى إدارة احترافية لمشروعهم من الفكرة إلى الإطلاق." },
-      { "title": "رواد الأعمال والشركات الناشئة", "description": "الذين لديهم أفكار مبتكرة ولكنهم يفتقرون إلى الخبرة الإدارية والهندسية لتخطيط وتنفيذ المشروع بشكل سليم." },
-      { "title": "الجهات الحكومية أو القطاعية", "description": "التي تطلق مشاريع تنموية أو بنية تحتية وتحتاج إلى استشارات متخصصة في إدارة المشاريع والإشراف عليها." },
-      { "title": "الشركات القائمة التي تتوسع", "description": "والتي تطلق مشاريع فرعية جديدة وتحتاج إلى إدارة مستقلة لهذه المشاريع لضمان الكفاءة التشغيلية." },
-      { "title": "أصحاب رؤوس الأموال", "description": "يبحثون عن ضمانات لسلامة قرارهم الاستثماري والعائد المالي (ROI)." },
-      { "title": "المديرون التنفيذيون", "description": "يبحثون عن الكفاءة في التنفيذ وإدارة المخاطر والالتزام بالميزانيات والجداول الزمنية." },
-      { "title": "مديرو المشاريع داخل الشركات الكبرى", "description": "الذين قد يحتاجون إلى دعم فني متخصص في جوانب معينة من التخطيط أو التنفيذ أو إدارة المخاطر." }
+      { "title": "الشركات التي تخطط لإطلاق منتجات أو خدمات جديدة", "description": "والتي تحتاج إلى التحقق من وجود فجوة سوقية، وفهم تفضيلات المستهلكين، وتقدير الطلب المستقبلي." },
+      { "title": "الشركات التي تواجه تحديات تنافسية", "description": "والتي تحتاج إلى تحليل مفصل لنقاط قوة وضعف المنافسين لوضع استراتيجيات تسعير وترويج جديدة." },
+      { "title": "الشركات التي تسعى لتحديد موقعها في السوق", "description": "والتي تحتاج إلى تقييم حصتها السوقية الحالية وموقعها النسبي مقابل المنافسين." },
+      { "title": "المستثمرون الجدد", "description": "الذين يحتاجون إلى دراسة سوق موثوقة كجزء من دراسة جدوى المشروع لتقييم جدوى الاستثمار." },
+      { "title": "أصحاب الشركات والمديرون العامون", "description": "الذين يبحثون عن فرص النمو واتخاذ قرارات استراتيجية مبنية على حقائق السوق." },
+      { "title": "مديرو التسويق والمبيعات", "description": "الذين يحتاجون إلى بيانات دقيقة حول سلوك المستهلك وحجم السوق لتصميم حملات تسويقية فعالة." },
+      { "title": "مديرو تطوير الأعمال", "description": "الذين يبحثون عن معدلات النمو السنوي وتوقعات الطلب المستقبلية لتحديد مسارات التوسع." }
     ]
   },
   cases: {
@@ -145,46 +187,88 @@ const arDict = {
     subtitle: "دليل إثبات يجسد انتقال الاستراتيجية من الورق إلى الميدان.",
     items: [
       {
-        "title": "دروس من مطار برلين",
-        "subtitle": "قصة \"مطار برلين براندنبورغ\" (لعنة غياب الإشراف الموحد)",
-        "issue": "كان من المقرر افتتاح مطار برلين في 2012، لكنه لم يفتتح إلا في 2020، بتكلفة تجاوزت الميزانية بـ 4 مليارات يورو.",
-        "lesson": "النجاح في المشاريع الإنشائية الضخمة لا يعتمد على قوة المقاولين فقط، بل على \"الرقابة الاستشارية المستقلة\" التي تضمن عدم تشتت المشروع وضبط ميزانيته من اليوم الأول."
+        "title": "تجربة أرامكس",
+        "subtitle": "تحدي العناوين المفقودة: شاهد كيف تغلبت الحلول المحلية المبتكرة على عمالقة اللوجستيات.",
+        "issue": "عندما دخلت شركات البريد العالمية مثل DHL و FedEx للشرق الأوسط، واجهت مشكلة غياب العناوين البريدية الدقيقة في المدن العربية.",
+        "analysis": [
+          "ماذا فعلت أرامكس؟ بدلاً من انتظار الحكومات لتنظيم العناوين، أجرت \"أرامكس\" دراسة سوق ميدانية عميقة وابتكرت حلولاً محلية مثل \"الدفع عند الاستلام\" وفهم الأزقة الضيقة والشوارع غير المسماة."
+        ],
+        "lesson": "التميز لا يأتي من تقليد النماذج الغربية، بل من \"تطويع الحلول الهندسية واللوجستية لتناسب الواقع المحلي\"."
       },
       {
-        "title": "سر الالتزام بالثانية",
-        "subtitle": "قصة \"مشروع مترو دبي\" (عبقرية المسار الحرج)",
-        "issue": "عندما أُطلق مشروع مترو دبي، شكك الكثيرون في إمكانية افتتاح أطول مترو آلي في العالم خلال 4 سنوات فقط في بيئة صحراوية قاسية.",
-        "lesson": "الالتزام بالموعد النهائي ليس \"حظاً\"، بل هو نتيجة \"هندسة زمنية\" دقيقة وتخطيط استباقي للمخاطر."
-      },
-      {
-        "title": "دراسة حالة: مطار بغداد الدولي",
-        "subtitle": "عندما تتقادم الإدارة قبل المنشأة",
-        "issue": "مرفق حيوي يمتلك بنية تحتية ضخمة، لكنه يعاني من تراجع حاد في جودة الخدمات، تكرار الحوادث الفنية (مثل الحرائق أو تعطل المنظومات)، وفوضى في تجربة المسافر.",
-        "lesson": "المشاريع الكبرى لا تنهار بسبب نقص التمويل دائماً، بل بسبب غياب نظم إدارة المشاريع التي تضمن ديمومة الكفاءة. في \"بوابة الحكمة للإستشارات الهندسية\"، نحن نؤمن بأن الإدارة الهندسية الصحيحة هي التي تمنع تحول أصولك الثمينة إلى أعباء تشغيلية."
+        "title": "دراسة حالة: المجمعات السكنية العمودية",
+        "subtitle": "عندما يغيب التحليل وتفشل الرؤية",
+        "issue": "المشكلة: تعتبر هذه التجربة في العراق مثالاً حياً ونموذجياً لـ \"فشل التخطيط بسبب غياب دراسات السوق والجدوى المتكاملة\".",
+        "analysis": [
+          "انفصال عن الواقع الشرائي: تم بناء مجمعات بمواصفات \"رفاهية\" وتكاليف عالية في بلد تعاني فيه الطبقة الأكبر (الموظفين وذوي الدخل المحدود) من أزمة سكن.",
+          "إهمال القدرة الاستيعابية للبنى التحتية: غياب دراسة \"الجدوى الفنية والبيئية\" أدى إلى ضغط هائل على شبكات الكهرباء والماء المتهالكة أصلاً.",
+          "غياب تحليل \"التأثير الحضري\": بناء عمودي مكثف في مناطق مكتظة دون تطوير الخدمات المرافقة يعكس غياب الرؤية الهندسية المتكاملة."
+        ],
+        "lesson": "المشروع الناجح ليس مجرد بناء جدران، بل هو ابتكار حلول تتناغم مع القدرة الشرائية للناس وكفاءة البنية التحتية للمدينة. في \"بوابة الحكمة للإستشارات الهندسية\"، نحن نؤمن بأن بناء الجدران سهل، ولكن بناء المشاريع المستدامة يتطلب دراسات سوق وجدوى فنية تضمن قبول المجتمع ونجاح الاستثمار."
       }
     ]
   },
   checklist: {
-    title: "قائمة تدقيق: جاهزية إطلاق المشروع",
+    title: "قائمة تدقيق دراسة السوق",
     headers: ["المراحل", "الأسئلة", "نعم", "كلا"],
     items: [
-      { phase: "التخطيط والجدوى", question: "هل تم تحديد الحجم الأمثل للمشروع بناءً على دراسة طلب السوق الفعلية؟" },
-      { phase: "التخطيط والجدوى", question: "هل هناك قائمة مفصلة بالمستلزمات المادية (معدات) والبشرية (كادر)؟" },
-      { phase: "التخطيط والجدوى", question: "هل حصلت على دراسة جدوى اقتصادية محدثة تعكس أسعار السوق الحالية؟" },
-      { phase: "الهندسة والتعاقدات", question: "هل المواصفات الفنية للمكائن والمعدات مطابقة للمعايير الدولية؟" },
-      { phase: "الهندسة والتعاقدات", question: "هل تتضمن العقود الموقعة بنداً واضحاً لـ \"غرامات التأخير\" و\"ضمان الصيانة\"؟" },
-      { phase: "الهندسة والتعاقدات", question: "هل تم تقييم العروض بناءً على معايير فنية (الجودة) وليس فقط السعر الأقل؟" },
-      { phase: "التنفيذ والتركيب", question: "هل نظام تخطيط موارد المشروع (ERP) جاهز للربط مع خطوط الإنتاج؟" },
-      { phase: "التنفيذ والتركيب", question: "هل تم وضع جدول زمني لتدريب الكادر التشغيلي قبل وصول المعدات؟" },
-      { phase: "التنفيذ والتركيب", question: "هل توجد خطة طوارئ في حال تأخر توريد المواد الأولية؟" }
+      { "phase": "تحليل السوق والمستهلك", "question": "هل لديك بيانات موثوقة ومحدثة عن عدد الزبائن المحتملين في منطقتك الجغرافية المستهدفة؟" },
+      { "phase": "تحليل السوق والمستهلك", "question": "هل قمت بتحديد \"الميزة التنافسية\" التي تجعل الزبون يترك المنافسين الحاليين ويأتي إليك؟" },
+      { "phase": "تحليل السوق والمستهلك", "question": "هل تعرف بدقة \"متوسط المبلغ\" الذي ينفقه العميل المستهدف على الخدمة/المنتج الذي ستقدمه؟" },
+      { "phase": "تحليل السوق والمستهلك", "question": "هل تم رسم \"شخصية العميل المثالي\" (Buyer Persona) بما في ذلك دوافعه الشرائية والمشاكل التي يواجهها؟" },
+      { "phase": "المنافسة والتوزيع", "question": "هل قمت بتحليل شامل لمخاطر دخول منافسين جدد إلى السوق في العامين القادمين؟" },
+      { "phase": "المنافسة والتوزيع", "question": "هل استراتيجية التسعير الخاصة بك تتماشى مع القوة الشرائية الحقيقية للسوق حالياً؟" },
+      { "phase": "المنافسة والتوزيع", "question": "هل قمت بتحديد أفضل قنوات التوزيع (تجزئة، جملة، أونلاين) لضمان انسيابية وصول المنتج؟" },
+      { "phase": "المنافسة والتوزيع", "question": "هل لديك خطة واضحة للتعامل مع العوائق اللوجستية أو القانونية في السوق المحلي؟" }
     ]
+  },
+  market_entry_guide: {
+    title: "دليل إختراق السوق: كيف تقرأ الفرص والمخاطر قبل إطلاق مشروعك؟",
+    phases: [
+      {
+        title: "مرحلة تحليل حجم وفرص السوق",
+        points: [
+          {"title": "تحديد السوق المستهدف", "desc": "تمييز السوق المتاح والسوق الذي يمكن خدمته فعلياً."},
+          {"title": "تحليل الاتجاهات", "desc": "رصد المتغيرات الاقتصادية والاجتماعية التي تؤثر على القوة الشرائية."},
+          {"title": "فجوات السوق", "desc": "اكتشاف الاحتياجات غير الملباة التي يمكن لمشروعك سدها."}
+        ]
+      },
+      {
+        title: "تشريح المنافسين",
+        points: [
+          {"title": "خارطة المنافسة", "desc": "تحديد المنافسين المباشرين وغير المباشرين."},
+          {"title": "تحليل نقاط القوة والضعف", "desc": "فهم استراتيجيات المنافسين في التسعير والتوزيع."},
+          {"title": "الحصة السوقية", "desc": "تقدير وزن المنافسين الحاليين وكيفية الحصول على حصة منهم."}
+        ]
+      },
+      {
+        title: "فهم سلوك المستهلك",
+        points: [
+          {"title": "رسم شخصية الزبون", "desc": "تحديد الدوافع الشرائية، العادات، والمشاكل التي يواجهها الزبون."},
+          {"title": "رحلة الزبون", "desc": "تتبع المسار الذي يتخذه الزبون من الوعي بالمنتج إلى قرار الشراء."},
+          {"title": "اختبار الاستجابة", "desc": "قياس مدى تقبل الجمهور المستهدف للسعر والميزات المقترحة."}
+        ]
+      },
+      {
+        title: "تحليل قنوات التوزيع وسلاسل الإمداد",
+        points: [
+          {"title": "الوصول إلى السوق", "desc": "تحديد أفضل القنوات (تجزئة، جملة، منصات إلكترونية)."},
+          {"title": "عوائق الدخول", "desc": "دراسة التحديات اللوجستية أو القانونية التي قد تعيق انسيابية المنتج."}
+        ]
+      }
+    ]
+  },
+  cta: {
+    title: "مشروعك القادم يستحق اليقين.",
+    description: "خدماتنا لا تنتهي بتسليم الدراسة، نحن لا نسلمك ورقاً ونمضي، بل نعقد معك (جلسة محاكاة نهائية) لمناقشة كافة السيناريوهات المالية والفنية، لضمان أنك تدرك كل دينار أين سيصرف وكيف سيعود.",
+    button: "احجز استشارة أولية مجانية"
   }
 };
 
-enJson.project_management = enDict;
-arJson.project_management = arDict;
+enJson.market_studies = enDict;
+arJson.market_studies = arDict;
 
 fs.writeFileSync(enPath, JSON.stringify(enJson, null, 2));
 fs.writeFileSync(arPath, JSON.stringify(arJson, null, 2));
 
-console.log("Dictionaries updated successfully");
+console.log("Market Studies dictionaries updated successfully");
