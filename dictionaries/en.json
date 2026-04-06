@@ -456,5 +456,267 @@
       "description": "Our services do not end with the delivery of a study. We don't just hand you a report and leave; instead, we conduct a (Final Simulation Session) with you to discuss all financial and technical scenarios, ensuring you understand exactly where every Dinar will be spent and how it will return.",
       "button": "Book a Free Initial Consultation"
     }
+  },
+  "feasibility_studies": {
+    "hero": {
+      "title": "Technical & Economic Feasibility Studies",
+      "subtitle": "Invest with Confidence, Avoid the Pitfalls: Why a Feasibility Study is Your Investment Compass."
+    },
+    "intro": {
+      "paragraphs": [
+        "Investment projects carry great opportunities, but also significant risks. The technical and economic feasibility studies we provide are not just formal documentation; they are your scientific compass for making sound investment decisions.",
+        "We transform your promising idea into an actionable plan supported by reliable data, comprehensive market analysis, and technical viability assessment. Our goal is to use scientific tools to ensure the optimal utilization of your resources, minimize the probability of failure, and maximize your profitability. Launch your project with a solid foundation and trusted data."
+      ],
+      "services_intro": "Our feasibility study services are designed to provide you with:",
+      "services": [
+        {
+          "title": "Comprehensive Understanding of Your Project",
+          "description": "From the initial concept to the final recommendations."
+        },
+        {
+          "title": "Accurate Market Analysis",
+          "description": "Evaluation of demand, competition, and potential opportunities."
+        },
+        {
+          "title": "Clear Technical & Financial Visualization",
+          "description": "Determining costs, revenues, and break-even points."
+        },
+        {
+          "title": "Comprehensive Risk Assessment",
+          "description": "Identifying potential challenges and developing strategies to deal with them."
+        },
+        {
+          "title": "Reliable Economic Indicators",
+          "description": "To ensure the project's continuity and profitability within its economic life cycle."
+        }
+      ]
+    },
+    "target_audience": {
+      "title": "Target Audience & Key Attractors",
+      "subtitle": "Who is this for?",
+      "intro": "Our service is designed for any individual or business entity that has a project idea or is planning a financial investment, and requires an objective and reliable evaluation of the investment's feasibility before committing significant resources.",
+      "ideal_audience_intro": "Our ideal audience includes:",
+      "audiences": [
+        {
+          "title": "Individual Investors",
+          "description": "Individuals with capital looking for safe and profitable investment channels, who need a formal feasibility report to support their decision."
+        },
+        {
+          "title": "Entrepreneurs & Startups",
+          "description": "Those who require a compelling and detailed feasibility study to present to potential investors or to obtain bank loans and financing."
+        },
+        {
+          "title": "Existing Companies Seeking Expansion",
+          "description": "Firms planning to launch a new product line, enter a new market, or build a new facility, needing a risk and expected return assessment."
+        },
+        {
+          "title": "Industrial & Manufacturing Sectors",
+          "description": "Companies that require a precise technical evaluation of proposed machinery, equipment, and production processes."
+        },
+        {
+          "title": "Commercial & Service Sectors",
+          "description": "Business owners or service providers who focus more on market studies and economic forecasts."
+        },
+        {
+          "title": "Capital Owners & Executives",
+          "description": "Leaders looking for bottom-line figures, Return on Investment (ROI), and break-even points."
+        },
+        {
+          "title": "Project & Financial Managers",
+          "description": "Professionals looking for technical details, accurate cost estimates, and risk management strategies."
+        }
+      ]
+    },
+    "cases": {
+      "title": "Real-World Stories",
+      "subtitle": "Evidence that embodies the transition of strategy from paper to the field.",
+      "items": [
+        {
+          "title": "Dubai Lagoon – The Sensitivity Analysis Trap",
+          "subtitle": "The Optimistic Figures Trap: Why are Sensitivity Analysis & Crisis Scenarios the true safety valves for your investment?",
+          "issue": "In the mid-2000s, the massive residential project 'Dubai Lagoon' was launched. The initial feasibility study was overly optimistic, assuming the real estate boom would last forever. It lacked a “Sensitivity Analysis” to handle market downturns or liquidity shortages.",
+          "analysis": [
+            "When the global financial crisis hit in 2008, the project collapsed and stalled for years because the “financial feasibility” wasn't flexible enough to handle worst-case scenarios."
+          ],
+          "lesson": "Learn how our Feasibility Studies stress-test your investment against market volatility. Feasibility is about “Resilience,” not just projected profits. A feasibility study without a financial contingency plan turns investment into a reckless gamble."
+        },
+        {
+          "title": "Tesla Giga Berlin – The Price of Ignoring Legal Feasibility",
+          "subtitle": "Even Giants Stumble: Discover the importance of Legal & Environmental Feasibility in protecting your project from sudden halts.",
+          "issue": "Elon Musk faced massive delays and millions of dollars in losses when building the “Tesla” factory in Germany. Initial studies focused heavily on economic and technical feasibility but underestimated strict German “Legal and Environmental Feasibility.”",
+          "analysis": [
+            "The project encountered legal battles regarding 'water supply' and 'forest protection,' causing construction to halt multiple times. Consequently, the company had to drastically modify its designs and operational plans at an additional cost to comply with local laws."
+          ],
+          "lesson": "Even tech giants can stumble when they underestimate local regulations. Discover why we prioritize Legal & Site Feasibility to ensure your project's smooth launch. Understanding the site's “operational and legal environment” determines whether the project will see the light of day."
+        }
+      ]
+    },
+    "investor_guide": {
+      "title": "The Informed Investor’s Guide: How to Distinguish Between a Promising Opportunity and a Losing Venture?",
+      "phases": [
+        {
+          "title": "Market Feasibility Phase (The Primary Entry Point)",
+          "points": [
+            {
+              "title": "Supply and Demand Analysis",
+              "desc": "Is there a genuine market gap that justifies your project’s entry?"
+            },
+            {
+              "title": "Market Share Estimation",
+              "desc": "What is the projected sales volume in the presence of current competitors?"
+            }
+          ]
+        },
+        {
+          "title": "Technical & Engineering Feasibility Phase (The Core Expertise)",
+          "points": [
+            {
+              "title": "Production Engineering",
+              "desc": "Selecting the most suitable technology, machinery, and equipment for the target production scale."
+            },
+            {
+              "title": "Operational Inputs",
+              "desc": "Identifying project requirements for raw materials, energy, and specialized technical staff."
+            },
+            {
+              "title": "Site and Space Optimization",
+              "desc": "Evaluating alternative locations based on proximity to suppliers and target markets."
+            }
+          ]
+        },
+        {
+          "title": "Financial & Economic Feasibility Phase (The Language of Numbers)",
+          "points": [
+            {
+              "title": "Investment Cost Estimation",
+              "desc": "Calculating the capital required to commence operations (Fixed Assets and Working Capital)."
+            },
+            {
+              "title": "Profitability Indicators",
+              "desc": "Calculating the Payback Period and the Internal Rate of Return (IRR)."
+            },
+            {
+              "title": "Sensitivity Analysis",
+              "desc": "Measuring the project's resilience against price fluctuations or changes in operating costs."
+            }
+          ]
+        },
+        {
+          "title": "Environmental & Legal Feasibility Phase",
+          "points": [
+            {
+              "title": "Compliance and Legislation",
+              "desc": "Ensuring the project aligns with current laws, regulations, and directives (specifically within the Iraqi business environment)."
+            },
+            {
+              "title": "Environmental Impact",
+              "desc": "Studying the project’s impact on the surrounding environment and ensuring long-term sustainability."
+            }
+          ]
+        }
+      ]
+    },
+    "checklist": {
+      "title": "Checklist: Feasibility Study",
+      "headers": [
+        "Phase",
+        "Questions",
+        "Yes",
+        "No"
+      ],
+      "items": [
+        {
+          "phase": "Market Viability",
+          "question": "Does the study rely on actual 2025 field data or just general estimates?"
+        },
+        {
+          "phase": "Market Viability",
+          "question": "Have you identified \"Direct Competitors\" and their specific strengths?"
+        },
+        {
+          "phase": "Market Viability",
+          "question": "Is your pricing strategy aligned with the current purchasing power of your target audience?"
+        },
+        {
+          "phase": "Technical Integrity",
+          "question": "Has the infrastructure capacity (power, water, roads) at the selected site been verified?"
+        },
+        {
+          "phase": "Technical Integrity",
+          "question": "Does the study include \"real quotations\" for machinery from reputable suppliers?"
+        },
+        {
+          "phase": "Technical Integrity",
+          "question": "Is there a clear training plan for the technical staff on the implemented technology?"
+        },
+        {
+          "phase": "Financial Resilience",
+          "question": "Is there enough Working Capital to cover expenses for at least six months post-launch?"
+        },
+        {
+          "phase": "Financial Resilience",
+          "question": "Has a \"Sensitivity Analysis\" been conducted to test profitability if sales drop by 20%?"
+        },
+        {
+          "phase": "Financial Resilience",
+          "question": "Is the Payback Period realistic and aligned with industry risks?"
+        },
+        {
+          "phase": "Legal & Environmental",
+          "question": "Does the project have initial approvals from sector authorities (industrial development, environment, investment board)?"
+        },
+        {
+          "phase": "Legal & Environmental",
+          "question": "Does the industrial waste disposal plan comply with prevailing environmental standards?"
+        }
+      ]
+    },
+    "cautionary_tales": {
+      "title": "Cautionary Tales: The Hidden Risks of Skipping a Feasibility Study",
+      "subtitle": "Behind every struggling project, there is a truth ignored during the study phase.",
+      "tales": [
+        {
+          "title": "The 'Wrong Tech' Trap (Incompatible Equipment)",
+          "scenario": "An investor imported a highly advanced production line from abroad based on the lowest price, without conducting a technical feasibility study.",
+          "hidden_risk": "Upon arrival, it was discovered that the local power grid couldn't support the machinery's load, and spare parts were unavailable locally.",
+          "result": "The project stalled for a year to rehabilitate the electrical network, missing the optimal market entry window."
+        },
+        {
+          "title": "The 'Optimistic Market' Illusion (Ignoring Sensitivity Analysis)",
+          "scenario": "Launching a massive industrial project based on \"expectations\" that raw material prices would remain constant, without a financial study featuring \"Sensitivity Analysis.\"",
+          "hidden_risk": "A sudden 15% fluctuation occurred in exchange rates or global material prices.",
+          "result": "Projected profits turned into continuous operational losses because the profit margin was too narrow and couldn't absorb market shocks."
+        },
+        {
+          "title": "The 'Attractive Location' Error (Ignoring Service Impact Studies)",
+          "scenario": "Building an industrial or commercial project in a crowded area to ensure \"visibility\" without a technical infrastructure feasibility study.",
+          "hidden_risk": "The project became inaccessible due to severe traffic jams. Weak water pressure and electricity meant reliance on private generators.",
+          "result": "Dramatically soaring operational costs devoured the profits, leading to a drop in the property's market value."
+        }
+      ]
+    },
+    "lessons": {
+      "title": "Lessons from Failure",
+      "subtitle": "The difference between a successful project and a failed one isn't capital; it's the accuracy of the data it stands on.",
+      "items": [
+        {
+          "title": "Don't Mistake 'Wishes' for 'Numbers'",
+          "desc": "Many investors fail because they replicate successful international models without studying the local Iraqi market's unique consumer behavior. What succeeds in Dubai may not succeed in Baghdad without precise engineering and marketing “adaptation.”"
+        },
+        {
+          "title": "Ignoring 'Hidden Costs' Kills Profitability",
+          "desc": "Failure to account for logistics, supply chain variables, and maintenance costs can turn a high-revenue project into an operational loss. True profitability lies in “Operational Costs,” not just “Capital Costs.”"
+        },
+        {
+          "title": "Infrastructure is Not a Minor Detail",
+          "desc": "Mega-projects often fail when they ignore technical feasibility regarding surrounding roads, power grids, and water supply, turning luxury assets into functional burdens. A project's success is tied to its integration with its infrastructural environment."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Your Next Project Deserves Certainty.",
+      "description": "Our services do not end with the delivery of a study. We don't just hand you a report and leave; instead, we conduct a (Final Simulation Session) with you to discuss all financial and technical scenarios, ensuring you understand exactly where every Dinar will be spent and how it will return.",
+      "button": "Book a Free Initial Consultation"
+    }
   }
 }
