@@ -93,10 +93,27 @@ export function Navbar({ lang, dictionary }: NavbarProps) {
                               "grid gap-2 p-4 text-start font-sans",
                               item.href.includes("services")
                                 ? "w-[300px] md:w-[500px] lg:w-[600px] md:grid-cols-2"
+                                : item.href.includes("knowledge-hub") 
+                                ? "w-[250px] md:w-[300px] grid-cols-1"
                                 : "w-[200px] md:w-[250px] grid-cols-1"
                             )}>
                               {item.href.includes("services") && dictionary.services_hub ? (
                                 dictionary.services_hub.services.map((subItem: any, i: number) => (
+                                  <li key={subItem.slug}>
+                                    <NavigationMenuLink
+                                      render={
+                                        <Link
+                                          href={`${item.href}/${subItem.slug}`}
+                                          className="block select-none rounded-md px-4 py-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                                        />
+                                      }
+                                    >
+                                      <div className="text-sm font-medium leading-none font-heading">{subItem.title}</div>
+                                    </NavigationMenuLink>
+                                  </li>
+                                ))
+                              ) : item.href.includes("knowledge-hub") && dictionary.knowledge_hub ? (
+                                dictionary.knowledge_hub.categories.map((subItem: any, i: number) => (
                                   <li key={subItem.slug}>
                                     <NavigationMenuLink
                                       render={

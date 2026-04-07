@@ -718,5 +718,1151 @@
       "description": "Our services do not end with the delivery of a study. We don't just hand you a report and leave; instead, we conduct a (Final Simulation Session) with you to discuss all financial and technical scenarios, ensuring you understand exactly where every Dinar will be spent and how it will return.",
       "button": "Book a Free Initial Consultation"
     }
+  },
+  "performance_efficiency": {
+    "hero": {
+      "title": "Performance Efficiency Assessment & Companies Restructuring",
+      "subtitle": "Assessing Your Company's Economic Performance Efficiency: Reclaim Your Profits."
+    },
+    "intro": {
+      "paragraphs": [
+        "Is your company operating at its full potential? Are you achieving the financial returns you expect?",
+        "Our economic performance assessment services are not just an audit; they are a precise and comprehensive diagnosis of your company's current status. We analyze your assets, production processes, marketing, and human resources to uncover hidden inefficiencies and waste.",
+        "The result? We provide you with practical improvement and development programs designed to boost your productive capacity, streamline operations, and most importantly: transform your company into an efficient economic unit that guarantees increased market share and profitability."
+      ],
+      "services_intro": "Our performance evaluation services ensure you receive:",
+      "services": [
+        {
+          "title": "Accurate Diagnosis of the Current Situation",
+          "description": "A comprehensive analysis of the basic data for all company units, and precise identification of weaknesses."
+        },
+        {
+          "title": "Measuring Economic Efficiency",
+          "description": "Performance evaluation at the unit level and company level generally, analyzing profits versus costs for specific time periods."
+        },
+        {
+          "title": "Proposals for Capacity Building",
+          "description": "Providing practical and direct solutions to increase the production or service capabilities of existing units."
+        },
+        {
+          "title": "Exploring Expansion Opportunities",
+          "description": "Identifying the hidden potential for development and expansion to meet the increasing local market demand."
+        }
+      ]
+    },
+    "target_audience": {
+      "title": "Target Audience & Key Attractors",
+      "subtitle": "Who is this for?",
+      "intro": "Our service is designed for existing companies, whether actively operating or temporarily paused, that seek to diagnose their internal problems and find scientific solutions to enhance efficiency, profitability, or resume operations.",
+      "ideal_audience_intro": "Our ideal audience includes:",
+      "audiences": [
+        {
+          "title": "Distressed or Underperforming Companies",
+          "description": "Firms experiencing low profits or losses that require urgent intervention to identify weaknesses and fix them."
+        },
+        {
+          "title": "Temporarily Stalled Companies",
+          "description": "Businesses that stopped operating due to operational or financial reasons and are looking for a reliable technical and economic action plan to restart successfully."
+        },
+        {
+          "title": "Companies Seeking Continuous Improvement",
+          "description": "Relatively successful companies aiming to increase their production or service capabilities and explore expansion opportunities to meet local demand."
+        },
+        {
+          "title": "Company Owners & Shareholders",
+          "description": "The final decision-makers looking for radical solutions to restore the value of their investments and ensure the company's continuity."
+        },
+        {
+          "title": "Boards of Directors & Executives",
+          "description": "Leaders seeking objective, data-driven reports to support senior management decisions and guide departments toward efficiency."
+        },
+        {
+          "title": "Financial Managers",
+          "description": "Individuals looking for a precise analysis of costs and economic indicators related to the company's overall performance."
+        },
+        {
+          "title": "Production & Operations Managers",
+          "description": "Professionals looking for technical recommendations to increase production capacity and improve daily operational efficiency."
+        }
+      ]
+    },
+    "cases": {
+      "title": "Real-World Stories",
+      "subtitle": "Evidence that embodies the transition of strategy from paper to the field.",
+      "items": [
+        {
+          "title": "Pioneering Experiences: Etisalat & Zain",
+          "subtitle": "Transitioning from 'Technical Management' to 'Experience Management'",
+          "issue": "Telecommunications companies in the region previously suffered from 'Administrative Bloat' and bureaucracies similar to those found in government institutions.",
+          "analysis": [
+            "These companies underwent comprehensive 'Restructuring' processes. The 'Management by Seniority' model was replaced with 'Management by Key Performance Indicators (KPIs).'",
+            "Furthermore, employees were transformed from mere 'technical operators' into 'Customer Service Ambassadors.'"
+          ],
+          "lesson": "They evolved from struggling local firms into cross-continental giants. Human Resources Engineering and Strategic Restructuring are what transform an institution from a financial burden into a profit-making machine."
+        }
+      ]
+    },
+    "diagnosis_guide": {
+      "title": "Performance Diagnosis Guide: How to Uncover Waste and Boost Your Company’s Productivity?",
+      "phases": [
+        {
+          "title": "Technical & Operational Diagnosis",
+          "points": [
+            {
+              "title": "Production Line Efficiency Analysis",
+              "desc": "Measuring actual machinery output compared to its theoretical design capacity."
+            },
+            {
+              "title": "Supply Chain Assessment",
+              "desc": "Evaluating warehouse management efficiency, lead times, and the waste percentage in raw materials."
+            },
+            {
+              "title": "Maintenance Systems Review",
+              "desc": "Transitioning from 'Reactive Maintenance' to 'Preventive Maintenance' to minimize downtime."
+            }
+          ]
+        },
+        {
+          "title": "Financial & Economic Evaluation",
+          "points": [
+            {
+              "title": "Cost Structure Analysis",
+              "desc": "Discovering 'Hidden Costs' that erode profit margins."
+            },
+            {
+              "title": "Return on Assets (ROA)",
+              "desc": "Assessing whether invested resources (land, buildings, equipment) are generating the required returns."
+            },
+            {
+              "title": "Break-Even Point (BEP)",
+              "desc": "Recalculating the sales volume needed to cover costs in light of current price fluctuations (2025 Market Rates)."
+            }
+          ]
+        },
+        {
+          "title": "Human Resources & Process Efficiency",
+          "points": [
+            {
+              "title": "Productivity Analysis",
+              "desc": "Measuring workforce output against operational costs."
+            },
+            {
+              "title": "Process Engineering",
+              "desc": "Streamlining workflows to eliminate bureaucracy and unproductive redundancy."
+            }
+          ]
+        }
+      ]
+    },
+    "checklist": {
+      "title": "Performance Efficiency Checklist: Is Your Company Silently Draining Your Resources?",
+      "headers": [
+        "Phase",
+        "Questions",
+        "Yes",
+        "No"
+      ],
+      "items": [
+        {
+          "phase": "Operational Excellence",
+          "question": "Do your production lines experience more than 5% unplanned downtime due to breakdowns?"
+        },
+        {
+          "phase": "Operational Excellence",
+          "question": "Is your raw material waste percentage higher than industry international standards?"
+        },
+        {
+          "phase": "Operational Excellence",
+          "question": "Do you lack a digital inventory system that prevents \"dead stock\" or critical shortages?"
+        },
+        {
+          "phase": "Financial Resilience",
+          "question": "Do you know the exact \"Unit Cost\" of your product after accounting for current 2025 energy and inflation rates?"
+        },
+        {
+          "phase": "Financial Resilience",
+          "question": "Is there an unexplained gap between rising sales and actual net profit margins?"
+        },
+        {
+          "phase": "Financial Resilience",
+          "question": "Are you pricing based on \"intuition\" rather than an updated Break-Even Analysis?"
+        },
+        {
+          "phase": "Process & Human Productivity",
+          "question": "Does your team waste time on repetitive manual tasks that could be automated?"
+        },
+        {
+          "phase": "Process & Human Productivity",
+          "question": "Do your employees lack clear, measurable Key Performance Indicators (KPIs)?"
+        },
+        {
+          "phase": "Process & Human Productivity",
+          "question": "Do routine meetings and internal conflict resolution consume more than 20% of senior management's time?"
+        }
+      ]
+    },
+    "lessons": {
+      "title": "Lessons from Failure: 'When Growth is Just an Illusion!'",
+      "subtitle": "High sales do not always equal success; Efficiency is what guarantees sustainability.",
+      "items": [
+        {
+          "title": "The Growth Illusion",
+          "desc": "A company achieved a 20% increase in sales, yet its net profits dropped by 10%. A lack of performance efficiency assessment led to overlooking rising 'Operating Costs' and an increased 'Waste Ratio,' both of which consumed the new revenue."
+        }
+      ]
+    },
+    "precise_diagnosis": {
+      "title": "The Precise Diagnosis: 10 Hidden Internal Reasons Stifling Your Performance",
+      "subtitle": "Test your company’s efficiency: How many of these reasons are hindering your growth today?",
+      "sectors": [
+        {
+          "title": "Companies Offering a Tangible Product (Industrial Sector)",
+          "points": [
+            {
+              "title": "Low Overall Equipment Effectiveness (OEE)",
+              "desc": "Machines are running but producing at a slower speed than their design capacity or producing defective parts requiring rework."
+            },
+            {
+              "title": "Dead Stock Accumulation",
+              "desc": "The buildup of unwanted raw materials or finished products, which freezes working capital and consumes storage space and insurance costs."
+            },
+            {
+              "title": "Weak Preventive Maintenance Culture",
+              "desc": "Reliance on reactive maintenance (fixing breakdowns when they occur), causing sudden production line stoppages during peak times."
+            },
+            {
+              "title": "Waste in Material Handling",
+              "desc": "Non-engineered facility layout and workflow, causing material or personnel to travel excessive distances, which is a waste of time and energy."
+            },
+            {
+              "title": "Absence of Source Quality Control Standards",
+              "desc": "Discovering defects at the end of the line instead of at the beginning of the process, resulting in the loss of materials, time, and effort."
+            }
+          ]
+        },
+        {
+          "title": "Companies Offering a Service (Service & Consulting Sector)",
+          "points": [
+            {
+              "title": "Non-Billable Time Leakage",
+              "desc": "Employees performing extra tasks for clients outside the original contract scope without recording the cost, thereby eroding profit margins."
+            },
+            {
+              "title": "Rework",
+              "desc": "The absence of 'Standard Operating Procedures' (SOPs) leads to errors requiring the service to be redelivered, which is a direct waste of human effort."
+            },
+            {
+              "title": "Administrative Over-Head",
+              "desc": "A large number of employees in support functions compared to a few who generate actual income (billable hours)."
+            },
+            {
+              "title": "Weak Technology Utilization",
+              "desc": "Reliance on manual or paper-based work for tasks that can be automated (e.g., CRM), causing slow response times to customers."
+            },
+            {
+              "title": "Specialized Skills Gap",
+              "desc": "Employees occupying roles that require skills beyond their current capabilities, leading to slow execution and lower output quality."
+            }
+          ]
+        }
+      ]
+    },
+    "cta": {
+      "title": "Your Next Project Deserves Certainty.",
+      "description": "Our services do not end with the delivery of a study. We don't just hand you a report and leave; instead, we conduct a (Final Simulation Session) with you to discuss all financial and technical scenarios, ensuring you understand exactly where every Dinar will be spent and how it will return.",
+      "button": "Book a Free Initial Consultation"
+    }
+  },
+  "human_resources": {
+    "hero": {
+      "title": "Human Resources Management (HRM)",
+      "subtitle": "Building a Strong & Committed Team: Why Effective HR Management is No Longer an Option, but a Business Imperative Today."
+    },
+    "intro": {
+      "paragraphs": [
+        "Human Resources isn't just an administrative department; it is the cornerstone of your company's success and sustainable growth.",
+        "We help you move beyond the traditional concepts of payroll and staffing. Our services include building a comprehensive system for effective performance management, continuous training and development, and ensuring a safe, productive work environment.",
+        "The result? Organized operations, unified work methodologies, and most importantly: a strong, committed, high-performing team that ensures your company's evolution and achievement of strategic objectives."
+      ],
+      "services_intro": "We offer comprehensive human resource restructuring solutions designed to meet the needs of your company, whether operating or temporarily paused. Our services include:",
+      "services": [
+        {
+          "title": "Designing an Effective Organizational Structure",
+          "description": "Building structures and defining responsibilities (job descriptions, grade scales, authorities) to ensure workflow efficiency."
+        },
+        {
+          "title": "Developing Policies & Procedures",
+          "description": "Establishing clear work manuals (employee handbook, codes of conduct, recruitment policies, contracts, confidentiality agreements) to ensure compliance and transparency."
+        },
+        {
+          "title": "Performance & Compensation Management",
+          "description": "Designing systems for employee performance evaluation, salaries and benefits, and managing attendance, leave, and promotions fairly and effectively."
+        },
+        {
+          "title": "Training & Development",
+          "description": "Identifying training needs and building plans to enhance the capabilities of your human capital."
+        }
+      ]
+    },
+    "target_audience": {
+      "title": "Target Audience & Key Attractors",
+      "subtitle": "Who is this for?",
+      "intro": "Our service is designed for existing companies, regardless of their sector, that suffer from shortcomings or chaos in managing their human element, whether structural, operational, or legal problems.",
+      "ideal_audience_intro": "Our ideal audience includes:",
+      "audiences": [
+        {
+          "title": "Rapidly Growing Companies",
+          "description": "Those that have surpassed the stage of arbitrary HR management and require a formal organizational structure, clear policies, and procedures to match their growth."
+        },
+        {
+          "title": "Family Businesses",
+          "description": "Those that may need professionalism and organization in managing employee affairs (salary scales, fair recruitment, evaluation) instead of personal management."
+        },
+        {
+          "title": "Distressed or Stalled Companies",
+          "description": "Those that require a radical restructuring of their workforce, including wage management, promotions, or even workforce reduction in a legal and organized manner."
+        },
+        {
+          "title": "Companies Seeking Legal Compliance",
+          "description": "Those needing to ensure their contracts, policies, and procedures comply with local labor laws, social security, and health standards."
+        },
+        {
+          "title": "Company Owners & Shareholders",
+          "description": "Who are looking for efficiency, legal compliance, and the guarantee of an organized work environment that reduces operational and legal risks."
+        },
+        {
+          "title": "Executives",
+          "description": "Leaders looking for a strategic partner to help them build a strong and productive team that ensures the implementation of the company's strategy."
+        },
+        {
+          "title": "HR Managers",
+          "description": "Those who may be new to their positions and need external support to redesign the structure and policies."
+        }
+      ]
+    },
+    "cases": {
+      "title": "Real-World Stories",
+      "subtitle": "Evidence that embodies the transition of strategy from paper to the field.",
+      "items": [
+        {
+          "title": "Re-engineering Oriental Weavers Group",
+          "subtitle": "The Power of System over Personal Authority",
+          "issue": "The group faced a significant challenge during its global expansion phase; operations relied heavily on 'personal loyalty' and the tacit knowledge stored in the minds of senior employees (Management by Trust and Seniority). This led to administrative bloat and overlapping authorities.",
+          "analysis": [
+            "The company underwent a comprehensive institutional restructuring. Precise Job Descriptions were established for every individual, and 'random bonus systems' were replaced with Key Performance Indicators (KPIs) linked directly to productivity and quality.",
+            "Furthermore, 'Succession Planning' was activated to ensure business continuity regardless of personnel changes."
+          ],
+          "lesson": "The company transformed from a local family business into the world's largest producer of machine-made carpets, managed by professional systems that rival major European firms. A high-performing employee needs a system that treats them fairly, and a strong institution is one that does not perish with the absence or departure of individuals, but rather grows through Human Resources Engineering."
+        }
+      ]
+    },
+    "building_guide": {
+      "title": "The Institutional Building Guide",
+      "subtitle": "How to Move Your Company from Individual Chaos to System Efficiency?",
+      "phases": [
+        {
+          "title": "Organizational Engineering",
+          "points": [
+            {
+              "title": "Organizational Structure Design",
+              "desc": "Building a structure aligned with the company’s size and objectives (beyond just boxes and lines)."
+            },
+            {
+              "title": "Defining Authorities",
+              "desc": "Mapping clear decision-making paths to prevent overlapping tasks and bureaucracy."
+            },
+            {
+              "title": "Job Descriptions",
+              "desc": "Precise identification of tasks, responsibilities, and qualifications required for each position."
+            }
+          ]
+        },
+        {
+          "title": "Talent Acquisition & Management",
+          "points": [
+            {
+              "title": "Selection Engineering",
+              "desc": "Establishing scientific standards for interviews and technical assessments to ensure 'the right person is in the right place.'"
+            },
+            {
+              "title": "Compensation & Benefits System",
+              "desc": "Designing a fair and competitive salary structure to retain top talent within your company."
+            }
+          ]
+        },
+        {
+          "title": "Performance Management & Development",
+          "points": [
+            {
+              "title": "Key Performance Indicators (KPIs)",
+              "desc": "Transforming the company’s major goals into measurable targets for every employee."
+            },
+            {
+              "title": "Skill Gap Analysis",
+              "desc": "Identifying genuine training needs that actually boost productivity."
+            },
+            {
+              "title": "Corporate Loyalty Culture",
+              "desc": "Building a work environment that stimulates innovation and ensures team continuity."
+            }
+          ]
+        }
+      ]
+    },
+    "checklist": {
+      "title": "Human Resources Management Checklist: Is Your Institution Built on People or Systems?",
+      "headers": [
+        "Phase",
+        "Questions",
+        "Yes",
+        "No"
+      ],
+      "items": [
+        {
+          "phase": "Organizational Engineering",
+          "question": "Do your employees suffer from conflicting orders due to the lack of a documented Org Chart?"
+        },
+        {
+          "phase": "Organizational Engineering",
+          "question": "Does every individual in your company have a written Job Description defining their responsibilities?"
+        },
+        {
+          "phase": "Organizational Engineering",
+          "question": "Do simple decisions always halt at the \"General Manager\" due to unclear delegation paths?"
+        },
+        {
+          "phase": "Talent Acquisition & Compensation",
+          "question": "Do you rely on scientific interviews and technical assessments for hiring, or just personal impressions?"
+        },
+        {
+          "phase": "Talent Acquisition & Compensation",
+          "question": "Is your salary structure fair and successful in retaining \"Key Talent\" from joining competitors?"
+        },
+        {
+          "phase": "Talent Acquisition & Compensation",
+          "question": "Do you have a \"Succession Plan\" to ensure business continuity if a key employee resigns?"
+        },
+        {
+          "phase": "Performance & Loyalty Management",
+          "question": "Are bonuses and raises linked to objective Key Performance Indicators (KPIs) or subjective opinions?"
+        },
+        {
+          "phase": "Performance & Loyalty Management",
+          "question": "Does your \"Employee Turnover\" rate exceed the natural average for your industry?"
+        },
+        {
+          "phase": "Performance & Loyalty Management",
+          "question": "Do you have an annual training plan based on a genuine Skill Gap Analysis of your team?"
+        }
+      ]
+    },
+    "chaos_diagnosis": {
+      "title": "Diagnosing Administrative Chaos",
+      "subtitle": "7 Warning Signs Your Organizational Structure is Stifling Company Growth.",
+      "signs": [
+        {
+          "title": "Unclear Reporting Lines",
+          "desc": "Employees are unsure who they report to or from whom they receive directions."
+        },
+        {
+          "title": "Duplication of Effort",
+          "desc": "The same task is frequently performed by multiple individuals, leading to wasted resources."
+        },
+        {
+          "title": "Decision Paralysis",
+          "desc": "Simple decisions always require the General Manager’s approval, causing bottlenecks and delays."
+        },
+        {
+          "title": "Lack of Accountability",
+          "desc": "Responsibilities are not clearly defined, resulting in a culture where no one is accountable for outcomes."
+        },
+        {
+          "title": "Talent Frustration",
+          "desc": "High-performing employees feel frustrated due to the absence of a clear and defined career path."
+        },
+        {
+          "title": "Unproductive Meetings",
+          "desc": "Excessive time is wasted in meetings resolving internal conflicts or discussing operational overlaps."
+        },
+        {
+          "title": "Hiring by Connection, Not Competence",
+          "desc": "Recruitment is based on “connections” and “networking” rather than necessary skills and qualifications."
+        }
+      ]
+    },
+    "hr_toolkit": {
+      "title": "The Professional HR Toolkit",
+      "subtitle": "Download 3 Essential Templates for Effective Team Management. Designed according to modern management best practices.",
+      "tools": [
+        {
+          "title": "Organizational Structure Template",
+          "benefit": "Helps the manager map out a 'Roadmap' for the team and eliminates overlapping authorities.",
+          "included": "A ready-to-use template (PowerPoint/Excel) illustrating the administrative hierarchy from the General Manager down."
+        },
+        {
+          "title": "Standard Job Description Template",
+          "benefit": "Ends the 'this is not part of my job' excuse and defines expectations with precision.",
+          "included": "A Word document containing standardized sections: Key Tasks, Responsibilities, Required Skills, and Initial KPIs."
+        },
+        {
+          "title": "Competency-Based Interview Guide",
+          "benefit": "Prevents 'Emotional Hiring' and assists the employer in uncovering the applicant's genuine skills.",
+          "included": "A list of critical questions designed to reveal Problem-Solving Ability, Teamwork, Commitment, and Technical Proficiency."
+        }
+      ]
+    },
+    "interview_questions": {
+      "title": "Top 10 Most Common Interview Questions: Real-World Scenarios",
+      "questions": [
+        {
+          "q": "Tell us about a major challenge you faced in your previous job and how you handled it?",
+          "aim": "To measure problem-solving skills and the ability to work under pressure."
+        },
+        {
+          "q": "Why specifically do you want to work with 'Gate of Wisdom'? And what do you know about our activities?",
+          "aim": "To gauge the candidate's seriousness and genuine interest in the company."
+        },
+        {
+          "q": "Give us an example of a situation where you had to work with a colleague you didn't agree with. How did you manage that relationship?",
+          "aim": "To measure emotional intelligence (EQ) and teamwork capabilities."
+        },
+        {
+          "q": "If you were assigned a task but didn't have enough time to complete it, how would you act?",
+          "aim": "To measure time management and prioritization skills."
+        },
+        {
+          "q": "Tell us about a mistake you made in your previous job. What did you do to correct it, and what did you learn?",
+          "aim": "To measure integrity, accountability, and the ability to learn from mistakes."
+        },
+        {
+          "q": "Where do you see yourself professionally 3 or 5 years from now?",
+          "aim": "To reveal the candidate's ambition and whether their goals align with the company's growth trajectory."
+        },
+        {
+          "q": "Describe a situation where you proposed a suggestion or an idea to improve the workflow in your previous company.",
+          "aim": "To measure proactivity and innovation."
+        },
+        {
+          "q": "How do you handle sudden changes in work plans or urgent customer requirements?",
+          "aim": "To measure flexibility and adaptability in a dynamic environment."
+        },
+        {
+          "q": "What is the most important skill or value you take pride in possessing, which you believe will add immediate value to our company?",
+          "aim": "To reveal self-confidence and self-awareness."
+        },
+        {
+          "q": "Do you have any questions for us?",
+          "aim": "(Crucial Question) A smart candidate asks about company culture, expectations, or departmental challenges."
+        }
+      ]
+    },
+    "unemployment_case": {
+      "title": "Case Study: Disguised Unemployment in Iraq’s Public Sector",
+      "content": [
+        {
+          "heading": "The Statistical Gap",
+          "text": "International indicators place Iraq among the world's highest in public sector employment. IMF and Iraqi Ministry of Planning estimates show that 37% to 42% of the total workforce are government employees. This is staggering compared to the global average of 11%, and the OECD average of 18% to 21%."
+        },
+        {
+          "heading": "The Structural Crisis",
+          "text": "This workforce inflation is a byproduct of rentier oil policies rather than productive growth, creating widespread 'Disguised Unemployment.' Thousands are on payrolls without clear productive tasks, leading to Budget Drain and Cultural Erosion that stifles private sector innovation."
+        },
+        {
+          "heading": "The Consulting Solution: How HRM Can Restructure the State?",
+          "text": "Strategic Rightsizing aligns staff numbers with actual operational needs. Productivity-Linked Compensation moves away from flat-rate salaries to performance-based incentives. Finally, 'Transfer & Retrain' programs establish a national framework to retrain surplus public employees for high-demand roles in emerging industries."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Your Next Project Deserves Certainty.",
+      "description": "Our services do not end with the delivery of a study. We don't just hand you a report and leave; instead, we conduct a (Final Simulation Session) with you to discuss all financial and technical scenarios, ensuring you understand exactly where every Dinar will be spent and how it will return.",
+      "button": "Book a Free Initial Consultation"
+    }
+  },
+  "marketing_and_sales": {
+    "hero": {
+      "title": "Marketing & Sales",
+      "subtitle": "Integrated Marketing & Sales Strategy: Engineering Growth for Your Business."
+    },
+    "intro": {
+      "paragraphs": [
+        "Are you struggling with the gap between your marketing and sales teams? Do you feel operational chaos is hindering your revenue goals?",
+        "At “GATE OF WISDOM CONSULTING ENGINEERS”, we go beyond academic definitions. Our mission is to align your marketing and sales strategies into one seamless, integrated platform.",
+        "We translate long-term market analysis into effective, short-term sales plans, ensuring every lead is converted into a paying customer. The result? Overcoming operational chaos and achieving tangible, sustainable financial growth for your company."
+      ],
+      "services_intro": "Our marketing and sales restructuring services ensure you receive:",
+      "services": [
+        {
+          "title": "Diagnosis of the Current Situation",
+          "description": "Analysis of the organizational structure, existing plans, and precise identification of problems and obstacles."
+        },
+        {
+          "title": "Comprehensive Market Study & Analysis",
+          "description": "Market size assessment, future demand forecasts, and an accurate survey of competitors to identify growth opportunities."
+        },
+        {
+          "title": "Charting New & Innovative Strategies",
+          "description": "Developing effective strategies for pricing, product or service development, and clear performance indicators for evaluation."
+        },
+        {
+          "title": "Development of Advanced Management Systems",
+          "description": "Assistance in developing and implementing marketing and sales operations management systems (ERP/CRM) to ensure operational efficiency."
+        }
+      ]
+    },
+    "target_audience": {
+      "title": "Target Audience & Key Attractors",
+      "subtitle": "Who is this for?",
+      "intro": "Our service is designed for existing companies (production or service), whether actively operating or temporarily paused, that face challenges in market performance, have lost market share, or need to modernize their marketing and sales approaches to fit the modern era and technological tools.",
+      "ideal_audience_intro": "Our ideal audience includes:",
+      "audiences": [
+        {
+          "title": "Companies with Traditional Methods",
+          "description": "Those still relying on outdated marketing and sales methods (e.g., print ads only) and need to transition to digital marketing and modern approaches."
+        },
+        {
+          "title": "Companies Facing Fierce Competition",
+          "description": "Those that need a precise analysis of competitors' strengths and weaknesses to develop new pricing and differentiation strategies to regain their competitive edge."
+        },
+        {
+          "title": "Companies Experiencing Stagnant Sales",
+          "description": "Those that need to diagnose problems and obstacles in their marketing and sales departments and reorganize their structure and plans."
+        },
+        {
+          "title": "Companies Seeking to Launch New Products",
+          "description": "Those that need accurate market studies and an effective marketing strategy to ensure a successful launch."
+        },
+        {
+          "title": "Company Owners & General Managers",
+          "description": "Leaders seeking solutions to increase revenues and profits and ensure the company's sustainable growth."
+        },
+        {
+          "title": "Current Sales & Marketing Managers",
+          "description": "Those who may be burdened by daily operations and need external strategic support to restructure departments and define new Performance Indicators (KPIs)."
+        },
+        {
+          "title": "Business Development Managers",
+          "description": "Those seeking new insights into the market and future demand to identify expansion opportunities."
+        }
+      ]
+    },
+    "cases": {
+      "title": "Strategic Insights: Pioneering Lessons from the Middle East",
+      "subtitle": "Real-World Stories: Evidence that embodies the transition of strategy from paper to the field.",
+      "items": [
+        {
+          "title": "Edita Food Industries:",
+          "subtitle": "The Power of Demand-Creation Marketing (Escaping the Price Trap)",
+          "issue": "The regional snacks market was overcrowded with generic, low-price products, leading to thin profit margins for all players.",
+          "analysis": [
+            "Instead of joining a 'Price War', the company invested in Brand Engineering. They launched premium products (like Molto and Todo) and focused their marketing on 'Quality and Social Status.'"
+          ],
+          "lesson": "Consumers began asking for products by name and strictly paying 30% more. Sales close the deal, but Marketing elevates the product’s value in the customer's mind."
+        },
+        {
+          "title": "Noon:",
+          "subtitle": "Aligning Marketing with Local Culture (Cultural Intelligence)",
+          "issue": "When 'Noon' entered the market to compete with global giants like Amazon, the challenge was: How to attract the Arab shopper who prioritizes trust and a localized touch?",
+          "analysis": [
+            "They achieved Strategic Alignment between Sales and Marketing. While Marketing focused on the 'Noon is one of us' slogan, Sales and Logistics operations prioritized 'Cash on Delivery' and easy returns."
+          ],
+          "lesson": "Within a few years, Noon captured a massive market share because it didn't just sell 'products'; it sold 'trust and peace of mind'. Smart Marketing transforms a society's cultural nuances into a competitive advantage."
+        },
+        {
+          "title": "Petromin:",
+          "subtitle": "From Selling 'Oils' to 'Maintenance Solutions' (Sales Pipeline Engineering)",
+          "issue": "Petromin was merely a lubricant supplier for gas stations, facing fierce price competition from international oil companies.",
+          "analysis": [
+            "They completely re-engineered their Sales Pipeline. They transitioned from selling a 'product' (oil) to providing a 'service' (Petromin Express rapid maintenance centers)."
+          ],
+          "lesson": "Instead of convincing a customer to buy a bottle of oil once, the customer now returns every 5,000 km for full service, doubling the Customer Lifetime Value (CLV)."
+        }
+      ]
+    },
+    "growth_guide": {
+      "title": "Growth Engineering Guide",
+      "subtitle": "How to Align Marketing & Sales to Multiply Your Profits?",
+      "phases": [
+        {
+          "title": "Strategic Alignment",
+          "points": [
+            {
+              "title": "Role Definition (Unlocking Overlaps)",
+              "desc": "Clarifying roles; Marketing attracts the 'Audience,' while Sales converts them into 'Customers.'"
+            },
+            {
+              "title": "Mapping the Customer Journey",
+              "desc": "Visualizing the path a customer takes from the moment they discover your company until the contract is signed."
+            }
+          ]
+        },
+        {
+          "title": "Building an Effective Sales Pipeline",
+          "points": [
+            {
+              "title": "Product Awareness & Positioning",
+              "desc": "Highlighting the competitive advantages of your engineering product by showcasing the 'Solutions' it provides, rather than just listing technical specifications."
+            },
+            {
+              "title": "Trust & Validation Stage (The Experience)",
+              "desc": "Providing tangible evidence (such as laboratory test reports, warranty certificates, or prototypes) to prove product quality."
+            },
+            {
+              "title": "Purchase Decision & Fulfillment",
+              "desc": "Streamlining the purchasing process and offering compelling commercial proposals, while ensuring smooth after-sales support."
+            }
+          ]
+        },
+        {
+          "title": "Performance Measurement & Relationships",
+          "points": [
+            {
+              "title": "Digital Performance Metrics",
+              "desc": "Measuring Customer Acquisition Cost (CAC) and Customer Lifetime Value (CLV)."
+            },
+            {
+              "title": "Relationship Automation (CRM)",
+              "desc": "How a digital system prevents the loss of 'Sales Opportunities' caused by oversight or neglect."
+            }
+          ]
+        }
+      ]
+    },
+    "checklist": {
+      "title": "Growth Engineering Checklist: Is Your Sales System Operating Efficiently?",
+      "headers": [
+        "Phase",
+        "Questions",
+        "Yes",
+        "No"
+      ],
+      "items": [
+        {
+          "phase": "Strategic Alignment",
+          "question": "Do you have a precise definition of your \"Ideal Customer Profile\", or are you targeting everyone?"
+        },
+        {
+          "phase": "Strategic Alignment",
+          "question": "Are Marketing and Sales roles overlapping in your company, causing accountability gaps?"
+        },
+        {
+          "phase": "Strategic Alignment",
+          "question": "Does your marketing message focus on \"Solving Customer Pains\" or just listing technical specs?"
+        },
+        {
+          "phase": "Sales Pipeline",
+          "question": "Do you have a clear, documented path for customers to follow from awareness to contract?"
+        },
+        {
+          "phase": "Sales Pipeline",
+          "question": "Do you provide tangible proof (test reports, warranties) to convince customers of your quality?"
+        },
+        {
+          "phase": "Sales Pipeline",
+          "question": "Is your purchasing and delivery process simple and fast, or is it hindered by bureaucracy?"
+        },
+        {
+          "phase": "Performance & CRM",
+          "question": "Do you know your exact Customer Acquisition Cost (CAC) and is it economically viable?"
+        },
+        {
+          "phase": "Performance & CRM",
+          "question": "Do you utilize a CRM system to ensure no leads are forgotten or neglected?"
+        },
+        {
+          "phase": "Performance & CRM",
+          "question": "Do you have accurate data on the long-term value each customer brings to your business?"
+        }
+      ]
+    },
+    "comparison": {
+      "title": "Beyond Operational Chaos: Key Differences Between Marketing & Sales",
+      "headers": [
+        "Feature",
+        "Marketing",
+        "Sales"
+      ],
+      "items": [
+        {
+          "feature": "Mission",
+          "marketing": "Creating 'Desire' and building brand awareness in the market.",
+          "sales": "Converting 'Desire' into 'Contracts' and actual revenue."
+        },
+        {
+          "feature": "Goal",
+          "marketing": "Long-term: Market share acquisition and sustainable reputation.",
+          "sales": "Short-term: Meeting sales targets and closing deals."
+        },
+        {
+          "feature": "Focus",
+          "marketing": "Focuses on the 'Audience' and their future needs.",
+          "sales": "Focuses on the 'Individual Customer' and current needs."
+        },
+        {
+          "feature": "Mechanism",
+          "marketing": "Market research, branding, content creation, and PR.",
+          "sales": "Direct communication, negotiation, and closing techniques."
+        },
+        {
+          "feature": "Output",
+          "marketing": "Qualified Leads: People interested in your services.",
+          "sales": "Closed Deals: Legally signed and active partnerships."
+        },
+        {
+          "feature": "Customer Relation",
+          "marketing": "One-to-Many (Indirect).",
+          "sales": "One-to-One (Direct & Personal)."
+        }
+      ]
+    },
+    "food_case": {
+      "title": "Survival Tomorrow: The Story of a Successful Food Industry Company",
+      "subtitle": "Operating Without Marketing - When Sales Generate Income Today, but Marketing Guarantees Survival Tomorrow.",
+      "sections": [
+        {
+          "title": "The Case",
+          "content": "A local food production company boasted that 'sales are excellent, and we don't need marketing.' However, a precise diagnosis revealed a bitter truth: the company was operating on an 'Order-Taking' model rather than a 'Demand-Creation' strategy. When an international competitor entered the market with a marketing campaign focused on (Health & Quality), the company lost 40% of its market share in just 3 months."
+        },
+        {
+          "title": "Why do these companies believe marketing is unnecessary?",
+          "content": "Due to Short-sighted Vision (focusing solely on clearing inventory and collecting daily cash flow) and Conceptual Confusion (viewing marketing as merely ads and extra expenses as long as wholesalers are still placing orders)."
+        },
+        {
+          "title": "The Repercussions (Behind the Scenes)",
+          "content": "Dependency on Wholesaler Power: Without a strong 'Brand' that consumers ask for by name, the factory is at the mercy of wholesalers. If a trader introduces a cheaper competitor, operations could halt immediately. Lack of Loyalty: Customers buy the product because it is 'available', not because they 'trust' the brand."
+        },
+        {
+          "title": "The Losses & Inevitable Fate",
+          "content": "Erosion of Profit Margins to Price Wars, and Missed Expansion Opportunities. The product becomes a generic 'commodity' without an identity. The Moment a Marketing-Savvy competitor enters, the factory loses its position rapidly."
+        }
+      ],
+      "lesson": "If you don't build a Brand that consumers ask for by name, you don't own a market; you own a warehouse waiting for a buyer."
+    },
+    "cta": {
+      "title": "Your Next Project Deserves Certainty.",
+      "description": "Our services do not end with the delivery of a study. We don't just hand you a report and leave; instead, we conduct a (Final Simulation Session) with you to discuss all financial and technical scenarios, ensuring you understand exactly where every Dinar will be spent and how it will return.",
+      "button": "Book a Free Initial Consultation"
+    }
+  },
+  "crm": {
+    "hero": {
+      "title": "Customer Relationship Management (CRM)",
+      "subtitle": "Sustainable Growth Starts Here: Why CRM is No Longer an Option, but a Necessity for Your Business."
+    },
+    "intro": {
+      "paragraphs": [
+        "In today's complex business landscape, it is no longer enough to simply sell products.",
+        "Customer Relationship Management (CRM) is an integrated business strategy and technology platform designed to help you understand your customers deeply, anticipate their needs, and foster lasting brand loyalty.",
+        "We help you transform fragmented sales, marketing, and customer support data into unified strategic insights. The result? Streamlined operations, improved responsiveness to customer demands, and most importantly: achieving tangible, sustainable growth for your company."
+      ],
+      "services_intro": "We utilize our engineering expertise in process analysis to provide:",
+      "services": [
+        {
+          "title": "CRM Strategy Built on Solid Foundations",
+          "description": "Designing clear, measurable action plans to achieve your objectives."
+        },
+        {
+          "title": "Ideal Organizational Structure",
+          "description": "Designing the appropriate structures and teams that ensure efficiency and effectiveness in CRM management."
+        },
+        {
+          "title": "Defining Roles and Responsibilities",
+          "description": "Ensuring every team understands its vital role in achieving a 360-degree view of the customer."
+        },
+        {
+          "title": "Expert Platform Recommendations",
+          "description": "We provide thoughtful technical recommendations for choosing the most suitable CRM software tool/platform for your technical needs and budget."
+        }
+      ]
+    },
+    "target_audience": {
+      "title": "Target Audience & Key Attractors",
+      "subtitle": "Who is this for?",
+      "intro": "Our service is designed for engineering, industrial, and construction sector companies seeking an organized, effective approach to customer relationship management to drive sustainable growth.",
+      "ideal_audience_intro": "Our ideal audience includes:",
+      "audiences": [
+        {
+          "title": "Engineering Consulting Offices",
+          "description": "Firms offering design, supervision, and project management services."
+        },
+        {
+          "title": "Contracting & Construction Companies",
+          "description": "Entities that need to organize their relationships with subcontractors, customers, and project owners."
+        },
+        {
+          "title": "Emerging Industrial Companies",
+          "description": "Manufacturers of engineering products or equipment needing to improve their sales and distribution processes."
+        },
+        {
+          "title": "Specialized Technical Service Companies",
+          "description": "Such as elevator maintenance, HVAC systems, or industrial security services."
+        },
+        {
+          "title": "Engineering Company Owners & Managers",
+          "description": "Key decision-makers looking for solutions to increase efficiency, profitability, and growth."
+        },
+        {
+          "title": "Sales & Marketing Managers",
+          "description": "Professionals struggling with a lack of a unified system to track leads and manage the complex sales cycle."
+        },
+        {
+          "title": "Operations Managers",
+          "description": "Individuals seeking ways to link CRM with daily operations and project management."
+        }
+      ]
+    },
+    "cases": {
+      "title": "Regional Insights: Careem – Defeating Uber with Local Data",
+      "subtitle": "The Power of the Field: How Reliable Local Data gave Careem the edge that forced a multi-billion-dollar acquisition.",
+      "items": [
+        {
+          "title": "Careem vs Uber",
+          "subtitle": "Defeating Uber with Local Data",
+          "issue": "When Uber entered the Middle East, it faced fierce competition from Careem. At the time, Uber relied strictly on credit card payments and purely digital mapping systems.",
+          "analysis": [
+            "Careem conducted a deep study of Arab consumer behavior and discovered that people preferred 'Cash on Delivery' and liked 'phone calls' to confirm locations. Consequently, Careem designed its CRM system and mobile app to support these specific local habits."
+          ],
+          "lesson": "Ultimately, Uber was forced to acquire Careem for $3.1 billion. Reliable local data is what wins the investment battle, not just the size of the capital."
+        }
+      ]
+    },
+    "growth_guide": {
+      "title": "Customer Retention Guide",
+      "subtitle": "Why CRM is No Longer an Option, but a Necessity for Your Company's Growth?",
+      "phases": [
+        {
+          "title": "Building a Unified Database",
+          "points": [
+            {
+              "title": "Goodbye to Fragmentation",
+              "desc": "Centralizing customer data (phone, email, correspondence, invoices) in one location, instead of losing it in notebooks."
+            },
+            {
+              "title": "Relationship History",
+              "desc": "Documenting every interaction with the customer to ensure personalized and professional service every single time."
+            }
+          ]
+        },
+        {
+          "title": "Engineering the Customer Journey",
+          "points": [
+            {
+              "title": "Opportunity Tracking",
+              "desc": "Classifying customers (interested, negotiation, sold, loyal) to follow up on each status with precision."
+            },
+            {
+              "title": "Sales Forecasting",
+              "desc": "Utilizing historical data to anticipate future revenues and plan accordingly."
+            }
+          ]
+        },
+        {
+          "title": "Process Automation & Efficiency",
+          "points": [
+            {
+              "title": "Smart Reminders",
+              "desc": "Scheduling alerts for customer follow-ups or contract renewals, thereby preventing the loss of any 'sales opportunity'."
+            },
+            {
+              "title": "Performance Reports",
+              "desc": "Gaining instant visibility into the performance of the sales and customer service teams at the push of a button."
+            }
+          ]
+        }
+      ]
+    },
+    "checklist": {
+      "title": "CRM Checklist: Do You Have a 'Growth System' or Just a Notebook?",
+      "headers": [
+        "Phase",
+        "Questions",
+        "Yes",
+        "No"
+      ],
+      "items": [
+        {
+          "phase": "Data Centralization",
+          "question": "Do you lose customer data and interaction history when a sales employee leaves the company?"
+        },
+        {
+          "phase": "Data Centralization",
+          "question": "Can you access the full correspondence and invoice history for any customer in under 10 seconds?"
+        },
+        {
+          "phase": "Data Centralization",
+          "question": "Is your customer data stored in a secure central system, or scattered across staff phones and personal notebooks?"
+        },
+        {
+          "phase": "Pipeline Engineering",
+          "question": "Can you identify the exact number of 'interested leads' who haven't made a purchase yet?"
+        },
+        {
+          "phase": "Pipeline Engineering",
+          "question": "Do you have accurate data to forecast next month's revenue based on current 'open opportunities'?"
+        },
+        {
+          "phase": "Pipeline Engineering",
+          "question": "Does your team follow a documented pipeline to move customers from first contact to signed contract?"
+        },
+        {
+          "phase": "Automation & Efficiency",
+          "question": "Does your team occasionally forget to follow up with interested leads, losing them to competitors?"
+        },
+        {
+          "phase": "Automation & Efficiency",
+          "question": "Are you automatically alerted when a contract renewal or a quote follow-up is due?"
+        },
+        {
+          "phase": "Automation & Efficiency",
+          "question": "Can you generate an instant report on each salesperson’s performance with a single click?"
+        }
+      ]
+    },
+    "insights": {
+      "title": "Consulting Insights: Why Does CRM Fail Sometimes?",
+      "subtitle": "'CRM is an engine, but you need a roadmap and a skilled driver.'",
+      "failure_reasons": [
+        {
+          "title": "User Resistance",
+          "desc": "If employees perceive CRM as a 'monitoring tool' rather than a 'productivity booster,' they will feed it inaccurate data or bypass it entirely."
+        },
+        {
+          "title": "Over-Engineering",
+          "desc": "Choosing a high-end system with hundreds of unnecessary features, leading to user fatigue and confusion."
+        },
+        {
+          "title": "Data Pollution",
+          "desc": "Poor initial data entry results in flawed reports, causing management to lose faith in the system’s ROI."
+        },
+        {
+          "title": "Operational Disconnect",
+          "desc": "Implementing a system that doesn't mirror the actual daily sales cycle of the company."
+        }
+      ],
+      "examples": [
+        {
+          "title": "The Distribution Company Case",
+          "desc": "A firm invested in a top-tier CRM, but field agents couldn't use it because it lacked 'offline mode' functionality for remote areas. Result: Sunk costs and a return to manual paperwork."
+        },
+        {
+          "title": "The 'Data Graveyard' Case",
+          "desc": "A firm implemented CRM but failed to integrate it with telephony and email systems. Result: Employees continued working outside the system, leaving the CRM useless."
+        }
+      ],
+      "roadmap": [
+        "Define your sales processes before picking a tool. The CRM should adapt to your workflow.",
+        "Involve your team in the selection process. When employees see it increases commissions, adoption rates soar.",
+        "'Garbage in, garbage out.' Start with clean, organized data.",
+        "Ensure seamless integration with email, phone, and social media.",
+        "Choose a scalable platform. You might need basic features today, but as you grow you will need advanced automation."
+      ]
+    },
+    "comparison": {
+      "title": "Comparing the Top CRM Platforms for 2025",
+      "headers": [
+        "Feature",
+        "HubSpot",
+        "Zoho CRM",
+        "Salesforce",
+        "Microsoft Dynamics 365",
+        "Odoo"
+      ],
+      "items": [
+        {
+          "feature": "Best For",
+          "hubspot": "Scaling Small to Medium Businesses.",
+          "zoho": "Budget-conscious growing firms.",
+          "salesforce": "Large enterprises with complex needs.",
+          "dynamics": "Organizations already using Microsoft ecosystem.",
+          "odoo": "Companies seeking a full ERP (Sales, Inventory, Accounting, HR) in one integrated platform."
+        },
+        {
+          "feature": "User Experience",
+          "hubspot": "Highly intuitive and easy to use.",
+          "zoho": "Moderate; requires some setup time.",
+          "salesforce": "Steep learning curve; requires training.",
+          "dynamics": "Familiar to Office 365 users but complex.",
+          "odoo": "Modern and user-friendly, though the vast number of modules requires initial organization."
+        },
+        {
+          "feature": "Arabic Support",
+          "hubspot": "Excellent Interface & Right-to-Left support.",
+          "zoho": "Full Arabic support for RTL.",
+          "salesforce": "Good, but customization takes effort.",
+          "dynamics": "Comprehensive Arabic integration.",
+          "odoo": "Outstanding; native Right-to-Left (RTL) support and localized interfaces."
+        },
+        {
+          "feature": "Customization",
+          "hubspot": "Flexible but limited in free versions.",
+          "zoho": "Highly flexible at a low cost.",
+          "salesforce": "Unlimited customization possibilities.",
+          "dynamics": "Extremely flexible for industrial workflows.",
+          "odoo": "Highest in class; Open-source nature allows for tailoring to specific Iraqi business workflows."
+        },
+        {
+          "feature": "Key Advantage",
+          "hubspot": "'All-in-one' Marketing & Sales sync.",
+          "zoho": "Best value for money (Affordable).",
+          "salesforce": "Global industry standard & deep AI.",
+          "dynamics": "Seamless integration with Outlook & Excel.",
+          "odoo": "All-in-One ecosystem; eliminates the need for 3rd-party integrations by housing everything in one place."
+        },
+        {
+          "feature": "Starting Price",
+          "hubspot": "Free tier available; paid starts moderate.",
+          "zoho": "Very competitive entry pricing.",
+          "salesforce": "Premium pricing; higher total cost.",
+          "dynamics": "Premium pricing; depends on existing licenses.",
+          "odoo": "Very flexible; pricing depends on the number of apps, generally offering a better ROI than global giants."
+        },
+        {
+          "feature": "Offline Mode",
+          "hubspot": "Limited.",
+          "zoho": "Strong mobile offline capabilities.",
+          "salesforce": "Available via Mobile App.",
+          "dynamics": "Strong offline sync for field engineers",
+          "odoo": "Available in specific modules (like POS) with reliable data synchronization."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Your Next Project Deserves Certainty.",
+      "description": "Our services do not end with the delivery of a study. We don't just hand you a report and leave; instead, we conduct a (Final Simulation Session) with you to discuss all financial and technical scenarios, ensuring you understand exactly where every Dinar will be spent and how it will return.",
+      "button": "Book a Free Initial Consultation"
+    }
+  },
+  "knowledge_hub": {
+    "hero": {
+      "title": "Knowledge Hub",
+      "subtitle": "Empowering investors and leaders with field-tested scientific tools and methodologies."
+    },
+    "intro": {
+      "heading": "The Consulting Knowledge Hub: Where Engineering Expertise Meets Managerial Vision",
+      "paragraphs": [
+        "At “Gate of Wisdom Consulting Engineers”, we believe that knowledge is the most powerful tool for navigating market volatility. Therefore, we didn't just stop at offering consultations; we established this Hub to be a living reference aimed at empowering investors and leaders with scientific tools and methodologies—field-tested in the Iraqi market since 2004.",
+        "This is not just an educational platform; it is your gateway to transition from (Crisis Management) to (Growth Engineering). Through our interactive webinars, specialized courses, and field workshops, we deliver the (Essence of Consulting Wisdom) to co-create an institutional future built on certainty and tangible results."
+      ]
+    },
+    "categories": [
+      {
+        "title": "Lectures",
+        "slug": "lectures",
+        "description": "Gain rapid insights from expert-led sessions on market dynamics, engineering solutions, and strategic management.",
+        "icon": "Video"
+      },
+      {
+        "title": "Training Courses",
+        "slug": "courses",
+        "description": "In-depth, structured curriculums designed to elevate your team's technical and managerial competencies.",
+        "icon": "BookOpen"
+      },
+      {
+        "title": "Interactive Workshops",
+        "slug": "workshops",
+        "description": "Hands-on, collaborative sessions aimed at applying advanced consulting methodologies directly to your operations.",
+        "icon": "Users"
+      }
+    ]
   }
 }

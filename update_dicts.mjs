@@ -9,154 +9,127 @@ const arJson = JSON.parse(fs.readFileSync(arPath, 'utf8'));
 
 const enDict = {
   hero: {
-    title: "Technical & Economic Feasibility Studies",
-    subtitle: "Invest with Confidence, Avoid the Pitfalls: Why a Feasibility Study is Your Investment Compass."
+    title: "Customer Relationship Management (CRM)",
+    subtitle: "Sustainable Growth Starts Here: Why CRM is No Longer an Option, but a Necessity for Your Business."
   },
   intro: {
     paragraphs: [
-      "Investment projects carry great opportunities, but also significant risks. The technical and economic feasibility studies we provide are not just formal documentation; they are your scientific compass for making sound investment decisions.",
-      "We transform your promising idea into an actionable plan supported by reliable data, comprehensive market analysis, and technical viability assessment. Our goal is to use scientific tools to ensure the optimal utilization of your resources, minimize the probability of failure, and maximize your profitability. Launch your project with a solid foundation and trusted data."
+      "In today's complex business landscape, it is no longer enough to simply sell products.",
+      "Customer Relationship Management (CRM) is an integrated business strategy and technology platform designed to help you understand your customers deeply, anticipate their needs, and foster lasting brand loyalty.",
+      "We help you transform fragmented sales, marketing, and customer support data into unified strategic insights. The result? Streamlined operations, improved responsiveness to customer demands, and most importantly: achieving tangible, sustainable growth for your company."
     ],
-    services_intro: "Our feasibility study services are designed to provide you with:",
+    services_intro: "We utilize our engineering expertise in process analysis to provide:",
     services: [
-      { "title": "Comprehensive Understanding of Your Project", "description": "From the initial concept to the final recommendations." },
-      { "title": "Accurate Market Analysis", "description": "Evaluation of demand, competition, and potential opportunities." },
-      { "title": "Clear Technical & Financial Visualization", "description": "Determining costs, revenues, and break-even points." },
-      { "title": "Comprehensive Risk Assessment", "description": "Identifying potential challenges and developing strategies to deal with them." },
-      { "title": "Reliable Economic Indicators", "description": "To ensure the project's continuity and profitability within its economic life cycle." }
+      { "title": "CRM Strategy Built on Solid Foundations", "description": "Designing clear, measurable action plans to achieve your objectives." },
+      { "title": "Ideal Organizational Structure", "description": "Designing the appropriate structures and teams that ensure efficiency and effectiveness in CRM management." },
+      { "title": "Defining Roles and Responsibilities", "description": "Ensuring every team understands its vital role in achieving a 360-degree view of the customer." },
+      { "title": "Expert Platform Recommendations", "description": "We provide thoughtful technical recommendations for choosing the most suitable CRM software tool/platform for your technical needs and budget." }
     ]
   },
   target_audience: {
     title: "Target Audience & Key Attractors",
     subtitle: "Who is this for?",
-    intro: "Our service is designed for any individual or business entity that has a project idea or is planning a financial investment, and requires an objective and reliable evaluation of the investment's feasibility before committing significant resources.",
+    intro: "Our service is designed for engineering, industrial, and construction sector companies seeking an organized, effective approach to customer relationship management to drive sustainable growth.",
     ideal_audience_intro: "Our ideal audience includes:",
     audiences: [
-      { "title": "Individual Investors", "description": "Individuals with capital looking for safe and profitable investment channels, who need a formal feasibility report to support their decision." },
-      { "title": "Entrepreneurs & Startups", "description": "Those who require a compelling and detailed feasibility study to present to potential investors or to obtain bank loans and financing." },
-      { "title": "Existing Companies Seeking Expansion", "description": "Firms planning to launch a new product line, enter a new market, or build a new facility, needing a risk and expected return assessment." },
-      { "title": "Industrial & Manufacturing Sectors", "description": "Companies that require a precise technical evaluation of proposed machinery, equipment, and production processes." },
-      { "title": "Commercial & Service Sectors", "description": "Business owners or service providers who focus more on market studies and economic forecasts." },
-      { "title": "Capital Owners & Executives", "description": "Leaders looking for bottom-line figures, Return on Investment (ROI), and break-even points." },
-      { "title": "Project & Financial Managers", "description": "Professionals looking for technical details, accurate cost estimates, and risk management strategies." }
+      { "title": "Engineering Consulting Offices", "description": "Firms offering design, supervision, and project management services." },
+      { "title": "Contracting & Construction Companies", "description": "Entities that need to organize their relationships with subcontractors, customers, and project owners." },
+      { "title": "Emerging Industrial Companies", "description": "Manufacturers of engineering products or equipment needing to improve their sales and distribution processes." },
+      { "title": "Specialized Technical Service Companies", "description": "Such as elevator maintenance, HVAC systems, or industrial security services." },
+      { "title": "Engineering Company Owners & Managers", "description": "Key decision-makers looking for solutions to increase efficiency, profitability, and growth." },
+      { "title": "Sales & Marketing Managers", "description": "Professionals struggling with a lack of a unified system to track leads and manage the complex sales cycle." },
+      { "title": "Operations Managers", "description": "Individuals seeking ways to link CRM with daily operations and project management." }
     ]
   },
   cases: {
-    title: "Real-World Stories",
-    subtitle: "Evidence that embodies the transition of strategy from paper to the field.",
+    title: "Regional Insights: Careem – Defeating Uber with Local Data",
+    subtitle: "The Power of the Field: How Reliable Local Data gave Careem the edge that forced a multi-billion-dollar acquisition.",
     items: [
       {
-        "title": "Dubai Lagoon – The Sensitivity Analysis Trap",
-        "subtitle": "The Optimistic Figures Trap: Why are Sensitivity Analysis & Crisis Scenarios the true safety valves for your investment?",
-        "issue": "In the mid-2000s, the massive residential project 'Dubai Lagoon' was launched. The initial feasibility study was overly optimistic, assuming the real estate boom would last forever. It lacked a “Sensitivity Analysis” to handle market downturns or liquidity shortages.",
+        "title": "Careem vs Uber",
+        "subtitle": "Defeating Uber with Local Data",
+        "issue": "When Uber entered the Middle East, it faced fierce competition from Careem. At the time, Uber relied strictly on credit card payments and purely digital mapping systems.",
         "analysis": [
-          "When the global financial crisis hit in 2008, the project collapsed and stalled for years because the “financial feasibility” wasn't flexible enough to handle worst-case scenarios."
+          "Careem conducted a deep study of Arab consumer behavior and discovered that people preferred 'Cash on Delivery' and liked 'phone calls' to confirm locations. Consequently, Careem designed its CRM system and mobile app to support these specific local habits."
         ],
-        "lesson": "Learn how our Feasibility Studies stress-test your investment against market volatility. Feasibility is about “Resilience,” not just projected profits. A feasibility study without a financial contingency plan turns investment into a reckless gamble."
-      },
-      {
-        "title": "Tesla Giga Berlin – The Price of Ignoring Legal Feasibility",
-        "subtitle": "Even Giants Stumble: Discover the importance of Legal & Environmental Feasibility in protecting your project from sudden halts.",
-        "issue": "Elon Musk faced massive delays and millions of dollars in losses when building the “Tesla” factory in Germany. Initial studies focused heavily on economic and technical feasibility but underestimated strict German “Legal and Environmental Feasibility.”",
-        "analysis": [
-          "The project encountered legal battles regarding 'water supply' and 'forest protection,' causing construction to halt multiple times. Consequently, the company had to drastically modify its designs and operational plans at an additional cost to comply with local laws."
-        ],
-        "lesson": "Even tech giants can stumble when they underestimate local regulations. Discover why we prioritize Legal & Site Feasibility to ensure your project's smooth launch. Understanding the site's “operational and legal environment” determines whether the project will see the light of day."
+        "lesson": "Ultimately, Uber was forced to acquire Careem for $3.1 billion. Reliable local data is what wins the investment battle, not just the size of the capital."
       }
     ]
   },
-  investor_guide: {
-    title: "The Informed Investor’s Guide: How to Distinguish Between a Promising Opportunity and a Losing Venture?",
+  growth_guide: {
+    title: "Customer Retention Guide",
+    subtitle: "Why CRM is No Longer an Option, but a Necessity for Your Company's Growth?",
     phases: [
       {
-        "title": "Market Feasibility Phase (The Primary Entry Point)",
+        "title": "Building a Unified Database",
         "points": [
-          { "title": "Supply and Demand Analysis", "desc": "Is there a genuine market gap that justifies your project’s entry?" },
-          { "title": "Market Share Estimation", "desc": "What is the projected sales volume in the presence of current competitors?" }
+          { "title": "Goodbye to Fragmentation", "desc": "Centralizing customer data (phone, email, correspondence, invoices) in one location, instead of losing it in notebooks." },
+          { "title": "Relationship History", "desc": "Documenting every interaction with the customer to ensure personalized and professional service every single time." }
         ]
       },
       {
-        "title": "Technical & Engineering Feasibility Phase (The Core Expertise)",
+        "title": "Engineering the Customer Journey",
         "points": [
-          { "title": "Production Engineering", "desc": "Selecting the most suitable technology, machinery, and equipment for the target production scale." },
-          { "title": "Operational Inputs", "desc": "Identifying project requirements for raw materials, energy, and specialized technical staff." },
-          { "title": "Site and Space Optimization", "desc": "Evaluating alternative locations based on proximity to suppliers and target markets." }
+          { "title": "Opportunity Tracking", "desc": "Classifying customers (interested, negotiation, sold, loyal) to follow up on each status with precision." },
+          { "title": "Sales Forecasting", "desc": "Utilizing historical data to anticipate future revenues and plan accordingly." }
         ]
       },
       {
-        "title": "Financial & Economic Feasibility Phase (The Language of Numbers)",
+        "title": "Process Automation & Efficiency",
         "points": [
-          { "title": "Investment Cost Estimation", "desc": "Calculating the capital required to commence operations (Fixed Assets and Working Capital)." },
-          { "title": "Profitability Indicators", "desc": "Calculating the Payback Period and the Internal Rate of Return (IRR)." },
-          { "title": "Sensitivity Analysis", "desc": "Measuring the project's resilience against price fluctuations or changes in operating costs." }
-        ]
-      },
-      {
-        "title": "Environmental & Legal Feasibility Phase",
-        "points": [
-          { "title": "Compliance and Legislation", "desc": "Ensuring the project aligns with current laws, regulations, and directives (specifically within the Iraqi business environment)." },
-          { "title": "Environmental Impact", "desc": "Studying the project’s impact on the surrounding environment and ensuring long-term sustainability." }
+          { "title": "Smart Reminders", "desc": "Scheduling alerts for customer follow-ups or contract renewals, thereby preventing the loss of any 'sales opportunity'." },
+          { "title": "Performance Reports", "desc": "Gaining instant visibility into the performance of the sales and customer service teams at the push of a button." }
         ]
       }
     ]
   },
   checklist: {
-    title: "Checklist: Feasibility Study",
+    title: "CRM Checklist: Do You Have a 'Growth System' or Just a Notebook?",
     headers: ["Phase", "Questions", "Yes", "No"],
     items: [
-      { "phase": "Market Viability", "question": "Does the study rely on actual 2025 field data or just general estimates?" },
-      { "phase": "Market Viability", "question": "Have you identified \"Direct Competitors\" and their specific strengths?" },
-      { "phase": "Market Viability", "question": "Is your pricing strategy aligned with the current purchasing power of your target audience?" },
-      { "phase": "Technical Integrity", "question": "Has the infrastructure capacity (power, water, roads) at the selected site been verified?" },
-      { "phase": "Technical Integrity", "question": "Does the study include \"real quotations\" for machinery from reputable suppliers?" },
-      { "phase": "Technical Integrity", "question": "Is there a clear training plan for the technical staff on the implemented technology?" },
-      { "phase": "Financial Resilience", "question": "Is there enough Working Capital to cover expenses for at least six months post-launch?" },
-      { "phase": "Financial Resilience", "question": "Has a \"Sensitivity Analysis\" been conducted to test profitability if sales drop by 20%?" },
-      { "phase": "Financial Resilience", "question": "Is the Payback Period realistic and aligned with industry risks?" },
-      { "phase": "Legal & Environmental", "question": "Does the project have initial approvals from sector authorities (industrial development, environment, investment board)?" },
-      { "phase": "Legal & Environmental", "question": "Does the industrial waste disposal plan comply with prevailing environmental standards?" }
+      { "phase": "Data Centralization", "question": "Do you lose customer data and interaction history when a sales employee leaves the company?" },
+      { "phase": "Data Centralization", "question": "Can you access the full correspondence and invoice history for any customer in under 10 seconds?" },
+      { "phase": "Data Centralization", "question": "Is your customer data stored in a secure central system, or scattered across staff phones and personal notebooks?" },
+      { "phase": "Pipeline Engineering", "question": "Can you identify the exact number of 'interested leads' who haven't made a purchase yet?" },
+      { "phase": "Pipeline Engineering", "question": "Do you have accurate data to forecast next month's revenue based on current 'open opportunities'?" },
+      { "phase": "Pipeline Engineering", "question": "Does your team follow a documented pipeline to move customers from first contact to signed contract?" },
+      { "phase": "Automation & Efficiency", "question": "Does your team occasionally forget to follow up with interested leads, losing them to competitors?" },
+      { "phase": "Automation & Efficiency", "question": "Are you automatically alerted when a contract renewal or a quote follow-up is due?" },
+      { "phase": "Automation & Efficiency", "question": "Can you generate an instant report on each salesperson’s performance with a single click?" }
     ]
   },
-  cautionary_tales: {
-    title: "Cautionary Tales: The Hidden Risks of Skipping a Feasibility Study",
-    subtitle: "Behind every struggling project, there is a truth ignored during the study phase.",
-    tales: [
-      {
-        "title": "The 'Wrong Tech' Trap (Incompatible Equipment)",
-        "scenario": "An investor imported a highly advanced production line from abroad based on the lowest price, without conducting a technical feasibility study.",
-        "hidden_risk": "Upon arrival, it was discovered that the local power grid couldn't support the machinery's load, and spare parts were unavailable locally.",
-        "result": "The project stalled for a year to rehabilitate the electrical network, missing the optimal market entry window."
-      },
-      {
-        "title": "The 'Optimistic Market' Illusion (Ignoring Sensitivity Analysis)",
-        "scenario": "Launching a massive industrial project based on \"expectations\" that raw material prices would remain constant, without a financial study featuring \"Sensitivity Analysis.\"",
-        "hidden_risk": "A sudden 15% fluctuation occurred in exchange rates or global material prices.",
-        "result": "Projected profits turned into continuous operational losses because the profit margin was too narrow and couldn't absorb market shocks."
-      },
-      {
-        "title": "The 'Attractive Location' Error (Ignoring Service Impact Studies)",
-        "scenario": "Building an industrial or commercial project in a crowded area to ensure \"visibility\" without a technical infrastructure feasibility study.",
-        "hidden_risk": "The project became inaccessible due to severe traffic jams. Weak water pressure and electricity meant reliance on private generators.",
-        "result": "Dramatically soaring operational costs devoured the profits, leading to a drop in the property's market value."
-      }
+  insights: {
+    title: "Consulting Insights: Why Does CRM Fail Sometimes?",
+    subtitle: "'CRM is an engine, but you need a roadmap and a skilled driver.'",
+    failure_reasons: [
+      { "title": "User Resistance", "desc": "If employees perceive CRM as a 'monitoring tool' rather than a 'productivity booster,' they will feed it inaccurate data or bypass it entirely." },
+      { "title": "Over-Engineering", "desc": "Choosing a high-end system with hundreds of unnecessary features, leading to user fatigue and confusion." },
+      { "title": "Data Pollution", "desc": "Poor initial data entry results in flawed reports, causing management to lose faith in the system’s ROI." },
+      { "title": "Operational Disconnect", "desc": "Implementing a system that doesn't mirror the actual daily sales cycle of the company." }
+    ],
+    examples: [
+      { "title": "The Distribution Company Case", "desc": "A firm invested in a top-tier CRM, but field agents couldn't use it because it lacked 'offline mode' functionality for remote areas. Result: Sunk costs and a return to manual paperwork." },
+      { "title": "The 'Data Graveyard' Case", "desc": "A firm implemented CRM but failed to integrate it with telephony and email systems. Result: Employees continued working outside the system, leaving the CRM useless." }
+    ],
+    roadmap: [
+      "Define your sales processes before picking a tool. The CRM should adapt to your workflow.",
+      "Involve your team in the selection process. When employees see it increases commissions, adoption rates soar.",
+      "'Garbage in, garbage out.' Start with clean, organized data.",
+      "Ensure seamless integration with email, phone, and social media.",
+      "Choose a scalable platform. You might need basic features today, but as you grow you will need advanced automation."
     ]
   },
-  lessons: {
-    title: "Lessons from Failure",
-    subtitle: "The difference between a successful project and a failed one isn't capital; it's the accuracy of the data it stands on.",
+  comparison: {
+    title: "Comparing the Top CRM Platforms for 2025",
+    headers: ["Feature", "HubSpot", "Zoho CRM", "Salesforce", "Microsoft Dynamics 365", "Odoo"],
     items: [
-      {
-        "title": "Don't Mistake 'Wishes' for 'Numbers'",
-        "desc": "Many investors fail because they replicate successful international models without studying the local Iraqi market's unique consumer behavior. What succeeds in Dubai may not succeed in Baghdad without precise engineering and marketing “adaptation.”"
-      },
-      {
-        "title": "Ignoring 'Hidden Costs' Kills Profitability",
-        "desc": "Failure to account for logistics, supply chain variables, and maintenance costs can turn a high-revenue project into an operational loss. True profitability lies in “Operational Costs,” not just “Capital Costs.”"
-      },
-      {
-        "title": "Infrastructure is Not a Minor Detail",
-        "desc": "Mega-projects often fail when they ignore technical feasibility regarding surrounding roads, power grids, and water supply, turning luxury assets into functional burdens. A project's success is tied to its integration with its infrastructural environment."
-      }
+      { "feature": "Best For", "hubspot": "Scaling Small to Medium Businesses.", "zoho": "Budget-conscious growing firms.", "salesforce": "Large enterprises with complex needs.", "dynamics": "Organizations already using Microsoft ecosystem.", "odoo": "Companies seeking a full ERP (Sales, Inventory, Accounting, HR) in one integrated platform." },
+      { "feature": "User Experience", "hubspot": "Highly intuitive and easy to use.", "zoho": "Moderate; requires some setup time.", "salesforce": "Steep learning curve; requires training.", "dynamics": "Familiar to Office 365 users but complex.", "odoo": "Modern and user-friendly, though the vast number of modules requires initial organization." },
+      { "feature": "Arabic Support", "hubspot": "Excellent Interface & Right-to-Left support.", "zoho": "Full Arabic support for RTL.", "salesforce": "Good, but customization takes effort.", "dynamics": "Comprehensive Arabic integration.", "odoo": "Outstanding; native Right-to-Left (RTL) support and localized interfaces." },
+      { "feature": "Customization", "hubspot": "Flexible but limited in free versions.", "zoho": "Highly flexible at a low cost.", "salesforce": "Unlimited customization possibilities.", "dynamics": "Extremely flexible for industrial workflows.", "odoo": "Highest in class; Open-source nature allows for tailoring to specific Iraqi business workflows." },
+      { "feature": "Key Advantage", "hubspot": "'All-in-one' Marketing & Sales sync.", "zoho": "Best value for money (Affordable).", "salesforce": "Global industry standard & deep AI.", "dynamics": "Seamless integration with Outlook & Excel.", "odoo": "All-in-One ecosystem; eliminates the need for 3rd-party integrations by housing everything in one place." },
+      { "feature": "Starting Price", "hubspot": "Free tier available; paid starts moderate.", "zoho": "Very competitive entry pricing.", "salesforce": "Premium pricing; higher total cost.", "dynamics": "Premium pricing; depends on existing licenses.", "odoo": "Very flexible; pricing depends on the number of apps, generally offering a better ROI than global giants." },
+      { "feature": "Offline Mode", "hubspot": "Limited.", "zoho": "Strong mobile offline capabilities.", "salesforce": "Available via Mobile App.", "dynamics": "Strong offline sync for field engineers", "odoo": "Available in specific modules (like POS) with reliable data synchronization." }
     ]
   },
   cta: {
@@ -168,154 +141,127 @@ const enDict = {
 
 const arDict = {
   hero: {
-    title: "دراسات الجدوى الفنية والإقتصادية",
-    subtitle: "استثمر بثقة وتجنب الخسائر، لماذا تعتبر دراسة الجدوى هي بوصلة قرارك الاستثماري؟"
+    title: "إدارة علاقات الزبائن (CRM)",
+    subtitle: "النمو المستدام يبدأ من هنا، لماذا لم يعد الـ CRM خياراً، بل ضرورة لشركتك؟"
   },
   intro: {
     paragraphs: [
-      "المشاريع الاستثمارية تحمل فرصاً عظيمة، لكنها تنطوي على مخاطر حقيقية. دراسات الجدوى الفنية والاقتصادية التي نقدمها ليست مجرد وثائق رسمية، بل هي بوصلتك العلمية لصناعة القرار الاستثماري السليم.",
-      "نحن نحول فكرتك الواعدة إلى خطة عمل مدعومة ببيانات موثوقة وتحليل شامل للسوق والجدوى الفنية. هدفنا هو استخدام الأدوات العلمية لضمان الاستخدام الأمثل لمواردك، تقليل احتمالات الفشل، وتعظيم عوائدك الربحية. ابدأ مشروعك بقاعدة صلبة وبيانات موثوقة."
+      "في عالم الأعمال المعقد اليوم، لم يعد كافياً مجرد بيع المنتجات.",
+      "أنظمة إدارة علاقات الزبائن (CRM) هي استراتيجية عمل متكاملة ومنصة تقنية مصممة لمساعدتك على فهم زبائنك بعمق، توقع احتياجاتهم، وتعزيز ولائهم لعلامتك التجارية.",
+      "نحن نساعدك على تحويل بيانات المبيعات والتسويق ودعم الزبائن المجزأة إلى رؤى استراتيجية موحدة. النتيجة؟ تبسيط العمليات، تحسين الاستجابة لرغبات الزبائن، والأهم تحقيق نمو مستدام وملموس لشركتك."
     ],
-    services_intro: "خدماتنا في دراسات الجدوى مصممة لتوفر لكم:",
+    services_intro: "نحن نوظف خبرتنا الهندسية في تحليل العمليات لتقديم:",
     services: [
-      { "title": "فهم شامل لمشروعكم", "description": "من المفهوم الأولي حتى التوصيات النهائية." },
-      { "title": "تحليل دقيق للسوق", "description": "تقييم الطلب، والمنافسة، والفرص المحتملة." },
-      { "title": "تصور فني ومالي واضح", "description": "تحديد التكاليف، والإيرادات، ونقاط التعادل." },
-      { "title": "تقييم شامل للمخاطر", "description": "تحديد التحديات المحتملة ووضع استراتيجيات للتعامل معها." },
-      { "title": "مؤشرات اقتصادية موثوقة", "description": "لضمان استمرارية المشروع وربحيتها ضمن عمره الاقتصادي." }
+      { "title": "استراتيجية CRM مبنية على أسس صلبة", "description": "تصميم خطط عمل واضحة وقابلة للقياس لتحقيق أهدافكم" },
+      { "title": "هيكل تنظيمي مثالي", "description": "تصميم الهياكل والفرق المناسبة التي تضمن الكفاءة والفاعلية في إدارة علاقات الزبائن CRM" },
+      { "title": "تحديد المهام والمسؤوليات", "description": "ضمان فهم كل فريق لدوره الحيوي في تحقيق رؤية الـ 360 درجة للزبون" },
+      { "title": "توصيات فنية مدروسة", "description": "لاختيار الأداة البرمجية (منصة CRM) الأنسب لاحتياجاتكم التقنية والميزانية المحددة، مما يضمن اختيار الأدوات المناسبة التي تدعم استراتيجيتكم" }
     ]
   },
   target_audience: {
     title: "جمهورنا المستهدف",
     subtitle: "لمن هذه الخدمة؟",
-    intro: "أي فرد أو كيان تجاري يمتلك فكرة مشروع أو يخطط لاستثمار مالي، ويحتاج إلى تقييم موضوعي وموثوق لجدوى هذا الاستثمار قبل الالتزام بالموارد الكبيرة.",
+    intro: "نخدم الشركات في القطاع الهندسي، الصناعي، والمقاولات التي تبحث عن نهج منظم وفعال لإدارة علاقات الزبائن.",
     ideal_audience_intro: "يشمل جمهورنا المستهدف:",
     audiences: [
-      { "title": "المستثمرون الأفراد", "description": "الأشخاص الذين لديهم رأس مال ويبحثون عن قنوات استثمارية آمنة ومربحة، ويحتاجون إلى تقرير جدوى رسمي لدعم قرارهم." },
-      { "title": "رواد الأعمال والشركات الناشئة", "description": "الذين يحتاجون إلى دراسة جدوى مقنعة ومفصلة لتقديمها للمستثمرين المحتملين أو للحصول على قروض بنكية وتمويل." },
-      { "title": "الشركات القائمة التي تسعى للتوسع", "description": "الشركات التي تخطط لإطلاق خط إنتاج جديد، أو دخول سوق جديد، أو بناء مصنع جديد، وتحتاج إلى تقييم المخاطر والعائد المتوقع." },
-      { "title": "القطاع الصناعي والتصنيع", "description": "الشركات التي تحتاج إلى تقييم فني دقيق لآلات ومعدات وعمليات إنتاج مقترحة." },
-      { "title": "القطاع التجاري والخدمي", "description": "أصحاب المشاريع التجارية أو الخدمية الذين يركزون بشكل أكبر على دراسات السوق والتوقعات الاقتصادية." },
-      { "title": "أصحاب رؤوس الأموال والمديرون التنفيذيون", "description": "يبحثون عن الأرقام النهائية، العائد على الاستثمار (ROI)، ونقاط التعادل." },
-      { "title": "مديرو المشاريع والمالية", "description": "يبحثون عن التفاصيل الفنية، تقديرات التكاليف الدقيقة، وإدارة المخاطر." }
+      { "title": "المكاتب الاستشارية الهندسية", "description": "الشركات التي تقدم خدمات التصميم، الإشراف، وإدارة المشاريع." },
+      { "title": "شركات المقاولات والإنشاءات", "description": "التي تحتاج إلى تنظيم علاقاتها مع المقاولين من الباطن والعملاء وأصحاب المشاريع." },
+      { "title": "الشركات الصناعية الناشئة", "description": "التي تصنع منتجات هندسية أو معدات وتحتاج إلى تحسين عمليات المبيعات والتوزيع." },
+      { "title": "شركات الخدمات الفنية المتخصصة", "description": "مثل صيانة المصاعد، أنظمة التدفئة والتبريد، أو خدمات الأمن الصناعي." },
+      { "title": "أصحاب ومدراء الشركات الهندسية", "description": "هم صناع القرار الرئيسيون الذين يبحثون عن حلول لزيادة الكفاءة والربحية والنمو." },
+      { "title": "مديرو المبيعات والتسويق", "description": "الذين يعانون من عدم وجود نظام موحد لتتبع الزبائن المتوقعين وإدارة دورة المبيعات المعقدة." },
+      { "title": "مديرو العمليات", "description": "الذين يبحثون عن طرق لربط إدارة علاقات الزبائن بالعمليات اليومية وإدارة المشاريع." }
     ]
   },
   cases: {
-    title: "قصص من واقعنا",
-    subtitle: "دليل إثبات يجسد انتقال الاستراتيجية من الورق إلى الميدان.",
+    title: "قوة الميدان: كيف منحت البيانات المحلية شركة كريم أفضلية الاستحواذ الملياري؟",
+    subtitle: "قصص من واقعنا: دليل إثبات يجسد انتقال الاستراتيجية من الورق إلى الميدان.",
     items: [
       {
-        "title": "قصة مشروع مجمع دبي لاجون",
-        "subtitle": "خديعة الأرقام المتفائلة: لماذا يعد تحليل الحساسية وسيناريوهات الأزمات صمام الأمان الحقيقي لاستثمارك؟",
-        "issue": "في منتصف العقد الأول من القرن الحادي والعشرين، أُطلق مشروع \"دبي لاجون\" السكني الضخم. كانت دراسة الجدوى الأولية متفائلة جداً وتفترض استمرار الطفرة العقارية للأبد. الدراسة لم تتضمن \"تحليل حساسية\" حقيقي لمواجهة انخفاض أسعار العقار أو شح السيولة.",
+        "title": "تجربة كريم الانتصار على أوبر",
+        "subtitle": "الانتصار بالبيانات المحلية",
+        "issue": "عندما دخلت 'أوبر' للمنطقة، واجهت منافسة شرسة من 'كريم'. 'أوبر' كانت تصر على الدفع بالبطاقة الائتمانية والخرائط الرقمية الصرفة.",
         "analysis": [
-          "عندما حلت الأزمة المالية العالمية عام 2008، انهار المشروع وتوقف لسنوات طويلة لأن \"الجدوى المالية\" لم تكن مرنة بما يكفي للتعامل مع أسوأ السيناريوهات."
+          "أجرت 'كريم' دراسة سلوك للمستهلك العربي، واكتشفت أن الناس يفضلون 'الدفع نقداً' ويحبون 'الاتصال بالهاتف'. صممت 'كريم' نظام CRM تطبيقاً يدعم هذه العادات."
         ],
-        "lesson": "دراسة الجدوى ليست مجرد أرقام للربح، بل هي \"اختبار صمود\" للمشروع أمام الأزمات. غياب خطة الطوارئ المالية يحول الاستثمار إلى مغامرة غير محسوبة."
-      },
-      {
-        "title": "قصة مصنع تسلا جيجا فكتوري - برلين",
-        "subtitle": "حتى العمالقة يخطئون: اكتشف أهمية الجدوى القانونية والبيئية في حماية مشروعك من التوقف المفاجئ.",
-        "issue": "واجه إيلون ماسك تأخيرات هائلة وخسائر بملايين الدولارات عند بناء مصنع \"تسلا\" في ألمانيا. ركزت الدراسات الأولية على الجدوى الاقتصادية والفنية، لكنها استخفت بـ \"الجدوى القانونية والبيئية\" الصارمة في ألمانيا.",
-        "analysis": [
-          "واجه المشروع قضايا قانونية تخص \"إمدادات المياه\" و\"حماية الغابات\" أدت لتوقف البناء لعدة مرات. واضطرت الشركة لتعديل تصاميمها وخططها التشغيلية بشكل جذري وبتكلفة إضافية لتتوافق مع القوانين المحلية."
-        ],
-        "lesson": "الجدوى ليست أرقام مبيعات فقط، إن فهم \"البيئة التشغيلية والقانونية\" للموقع هو الذي يحدد هل سيخرج المشروع للنور أم سيظل حبيس الأوراق القانونية."
+        "lesson": "اضطرت 'أوبر' للاستحواذ على 'كريم' بـ 3.1 مليار دولار. البيانات المحلية الموثوقة هي التي تحسم المعركة الاستثمارية، وليس ضخامة رأس المال فقط."
       }
     ]
   },
-  investor_guide: {
-    title: "دليل المستثمر الواعي: كيف تفرق بين الفرصة الواعدة والمغامرة الخاسرة؟",
+  growth_guide: {
+    title: "دليل الإحتفاظ بالزبائن",
+    subtitle: "لماذا لم يعد الـ CRM خياراً، بل ضرورة لنمو شركتك؟",
     phases: [
       {
-        "title": "مرحلة الجدوى التسويقية (المدخل الرئيسي)",
+        "title": "مرحلة بناء قاعدة بيانات موحدة",
         "points": [
-          { "title": "تحليل العرض والطلب", "desc": "هل هناك فجوة حقيقية في السوق تسمح بدخول مشروعك؟" },
-          { "title": "تقدير الحصة السوقية", "desc": "ما هو الحجم المتوقع للمبيعات في ظل وجود المنافسين الحاليين؟" }
+          { "title": "وداعاً للشتات", "desc": "تجميع بيانات الزبائن (الهاتف، البريد، المراسلات، الفواتير) في مكان واحد بدلاً من ضياعها في دفاتر أو هواتف الموظفين." },
+          { "title": "تاريخ العلاقة", "desc": "توثيق كل تفاعل مع الزبون لضمان تقديم خدمة شخصية واحترافية في كل مرة." }
         ]
       },
       {
-        "title": "مرحلة الجدوى الفنية والهندسية (جوهر التخصص)",
+        "title": "مرحلة هندسة رحلة الزبون",
         "points": [
-          { "title": "هندسة الإنتاج", "desc": "اختيار التكنولوجيا والمكائن والمعدات الأنسب لمقياس الإنتاج المستهدف." },
-          { "title": "مدخلات التشغيل", "desc": "تحديد احتياجات المشروع من مواد أولية، طاقة، وكوادر فنية متخصصة." },
-          { "title": "الموقع والمساحة", "desc": "المفاضلة بين المواقع البديلة بناءً على القرب من الموردين والأسواق." }
+          { "title": "متابعة الفرص", "desc": "تصنيف الزبائن (مهتم، تفاوض، تم البيع، زبون دائم) لمتابعة كل حالة بدقة." },
+          { "title": "التنبؤ بالمبيعات", "desc": "استخدام البيانات التاريخية لتوقع الإيرادات المستقبلية والتخطيط بناءً عليها." }
         ]
       },
       {
-        "title": "مرحلة الجدوى المالية والاقتصادية (لغة الأرقام)",
+        "title": "أتمتة العمليات ورفع الكفاءة",
         "points": [
-          { "title": "تقدير التكاليف الاستثمارية", "desc": "حساب رأس المال المطلوب لبدء التشغيل (أصول ثابتة، رأس مال عامل)." },
-          { "title": "مؤشرات الربحية", "desc": "حساب فترة استرداد رأس المال (Payback Period) ومعدل العائد الداخلي (IRR)." },
-          { "title": "تحليل الحساسية", "desc": "قياس مدى صمود المشروع أمام تقلبات الأسعار أو تغير تكاليف التشغيل." }
-        ]
-      },
-      {
-        "title": "مرحلة الجدوى البيئية والقانونية",
-        "points": [
-          { "title": "الامتثال والتشريعات", "desc": "التأكد من مواءمة المشروع مع القوانين والأنظمة والتعليمات النافذة (خاصة في البيئة العراقية)." },
-          { "title": "الأثر البيئي", "desc": "دراسة تأثير المشروع على البيئة المحيطة وضمان الاستدامة." }
+          { "title": "مرحلة التذكيرات الذكية", "desc": "جدولة التنبيهات لمتابعة الزبائن أو تجديد العقود، مما يمنع ضياع أي 'فرصة بيعية'." },
+          { "title": "تقارير الأداء", "desc": "الحصول على رؤية فورية لأداء فريق المبيعات وخدمة الزبائن بضغطة زر." }
         ]
       }
     ]
   },
   checklist: {
-    title: "قائمة تدقيق دراسة الجدوى",
+    title: "قائمة تدقيق الـ CRM: هل تملك 'نظاماً للنمو' أم مجرد 'دفتر ملاحظات'؟",
     headers: ["المراحل", "الأسئلة", "نعم", "كلا"],
     items: [
-      { "phase": "الجانب التسويقي", "question": "هل تعتمد الدراسة على بيانات ميدانية حقيقية لعام 2025 أم على تقديرات عامة؟" },
-      { "phase": "الجانب التسويقي", "question": "هل تم تحديد \"المنافسين المباشرين\" ونقاط قوتهم التي ستواجهها عند الإطلاق؟" },
-      { "phase": "الجانب التسويقي", "question": "هل استراتيجية التسعير المقترحة تأخذ بنظر الاعتبار القوة الشرائية الحالية للجمهور المستهدف؟" },
-      { "phase": "الجانب الفني والهندسي", "question": "هل تم التأكد من قدرة البنية التحتية (كهرباء، ماء، طرق) في الموقع المختار على تحمل أحمال المشروع؟" },
-      { "phase": "الجانب الفني والهندسي", "question": "هل تضمنت الدراسة الفنية \"عروض أسعار حقيقية\" للمكائن من مجهزين موثوقين؟" },
-      { "phase": "الجانب الفني والهندسي", "question": "هل هناك خطة واضحة لتدريب الكادر الفني على التكنولوجيا المستخدمة؟" },
-      { "phase": "الجانب المالي والاقتصادي", "question": "هل تم احتساب رأس مال عامل يكفي لتغطية المصاريف لستة أشهر على الأقل بعد الإطلاق؟" },
-      { "phase": "الجانب المالي والاقتصادي", "question": "هل تم إجراء \"تحليل الحساسية\" لمعرفة مصير الأرباح في حال انخفاض المبيعات بنسبة 20%؟" },
-      { "phase": "الجانب المالي والاقتصادي", "question": "هل فترة استرداد رأس المال منطقية وتتوافق مع مخاطر القطاع؟" },
-      { "phase": "الجانب القانوني والبيئي", "question": "هل المشروع حاصل على موافقات مبدئية من الجهات القطاعية (تنمية صناعية، بيئة، هيئة استثمار)؟" },
-      { "phase": "الجانب القانوني والبيئي", "question": "هل تتوافق خطة التخلص من المخلفات الصناعية مع المعايير البيئية النافذة في العراق؟" }
+      { "phase": "تنظيم البيانات", "question": "هل تضيع بيانات الزبائن وتاريخ تواصلهم عند استقالة أحد موظفي المبيعات؟" },
+      { "phase": "تنظيم البيانات", "question": "هل يمكنك الوصول إلى كامل تاريخ المراسلات والفواتير لأي زبون في أقل من 10 ثوانٍ؟" },
+      { "phase": "تنظيم البيانات", "question": "هل بيانات زبائنك مخزنة في نظام مركزي آمن أم موزعة بين هواتف الموظفين ودفاترهم؟" },
+      { "phase": "هندسة المسار", "question": "هل يمكنك تحديد عدد الزبائن 'المهتمين' حالياً والذين لم يتحولوا لشراء فعلي بعد؟" },
+      { "phase": "هندسة المسار", "question": "هل تملك أرقاماً دقيقة تتوقع حجم مبيعاتك للشهر القادم بناءً على 'الفرص الحالية'؟" },
+      { "phase": "هندسة المسار", "question": "هل يملك فريقك مساراً واضحاً لمتابعة الزبون من أول اتصال حتى توقيع العقد؟" },
+      { "phase": "الأتمتة والكفاءة", "question": "هل ينسى فريقك أحياناً معاودة الاتصال بزبون مهتم، مما يجعله يتجه للمنافسين؟" },
+      { "phase": "الأتمتة والكفاءة", "question": "هل يتم تنبيهك تلقائياً عند اقتراب موعد تجديد عقد أو متابعة عرض سعري؟" },
+      { "phase": "الأتمتة والكفاءة", "question": "هل يمكنك الحصول على تقرير فوري بـ 'ضغطة زر' يوضح أداء كل موظف مبيعات لديك؟" }
     ]
   },
-  cautionary_tales: {
-    title: "قصص تحذيرية: المخاطر الخفية لإهمال دراسات الجدوى",
-    subtitle: "خلف كل مشروع متعثر، توجد حقيقة تم تجاهلها في مرحلة الدراسة.",
-    tales: [
-      {
-        "title": "فخ التكنولوجيا الخاطئة (المعدات غير المتوافقة)",
-        "scenario": "مستثمر قام باستيراد خط إنتاج متطور جداً من الخارج بناءً على السعر الأقل، دون إجراء دراسة جدوى فنية.",
-        "hidden_risk": "عند وصول المعدات، اكتشف أن الطاقة الكهربائية في الموقع لا تتحمل أحمال الماكينات، وأن قطع الغيار غير متوفرة في السوق المحلي.",
-        "result": "توقف المشروع لمدة عام لإعادة تأهيل الشبكة الكهربائية، وضياع فرصة دخول السوق في الوقت المناسب."
-      },
-      {
-        "title": "وهم السوق المتفائل (إهمال تحليل الحساسية)",
-        "scenario": "بناء مشروع صناعي ضخم بناءً على \"توقعات\" بأن سعر المادة الأولية سيظل ثابتاً، دون إجراء دراسة جدوى مالية تتضمن \"تحليل الحساسية\".",
-        "hidden_risk": "حدث تقلب مفاجئ في أسعار الصرف أو أسعار المواد العالمية بنسبة 15%.",
-        "result": "تحولت الأرباح المتوقعة إلى خسائر تشغيلية مستمرة لأن هامش الربح كان ضيقاً جداً ولم يحسب حساب التقلبات."
-      },
-      {
-        "title": "خطأ \"الموقع الجاذب\" (إهمال دراسة الأثر الخدمي)",
-        "scenario": "بناء مشروع في منطقة مزدحمة لضمان \"الرؤية\" دون دراسة جدوى فنية للبنى التحتية.",
-        "hidden_risk": "المشروع أصبح غير قابل للوصول بسبب الاختناقات المرورية، وضعف ضغط الماء والكهرباء جعل تكلفة التشغيل عبر المولدات الخاصة تلتهم الأرباح.",
-        "result": "انخفاض القيمة السوقية للعقارات أو المنتجات وصعوبة استقطاب المستأجرين."
-      }
+  insights: {
+    title: "رؤية استشارية معمقة: لماذا يفشل الـ CRM أحياناً؟",
+    subtitle: "الـ CRM هو محرك لسيارة، لكنك تحتاج إلى خارطة طريق وسائق محترف.",
+    failure_reasons: [
+      { "title": "مقاومة التغيير عند البشر", "desc": "إذا لم يقتنع الموظف بأن النظام يسهل عمله بدلاً من كونه أداة رقابة، فسيقوم بإدخال بيانات خاطئة أو إهماله." },
+      { "title": "تعقيد الواجهة", "desc": "شراء نظام معقد جداً يحتوي على مئات الخصائص التي لا تحتاجها الشركة، مما يجعل الموظف يشعر بالضياع." },
+      { "title": "بيانات ملوثة", "desc": "إدخال بيانات غير دقيقة أو مكررة يؤدي إلى تقارير خاطئة، مما يجعل الإدارة تفقد الثقة." },
+      { "title": "غياب الربط مع الاستراتيجية", "desc": "أن يكون النظام في وادٍ وطريقة عمل الفريق الميداني في وادٍ آخر." }
+    ],
+    examples: [
+      { "title": "مثال شركة التوزيع", "desc": "شركة استوردت نظام CRM عالمي، لكن المندوبين لم يستخدموه لأنه يتطلب إنترنت دائما ولا يدعم العمل دون اتصال. النتيجة: عودة المندوبين للورق." },
+      { "title": "مثال صندوق البريد المهمل", "desc": "شركة عقارات لم تربط النظام ببريد الموظفين أو اتصالاتهم. النتيجة: أصبح النظام 'مقبرة للبيانات' بدلاً من أن يكون أداة للمتابعة." }
+    ],
+    roadmap: [
+      "ابدأ بالعمليات لا بالبرمجيات. النظام يجب أن 'يخدم' طريقتك في العمل.",
+      "التركيز على تبني الموظفين. اجعل النظام 'مساعداً' لهم وليس 'رقيباً' عليهم.",
+      "جودة البيانات هي الوقود. ابدأ ببيانات نظيفة ومنظمة.",
+      "التكامل مع الأدوات الحالية. تأكد أن النظام يرتبط ببريدك واتصالاتك الهاتفية.",
+      "التفكير في التوسع. اختر منصة مرنة تتيح لك إضافة الخصائص حسب الحاجة غداً."
     ]
   },
-  lessons: {
-    title: "دروس من الفشل: كيف تحمي استثمارك من المصير المجهول؟",
-    subtitle: "الفرق بين المشروع الناجح والفاشل ليس في حجم رأس المال، بل في دقة البيانات التي بني عليها.",
+  comparison: {
+    title: "مقارنة أفضل منصات CRM لعام 2025",
+    headers: ["وجه المقارنة", "HubSpot", "Zoho CRM", "Salesforce", "Microsoft Dynamics 365", "Odoo"],
     items: [
-      {
-        "title": "لا تخلط بين 'الأمنيات' و 'الأرقام'",
-        "desc": "مستثمرون اعتمدوا على \"انطباعهم الشخصي\" بنجاح مشروع معين لأنهم رأوا تجربة مماثلة ناجحة في بلد آخر، مع إهمال دراسة خصوصية السوق العراقي (القوة الشرائية، الثقافة الاستهلاكية، والمنافسة المحلية). ما ينجح في الخارج قد لا ينجح بالضرورة في بغداد دون \"تكييف\" هندسي وتسويقي دقيق."
-      },
-      {
-        "title": "إهمال 'التكاليف الخفية' يقتل الربحية",
-        "desc": "مشاريع صناعية تعثرت لأن دراسة الجدوى ركزت على تكلفة المكائن وأهملت تكاليف \"اللوجستيات\" و\"سلاسل الإمداد\" وعدم احتساب تكلفة النقل والخزن أو التوقف للصيانة. الربحية الحقيقية تكمن في تفاصيل \"التكاليف التشغيلية\"."
-      },
-      {
-        "title": "'البنية التحتية' ليست مجرد تفصيل ثانوي",
-        "desc": "مجمعات سكنية ميتة بسبب البدء بالتنفيذ قبل التأكد من الجدوى الفنية لشبكات الطرق والصرف الصحي. المشروع لا ينتهي عند الجدران، وتأثره بالبيئة التحتية يحدد نجاحه."
-      }
+      { "feature": "الأنسب لـ", "hubspot": "الشركات الصغيرة والمتوسطة الطموحة.", "zoho": "الشركات التي تبحث عن الجودة مقابل السعر.", "salesforce": "المؤسسات الضخمة ذات المتطلبات المعقدة.", "dynamics": "الشركات التي تعتمد كلياً على برامج مايكروسوفت.", "odoo": "الشركات التي ترغب بربط المبيعات بالمخازن والمحاسبة في منصة واحدة." },
+      { "feature": "سهولة الاستخدام", "hubspot": "بديهي جداً وسهل التعلم للفريق.", "zoho": "متوسط السهولة؛ يتطلب بعض الوقت للإعداد.", "salesforce": "يحتاج لمنحنى تعلم طويل وتدريب مكثف.", "dynamics": "مألوف لمستخدمي Office 365 لكنه معقد تقنياً.", "odoo": "واجهة حديثة، كثرة التطبيقات قد تتطلب تنظيماً في البداية." },
+      { "feature": "دعم اللغة العربية", "hubspot": "واجهة ممتازة ودعم كامل للكتابة من اليمين.", "zoho": "دعم كامل وشامل للغة العربية.", "salesforce": "جيد، لكن التخصيص للعربية يتطلب جهداً.", "dynamics": "تكامل شامل ومعرب بالكامل.", "odoo": "ممتاز جداً، ويدعم الكتابة من اليمين (RTL) بشكل أصيل." },
+      { "feature": "المرونة والتخصيص", "hubspot": "مرن، لكنه محدود في النسخ المجانية.", "zoho": "مرن جداً وبأسعار معقولة.", "salesforce": "إمكانيات تخصيص لا نهائية.", "dynamics": "مرن جداً للعمليات الهندسية والصناعية.", "odoo": "الأعلى في فئته؛ كونه مفتوح المصدر يتيح تعديل أي عملية." },
+      { "feature": "الميزة الجوهرية", "hubspot": "تكامل تام بين التسويق والمبيعات.", "zoho": "أفضل قيمة مقابل السعر (اقتصادي).", "salesforce": "المعيار العالمي واستخدام الذكاء الاصطناعي.", "dynamics": "تكامل سلس مع Outlook و Excel.", "odoo": "نظام (All-in-One) لا تحتاج لربط برامج خارجية." },
+      { "feature": "مستوى السعر", "hubspot": "تتوفر نسخة مجانية؛ النسخ المدفوعة متوسطة.", "zoho": "تنافسي جداً؛ الأرخص في فئته.", "salesforce": "مرتفع التكلفة (استثمار ضخم).", "dynamics": "مرتفع؛ يعتمد على تراخيص مايكروسوفت.", "odoo": "مرن؛ يعتمد على عدد التطبيقات، غالباً أقل من المنافسين العالميين." },
+      { "feature": "العمل دون إنترنت", "hubspot": "محدود.", "zoho": "قوي جداً في تطبيقات الموبايل (للعمل الميداني).", "salesforce": "متوفر من خلال تطبيق الموبايل.", "dynamics": "مزامنة قوية للمهندسين في المواقع البعيدة.", "odoo": "يدعم العمل دون إنترنت في تطبيقات محددة (مثل POS)." }
     ]
   },
   cta: {
@@ -325,10 +271,10 @@ const arDict = {
   }
 };
 
-enJson.feasibility_studies = enDict;
-arJson.feasibility_studies = arDict;
+enJson.crm = enDict;
+arJson.crm = arDict;
 
 fs.writeFileSync(enPath, JSON.stringify(enJson, null, 2));
 fs.writeFileSync(arPath, JSON.stringify(arJson, null, 2));
 
-console.log("Feasibility Studies dictionaries updated successfully");
+console.log("CRM dictionaries updated successfully");
