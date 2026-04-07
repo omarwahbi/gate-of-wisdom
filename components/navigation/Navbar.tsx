@@ -113,20 +113,36 @@ export function Navbar({ lang, dictionary }: NavbarProps) {
                                   </li>
                                 ))
                               ) : item.href.includes("knowledge-hub") && dictionary.knowledge_hub ? (
-                                dictionary.knowledge_hub.categories.map((subItem: any, i: number) => (
-                                  <li key={subItem.slug}>
-                                    <NavigationMenuLink
-                                      render={
-                                        <Link
-                                          href={`${item.href}/${subItem.slug}`}
-                                          className="block select-none rounded-md px-4 py-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                                        />
-                                      }
-                                    >
-                                      <div className="text-sm font-medium leading-none font-heading">{subItem.title}</div>
-                                    </NavigationMenuLink>
-                                  </li>
-                                ))
+                                dictionary.knowledge_hub.categories.map((subItem: any, i: number) => {
+                                  const isReady = subItem.slug === 'lectures';
+                                  return (
+                                    <li key={subItem.slug}>
+                                      <NavigationMenuLink
+                                        render={
+                                          isReady ? (
+                                            <Link
+                                              href={`${item.href}/${subItem.slug}`}
+                                              className="block select-none rounded-md px-4 py-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                                            />
+                                          ) : (
+                                            <div className="flex items-center justify-between select-none rounded-md px-4 py-3 leading-none no-underline outline-none transition-colors cursor-not-allowed opacity-60 bg-muted/30 hover:bg-muted/50 group" />
+                                          )
+                                        }
+                                      >
+                                          {isReady ? (
+                                            <div className="text-sm font-medium leading-none font-heading">{subItem.title}</div>
+                                          ) : (
+                                            <>
+                                              <div className="text-sm font-medium leading-none font-heading pointer-events-none">{subItem.title}</div>
+                                              <span className="text-[10px] font-bold uppercase tracking-wider text-muted-foreground bg-secondary px-2 py-0.5 rounded-full group-hover:text-primary group-hover:bg-primary/10 transition-colors pointer-events-none">
+                                                {lang === 'ar' ? 'قريباً' : 'Soon'}
+                                              </span>
+                                            </>
+                                          )}
+                                      </NavigationMenuLink>
+                                    </li>
+                                  );
+                                })
                               ) : (
                                 [1, 2, 3].map((i) => (
                                   <li key={i}>

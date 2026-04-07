@@ -1864,5 +1864,205 @@
         "icon": "Users"
       }
     ]
+  },
+  "lectures": {
+    "hero": {
+      "title": "Expert Lectures & Seminars",
+      "subtitle": "Free Online Webinars: Your First Gateway to Specialized Consulting Insights"
+    },
+    "intro": {
+      "paragraphs": [
+        "At “GATE OF WISDOM CONSULTING ENGINEERS”, we believe in sharing knowledge as a first step towards building successful partnerships.",
+        "Our lectures/webinars section is designed to be your primary source for valuable, free information on the latest challenges and opportunities in the business and engineering world.",
+        "Join our experts in live online sessions where we deliver strategic insights, lessons learned, and initial tools on vital topics such as project management, performance efficiency, and market strategies.",
+        "The result? You gain a deeper understanding of your area of interest, receive free downloadable materials, and most importantly: build the confidence and knowledge needed to make informed business decisions."
+      ],
+      "features_intro": "Our lecture and training programs provide you with:",
+      "features": [
+        {
+          "title": "Specialized & Practical Knowledge",
+          "description": "Covering CRM, Feasibility Studies, Performance Evaluation, HR, Marketing & Sales, Project Management, Market Studies, and Investment Environments."
+        },
+        {
+          "title": "Insights Built on Data",
+          "description": "A treasure trove of continuously updated statistics and data that help you understand reality and inform stakeholders."
+        },
+        {
+          "title": "Development of Thinking Skills",
+          "description": "Designed to encourage critical thinking, active listening, and building a strong professional network."
+        },
+        {
+          "title": "Excellence & Leadership",
+          "description": "Targeted at advanced educational levels, companies, and individuals interested in leadership in their fields."
+        }
+      ]
+    },
+    "target_audience": {
+      "title": "Target Audience & Key Attractors",
+      "subtitle": "Who is this for?",
+      "intro": "Our lectures are designed for any individual or organization seeking specialized knowledge, practical expertise, and advanced insights in management, economics, and engineering.",
+      "ideal_audience_intro": "Our ideal audience includes:",
+      "audiences": [
+        {
+          "title": "Educational Institutions",
+          "description": "Universities striving to enrich curricula with practical expertise for advanced students."
+        },
+        {
+          "title": "Private & Public Companies",
+          "description": "Entities aiming to train their employees and enhance competencies in project management, CRM, or data analysis."
+        },
+        {
+          "title": "Professionals & Interested Individuals",
+          "description": "Those seeking to develop skills, keep pace with developments, or build a strong professional network."
+        },
+        {
+          "title": "Students & Recent Graduates",
+          "description": "Searching for a competitive edge in the job market through specialized practical knowledge."
+        },
+        {
+          "title": "Managers & Leaders",
+          "description": "Professionals needing a deeper understanding of economic indicators or administrative strategies."
+        },
+        {
+          "title": "Stakeholders & Investors",
+          "description": "Those who require enlightenment regarding the country's economic reality to make safe, profitable decisions."
+        }
+      ]
+    },
+    "guide": {
+      "title": "The Consulting Knowledge Hub Guide",
+      "subtitle": "Your Path to Excellence Starts Here",
+      "why_start_intro": "We believe that knowledge is the cornerstone of every successful investment. We have designed our Live Webinar Program to be your primary gateway to deeply understanding our engineering and consulting services before taking any executive steps.",
+      "points": [
+        {
+          "title": "Explore Solutions",
+          "desc": "Gain insight into the core of our services and how they address real-world challenges in the Iraqi market."
+        },
+        {
+          "title": "Expert Insights",
+          "desc": "Our lectures are not theoretical; they are a distillation of our field expertise since 2004, provided to help you make decisions with certainty."
+        },
+        {
+          "title": "Trial Before Investment",
+          "desc": "The webinar offers a chance to evaluate our methodology, ask complex questions, and receive immediate operational answers."
+        }
+      ],
+      "what_is_next": "The lecture is just the starting point. Through it, you will identify areas where your project requires deeper intervention (through Specialized Training Courses or Interactive Workshops).",
+      "gift": "Because we value your time, every participant receives a 'Free Toolkit' (Actionable templates, checklists, or draft plans) to serve as your first practical reference."
+    },
+    "topics": {
+      "title": "Webinar Titles and Structure",
+      "subtitle": "A Preview of Our Advanced Strategic Sessions",
+      "registration_note": "In the Registration Page for each webinar, you will find: 'You will learn in this session...', the Agenda, 'Attendance Gift', and a detailed schedule to book.",
+      "items": [
+        {
+          "service": "Project Management",
+          "title": "From Concept to Launch: How to Avoid Delays and Budget Overruns in Construction and Industrial Projects?",
+          "structure": "The Hook, Identifying the Pain Points, The Engineering Methodology Solution, Quick Case Study, The Irresistible Offer."
+        },
+        {
+          "service": "Market Study",
+          "title": "Entering the Iraqi Market 2026: How to Discover Market Gaps Before Your Competitors?",
+          "structure": "The Hook, Diagnosing 'Market Blindness', The Data Methodology Solution, Quick Case Study, The Closing."
+        },
+        {
+          "service": "Feasibility Studies",
+          "title": "Investment Certainty: Transforming Feasibility Data into Tangible Profits?",
+          "structure": "The Hook, Diagnosing 'Fatal Errors', The Quad-Feasibility Framework, Gamble vs. Calculated Decision, The Closing."
+        },
+        {
+          "service": "Performance Efficiency",
+          "title": "Silent Profit Leakage: How to Detect Technical and Financial Waste in Your Operations?",
+          "structure": "The Hook, Diagnosing the Symptoms, The Strategic Scalpel, 'Before & After' Case Study, The Closing."
+        },
+        {
+          "service": "Human Resources",
+          "title": "Institutional Engineering: Moving from People-Based Trust to KPI-Based Management?",
+          "structure": "The Hook, Diagnosing 'Individual Chaos', The Institutional Engineering Principle, Transition to Discipline Case, The Closing."
+        },
+        {
+          "service": "Marketing & Sales",
+          "title": "Growth Engineering: Why Sales Fail Without a Strategic Marketing Framework?",
+          "structure": "The Hook, Diagnosing 'Operational Chaos', The Growth Engineering System, Selling Products vs Solutions, The Closing."
+        },
+        {
+          "service": "CRM System",
+          "title": "Relationship Automation: How CRM Prevents Lost Deals and Turns Customers into Lasting Assets?",
+          "structure": "The Hook, Diagnosing 'Digital Fragmentation', The Automation Engine, Iraqi Market Platform Comparison, The Closing."
+        }
+      ]
+    },
+    "free_materials": {
+      "title": "What will attendees receive?",
+      "subtitle": "Free exclusive material to encourage rapid strategic implementation.",
+      "items": [
+        {
+          "title": "The Webinar Toolkit",
+          "details": [
+            "Ready-to-use Templates: 'Flexible Organizational Chart' or 'Marketing Plan Draft'.",
+            "Cheat Sheets: One-page summaries of complex terminology.",
+            "Mind Maps: Visual roadmaps executing specific projects from A to Z."
+          ]
+        },
+        {
+          "title": "Exclusive Checklists",
+          "details": [
+            "The Digital Transformation Readiness Checklist.",
+            "15 Critical Points to Verify Before Signing a Machinery Supply Contract."
+          ]
+        },
+        {
+          "title": "Flash Data Reports",
+          "details": [
+            "Infographics: 'Iraq Economic Indicators Summary 2025'.",
+            "Quick Comparison Matrices: Comparing top CRM platforms."
+          ]
+        },
+        {
+          "title": "Micro-Consultation",
+          "details": [
+            "The Promise: 'The first 10 registrants will receive a free 15-minute preliminary assessment of their projects after the webinar.'"
+          ]
+        }
+      ]
+    },
+    "cta": {
+      "title": "Your Next Project Deserves Certainty.",
+      "description": "Book your seat in our upcoming webinars and take the first step towards engineering growth for your institution.",
+      "button": "Book a Free Initial Consultation"
+    }
+  },
+  "bi_center": {
+    "hero": {
+      "title": "Business Intelligence Center",
+      "subtitle": "Your Gateway to Real Opportunities in Iraq"
+    },
+    "intro": {
+      "heading": "Business Intelligence & Investment Hub",
+      "paragraphs": [
+        "In a dynamic economic environment like the Iraqi market, guesswork or reliance on superficial information is no longer sufficient. At “Gate of Wisdom Consulting Engineers”, we offer you a comprehensive Business Intelligence Center, designed to provide investors with accurate data, in-depth analysis, and strategic insights that protect capital and ensure sustainable growth.",
+        "This hub is your tool to transition from the 'Investment Gamble' stage to the 'Calculated Decision' stage, and includes specialized modules in Iraq Economic Insights, Iraq Investment Study & International Indicators & Rankings."
+      ]
+    },
+    "categories": [
+      {
+        "title": "Iraq Economic Insights",
+        "slug": "economic-insights",
+        "description": "Deep analytical coverage of Iraq's macroeconomic trends, GDP growth engines, and state fiscal policies.",
+        "icon": "LineChart"
+      },
+      {
+        "title": "Iraq Investment Study",
+        "slug": "investment-study",
+        "description": "Strategic assessments of high-yield sectors, local regulatory frameworks, and market entry roadmaps.",
+        "icon": "Landmark"
+      },
+      {
+        "title": "International Indicators & Rankings",
+        "slug": "international-indicators",
+        "description": "Tracking Iraq's position across global indices including ease of doing business, transparency, and risk metrics.",
+        "icon": "Globe"
+      }
+    ]
   }
 }

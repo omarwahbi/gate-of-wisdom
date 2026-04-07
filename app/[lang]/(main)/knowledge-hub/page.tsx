@@ -53,18 +53,18 @@ export default async function KnowledgeHubPage(props: KnowledgeHubPageProps) {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {hubData.categories.map((cat: any, idx: number) => {
               const Icon = iconMap[cat.icon] || BookOpen;
+              const isReady = cat.slug === 'lectures';
 
-              return (
-                <Link key={idx} href={`/${lang}/knowledge-hub/${cat.slug}`} className="group h-full">
-                  <Card className="h-full border-border hover:border-primary/50 hover:shadow-lg transition-all duration-300 bg-card flex flex-col group-hover:-translate-y-1 relative overflow-hidden">
-                    <div className="absolute top-0 end-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity transform group-hover:scale-110">
-                      <Icon className="w-32 h-32 text-primary" />
+              const CardBody = (
+                  <Card className={cn("h-full border-border transition-all duration-300 flex flex-col relative overflow-hidden group/card", isReady ? "hover:border-primary/50 hover:shadow-lg bg-card hover:-translate-y-1" : "bg-muted/50 cursor-not-allowed")}>
+                    <div className={cn("absolute top-0 end-0 p-6 opacity-5 transition-transform duration-500", isReady ? "group-hover/card:opacity-10 group-hover/card:scale-110" : "")}>
+                      <Icon className={cn("w-32 h-32", isReady ? "text-primary" : "text-muted-foreground")} />
                     </div>
                     <CardHeader className="relative z-10 pb-4">
-                      <div className="h-14 w-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
+                      <div className={cn("h-14 w-14 rounded-2xl flex items-center justify-center mb-6 transition-colors duration-300", isReady ? "bg-primary/10 text-primary group-hover/card:bg-primary group-hover/card:text-primary-foreground" : "bg-secondary text-muted-foreground")}>
                         <Icon className="h-7 w-7" />
                       </div>
-                      <CardTitle className="text-2xl text-foreground font-bold leading-tight group-hover:text-primary transition-colors">
+                      <CardTitle className={cn("text-2xl font-bold leading-tight transition-colors", isReady ? "text-foreground group-hover/card:text-primary" : "text-muted-foreground")}>
                         {cat.title}
                       </CardTitle>
                     </CardHeader>
@@ -73,13 +73,30 @@ export default async function KnowledgeHubPage(props: KnowledgeHubPageProps) {
                         {cat.description}
                       </CardDescription>
                       
-                      <div className="flex items-center text-primary font-semibold text-sm mt-auto capitalize opacity-80 group-hover:opacity-100 transition-opacity pt-4 border-t border-border">
-                         <span className="me-2">{lang === 'ar' ? 'استكشف المزيد' : 'Explore More'}</span>
-                         <ArrowRight className={cn("w-4 h-4 transition-transform duration-300", lang === 'ar' ? 'rotate-180 group-hover:-translate-x-1' : 'group-hover:translate-x-1')} />
+                      <div className="flex items-center font-semibold text-sm mt-auto capitalize pt-4 border-t border-border">
+                         {isReady ? (
+                           <div className="flex items-center text-primary opacity-80 group-hover/card:opacity-100 transition-opacity">
+                             <span className="me-2">{lang === 'ar' ? 'استكشف المزيد' : 'Explore More'}</span>
+                             <ArrowRight className={cn("w-4 h-4 transition-transform duration-300", lang === 'ar' ? 'rotate-180 group-hover/card:-translate-x-1' : 'group-hover/card:translate-x-1')} />
+                           </div>
+                         ) : (
+                           <span className="text-muted-foreground inline-flex items-center gap-2">
+                             {lang === 'ar' ? 'تتوفر قريباً' : 'Coming Soon'}
+                           </span>
+                         )}
                       </div>
                     </CardContent>
                   </Card>
+              );
+
+              return isReady ? (
+                <Link key={idx} href={`/${lang}/knowledge-hub/${cat.slug}`} className="h-full block">
+                  {CardBody}
                 </Link>
+              ) : (
+                <div key={idx} className="h-full relative group">
+                  {CardBody}
+                </div>
               );
             })}
           </div>
