@@ -3,6 +3,7 @@ import { PageHeader } from "@/components/PageHeader";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, Target, Video, Users, BookOpen, Gift, Map, Bookmark, LayoutTemplate, Briefcase, FileText, CheckSquare, BarChart, CalendarClock, Presentation } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { BoldText } from "@/components/BoldText";
 
 interface KnowledgeHubLecturesProps {
   params: Promise<{
@@ -31,7 +32,7 @@ export default async function LecturesPage(props: KnowledgeHubLecturesProps) {
           <div className="space-y-6 mb-16 max-w-4xl text-start">
             {pageData.intro.paragraphs.map((p: string, idx: number) => (
               <p key={idx} className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                {p}
+                <BoldText text={p} />
               </p>
             ))}
           </div>

@@ -1,15 +1,16 @@
 import Link from "next/link";
 import { getDictionary } from "@/lib/get-dictionary";
 import { cn } from "@/lib/utils";
-import { 
-  Briefcase, 
-  LineChart, 
-  Target, 
-  Layers, 
-  Users, 
-  BarChart, 
-  HeartHandshake 
+import {
+  Briefcase,
+  LineChart,
+  Target,
+  Layers,
+  Users,
+  BarChart,
+  HeartHandshake
 } from "lucide-react";
+import { BoldText } from "@/components/BoldText";
 
 interface ServicesPageProps {
   params: Promise<{ lang: "en" | "ar" }>;
@@ -46,7 +47,7 @@ export default async function ServicesPage(props: ServicesPageProps) {
             {services_hub.subtitle}
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-muted-foreground md:text-xl">
-            {services_hub.intro}
+            <BoldText text={services_hub.intro} />
           </p>
         </div>
       </section>

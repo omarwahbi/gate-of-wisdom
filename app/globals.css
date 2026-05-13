@@ -128,4 +128,41 @@
   body {
     @apply bg-background text-foreground;
   }
+  /* All headings bold */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+  }
+  /* Company name bold everywhere */
+  .font-heading {
+    font-weight: 700;
+  }
+  strong, b {
+    font-weight: 700;
+  }
+}
+
+/* Force bold for company names everywhere */
+[data-company-name],
+.company-name {
+  font-weight: 700 !important;
+}
+
+/* Target Arabic company name in content */
+p:has([class*="font-heading"]),
+.font-heading * {
+  font-weight: 700;
+}
+
+/* All card titles, headers bold */
+.card-title,
+[data-slot="card-title"],
+.card-header,
+[data-slot="card-header"] {
+  font-weight: 700;
+}
+
+/* Navigation menu items bold */
+nav a,
+[data-slot="navigation-menu-link"] {
+  font-weight: 700;
 }

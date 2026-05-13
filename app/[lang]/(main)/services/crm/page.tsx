@@ -1,8 +1,9 @@
 import { getDictionary } from "@/lib/get-dictionary";
 import { PageHeader } from "@/components/PageHeader";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Check, Lightbulb, Target, Users, BookOpen, AlertTriangle, Crosshair, Map, Activity, ShieldAlert, Cpu } from "lucide-react";
+import { BoldText } from "@/components/BoldText";
+import { ServiceGiftSection } from "@/components/ServiceGiftSection";
 
 interface ServicePageProps {
   params: Promise<{
@@ -31,7 +32,7 @@ export default async function CRMPage(props: ServicePageProps) {
           <div className="max-w-4xl space-y-6 mb-12">
             {serviceData.intro.paragraphs.map((p: string, idx: number) => (
               <p key={idx} className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                {p}
+                <BoldText text={p} />
               </p>
             ))}
           </div>
@@ -116,13 +117,17 @@ export default async function CRMPage(props: ServicePageProps) {
                 <div className="mb-8 bg-black/15 rounded-2xl p-6 border border-white/5">
                   <p className="font-semibold mb-3 flex items-center gap-2">
                     <AlertTriangle className="h-5 w-5 text-amber-300" />
-                    <span className="opacity-80 uppercase tracking-wider text-sm">The Situation</span>
+                    <span className="opacity-80 uppercase tracking-wider text-sm">
+                      {lang === 'ar' ? 'الحالة' : 'The Situation'}
+                    </span>
                   </p>
                   <p className="text-lg leading-relaxed">{cs.issue}</p>
                 </div>
                 
                 <div className="mb-8 border-s-4 border-white/40 ps-5 py-2">
-                   <strong className="block mb-3 font-medium opacity-80 uppercase tracking-wider text-sm">The Solution & Action</strong>
+                   <strong className="block mb-3 font-medium opacity-80 uppercase tracking-wider text-sm">
+                     {lang === 'ar' ? 'الحل والإجراء' : 'The Solution & Action'}
+                   </strong>
                    {cs.analysis.map((an: string, i: number) => (
                       <p key={i} className="opacity-95 leading-relaxed text-lg">{an}</p>
                    ))}
@@ -131,7 +136,9 @@ export default async function CRMPage(props: ServicePageProps) {
                 <div className="bg-white text-primary rounded-2xl p-6 flex gap-5 w-full text-start items-start shadow-xl shadow-black/10 transition-transform hover:scale-[1.01]">
                   <Lightbulb className="h-10 w-10 flex-shrink-0" />
                   <div>
-                    <strong className="block mb-1 text-sm uppercase tracking-wider text-muted-foreground">The Lesson</strong>
+                    <strong className="block mb-1 text-sm uppercase tracking-wider text-muted-foreground">
+                      {lang === 'ar' ? 'الدرس المستفاد' : 'The Lesson'}
+                    </strong>
                     <p className="text-xl font-bold leading-relaxed">{cs.lesson}</p>
                   </div>
                 </div>
@@ -180,52 +187,12 @@ export default async function CRMPage(props: ServicePageProps) {
         </div>
       </section>
 
-      {/* 6. CRM System Checklist Table */}
-      <section className="bg-background py-16 md:py-24">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto mb-12 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">{serviceData.checklist.title}</h2>
-          </div>
-          
-          <div className="max-w-4xl mx-auto rounded-xl border border-border overflow-hidden shadow-sm bg-card">
-            <Table>
-              <TableHeader className="bg-muted">
-                <TableRow>
-                  <TableHead className="w-[180px] text-start font-bold uppercase tracking-wider">{serviceData.checklist.headers[0]}</TableHead>
-                  <TableHead className="text-start font-bold uppercase tracking-wider">{serviceData.checklist.headers[1]}</TableHead>
-                  <TableHead className="w-[80px] text-center font-bold uppercase tracking-wider">{serviceData.checklist.headers[2]}</TableHead>
-                  <TableHead className="w-[80px] text-center font-bold uppercase tracking-wider">{serviceData.checklist.headers[3]}</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {serviceData.checklist.items.map((item: any, idx: number) => (
-                  <TableRow key={idx}>
-                    <TableCell className="font-medium text-start align-top border-e">
-                       <span className="inline-flex items-center rounded-md bg-secondary px-2 py-1 text-xs font-medium text-secondary-foreground ring-1 ring-inset ring-secondary-foreground/10">
-                        {item.phase}
-                      </span>
-                    </TableCell>
-                    <TableCell className="text-start text-base border-e font-medium">{item.question}</TableCell>
-                    <TableCell className="text-center align-middle border-e bg-secondary/20">
-                      <div className="mx-auto h-6 w-6 rounded-md border border-input shadow-sm bg-background" />
-                    </TableCell>
-                    <TableCell className="text-center align-middle bg-destructive/5">
-                      <div className="mx-auto h-6 w-6 rounded-md border border-input shadow-sm bg-background" />
-                    </TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </div>
-        </div>
-      </section>
-
-      {/* 7. Consulting Insights (Why CRM Fails) */}
+      {/* 6. Consulting Insights (Why CRM Fails) */}
       <section className="bg-muted py-16 md:py-24 border-y">
         <div className="container mx-auto px-4 max-w-6xl">
            <div className="text-center mb-16">
              <span className="inline-flex items-center gap-2 rounded-full bg-red-100 dark:bg-red-900/30 px-4 py-2 text-sm font-bold tracking-wider uppercase text-red-600 dark:text-red-400 border border-red-200 dark:border-red-900 mb-6">
-                <ShieldAlert className="h-5 w-5" /> Warning Insights
+                <ShieldAlert className="h-5 w-5" /> {lang === 'ar' ? 'رؤى تحذيرية' : 'Warning Insights'}
              </span>
              <h2 className="text-3xl md:text-5xl font-bold mb-4">{serviceData.insights.title}</h2>
              <p className="text-xl text-muted-foreground">{serviceData.insights.subtitle}</p>
@@ -234,7 +201,7 @@ export default async function CRMPage(props: ServicePageProps) {
            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
              {/* Left Column: Reasons for failure */}
              <div className="lg:col-span-4 space-y-6">
-               <h3 className="text-2xl font-bold mb-6 text-foreground flex items-center gap-2"><AlertTriangle className="text-primary w-6 h-6"/> Failure Triggers</h3>
+               <h3 className="text-2xl font-bold mb-6 text-foreground flex items-center gap-2"><AlertTriangle className="text-primary w-6 h-6"/>{lang === 'ar' ? 'محفزات الفشل' : 'Failure Triggers'}</h3>
                {serviceData.insights.failure_reasons.map((reason: any, idx: number) => (
                  <div key={idx} className="bg-card border-s-4 border-s-destructive p-5 rounded-r-xl shadow-sm">
                    <strong className="block text-foreground mb-1">{reason.title}</strong>
@@ -245,7 +212,7 @@ export default async function CRMPage(props: ServicePageProps) {
              
              {/* Middle Column: Visual Real-World Case Examples */}
              <div className="lg:col-span-4 space-y-6">
-               <h3 className="text-2xl font-bold mb-6 text-foreground flex items-center gap-2"><BookOpen className="text-primary w-6 h-6"/> Real Examples</h3>
+               <h3 className="text-2xl font-bold mb-6 text-foreground flex items-center gap-2"><BookOpen className="text-primary w-6 h-6"/>{lang === 'ar' ? 'أمثلة واقعية' : 'Real Examples'}</h3>
                {serviceData.insights.examples.map((ex: any, idx: number) => (
                  <div key={idx} className="bg-secondary/40 border border-border p-6 rounded-xl relative overflow-hidden h-[calc(50%-12px)] flex flex-col justify-center">
                     <div className="absolute top-0 end-0 p-4 opacity-10">
@@ -262,7 +229,7 @@ export default async function CRMPage(props: ServicePageProps) {
                 <div className="bg-primary text-primary-foreground p-8 rounded-2xl h-full shadow-lg relative overflow-hidden">
                    <div className="absolute top-0 end-0 w-32 h-32 bg-white/10 rounded-full blur-2xl transform translate-x-1/2 -translate-y-1/2"></div>
                    <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
-                     <Map className="w-6 h-6" /> Roadmap to Success
+                     <Map className="w-6 h-6" /> {lang === 'ar' ? 'خريطة الطريق للنجاح' : 'Roadmap to Success'}
                    </h3>
                    <ul className="space-y-6">
                      {serviceData.insights.roadmap.map((step: string, idx: number) => (
@@ -280,43 +247,29 @@ export default async function CRMPage(props: ServicePageProps) {
         </div>
       </section>
 
-      {/* 8. Top CRM Platforms Matrix Comparison */}
-      <section className="bg-background py-16 md:py-24">
-        <div className="container mx-auto px-4 max-w-[1200px]">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">{serviceData.comparison.title}</h2>
-          </div>
-          
-          <div className="w-full overflow-x-auto rounded-xl border border-border shadow-md bg-white dark:bg-card">
-            <Table className="w-full min-w-[1000px]">
-              <TableHeader className="bg-primary hover:bg-primary">
-                <TableRow>
-                  <TableHead className="w-[180px] font-bold text-start text-primary-foreground border-e border-primary-foreground/20 sticky start-0 bg-primary z-10">{serviceData.comparison.headers[0]}</TableHead>
-                  {serviceData.comparison.headers.slice(1).map((header: string, i: number) => (
-                    <TableHead key={i} className="font-bold text-start text-primary-foreground border-e border-primary-foreground/20 min-w-[200px]">{header}</TableHead>
-                  ))}
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {serviceData.comparison.items.map((item: any, idx: number) => (
-                  <TableRow key={idx} className="hover:bg-muted/50 transition-colors">
-                    <TableCell className="font-bold text-start align-top border-e bg-muted/40 sticky start-0 z-10">
-                       {item.feature}
-                    </TableCell>
-                    <TableCell className="text-start text-sm border-e p-4 leading-relaxed bg-background">{item.hubspot}</TableCell>
-                    <TableCell className="text-start text-sm border-e p-4 leading-relaxed bg-background">{item.zoho}</TableCell>
-                    <TableCell className="text-start text-sm border-e p-4 leading-relaxed bg-background">{item.salesforce}</TableCell>
-                    <TableCell className="text-start text-sm border-e p-4 leading-relaxed bg-background">{item.dynamics}</TableCell>
-                    <TableCell className="text-start text-sm p-4 leading-relaxed bg-background font-medium text-emerald-700 dark:text-emerald-400">{item.odoo}</TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </div>
-        </div>
-      </section>
+      {/* 7. Gift / Lead Magnet Section */}
+      <ServiceGiftSection
+        lang={lang}
+        giftTitle={{
+          en: "CRM Implementation Guide",
+          ar: "دليل تطبيق إدارة علاقات العملاء"
+        }}
+        giftDescription={{
+          en: "Get Your CRM Implementation Guide.",
+          ar: "احصل على دليل تطبيق إدارة علاقات العملاء."
+        }}
+        useEnvEndpoint={true}
+        emailSubject={{
+          en: "Gate of Wisdom - CRM Implementation Guide",
+          ar: "بوابة الحكمة - دليل تطبيق إدارة علاقات العملاء"
+        }}
+        emailMessage={{
+          en: "Thank you for downloading the CRM Implementation Guide. Please find the attachment below.",
+          ar: "شكراً لتحميلك دليل تطبيق إدارة علاقات العملاء. تجد المرفق أدناه."
+        }}
+      />
 
-      {/* 9. Final Call to Action */}
+      {/* 8. Final Call to Action */}
       <section className="bg-background pb-16 md:pb-24">
         <div className="container mx-auto px-4 text-center max-w-3xl bg-primary text-primary-foreground rounded-3xl p-8 md:p-12 shadow-xl shadow-primary/10 relative overflow-hidden">
           <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay"></div>

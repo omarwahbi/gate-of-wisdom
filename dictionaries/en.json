@@ -13,25 +13,25 @@
   },
   "home": {
     "hero": {
-      "companyName": "GATE OF WISDOM CONSULTING ENGINEERS",
+      "companyName": "**GATE OF WISDOM CONSULTING ENGINEERS**",
       "slogan": "Iraqi Engineering Expertise, Global Solutions"
     },
     "about": {
-      "title": "GATE OF WISDOM CONSULTING ENGINEERS, Iraqi Engineering Expertise, Global Solutions",
+      "title": "**GATE OF WISDOM CONSULTING ENGINEERS**, Iraqi Engineering Expertise, Global Solutions",
       "subtitle": "Establishment",
-      "p1": "“GATE OF WISDOM CONSULTING ENGINEERS”, is an Iraqi Limited Liability Company established in 2024. We don’t start from scratch; we build upon an extensive knowledge, legacy and accumulated scientific expertise in the field of engineering and industrial studies.",
+      "p1": "“**GATE OF WISDOM CONSULTING ENGINEERS**”, is an Iraqi Limited Liability Company established in 2024. We don’t start from scratch; we build upon an extensive knowledge, legacy and accumulated scientific expertise in the field of engineering and industrial studies.",
       "p2": "This heritage stems from a wide network of reputable national and international relationships dating back to 2004.",
       "p3": "Today, we leverage this deep experience to offer our customers a comprehensive suite of innovative, integrated consulting services and solutions. Our mission is to work side-by-side with our customers in both public and private sectors, helping them to make the best investment decisions and execute the most complex projects smoothly and professionally.",
       "p4": "We forge genuine partnerships that share tasks and confront challenges, aiming to redefine excellence within the Iraqi market. The success of our partners is our compass, and their achievement is our true measure of success."
     },
     "vision": {
       "title": "Our Vision: Leading Engineering Consultancy in Iraq & the Region",
-      "p1": "At “GATE OF WISDOM CONSULTING ENGINEERS”, we aspire to be the leading and preferred consulting partner for customers seeking engineering excellence and innovative solutions in Iraq and the broader region.",
+      "p1": "At “**GATE OF WISDOM CONSULTING ENGINEERS**”, we aspire to be the leading and preferred consulting partner for customers seeking engineering excellence and innovative solutions in Iraq and the broader region.",
       "p2": "Our vision goes beyond simply meeting our customers' needs; we aim to exceed their expectations by adhering to the highest international standards of quality and professionalism. We believe that continuous innovation is key to success, so we constantly strive to develop our team's skills and leverage the latest engineering knowledge to deliver tangible added value that boosts our customers' growth and supports the development of our industry towards a sustainable and prosperous future."
     },
     "mission": {
       "title": "Our Mission: Turning Our Clients' Potential into Tangible Success",
-      "p1": "Our mission at “GATE OF WISDOM CONSULTING ENGINEERS”, is to be the most trusted consulting entity in Iraq, committed to providing innovative, results-oriented engineering services and solutions.",
+      "p1": "Our mission at “**GATE OF WISDOM CONSULTING ENGINEERS**”, is to be the most trusted consulting entity in Iraq, committed to providing innovative, results-oriented engineering services and solutions.",
       "p2": "We work closely with individuals and companies to transform the full potential of their projects into concrete achievements. Our goal is to accelerate their business growth and enhance their individual successes, thereby directly contributing to national development programs and bringing prosperity and progress to Iraqi society as a whole."
     },
     "values": {
@@ -61,7 +61,7 @@
   "services_hub": {
     "title": "Our Integrated Consulting Services",
     "subtitle": "Your Compass for Sound Decisions & Tangible Results.",
-    "intro": "At “GATE OF WISDOM CONSULTING ENGINEERS”, we don't just offer advice; we provide a comprehensive suite of innovative solutions designed to help you make sound, informed decisions. Whether you are launching a new venture, planning an expansion of an existing project, or seeking to restructure an underperforming business, our engineering expertise ensures your success. Our key services include:",
+    "intro": "At “**GATE OF WISDOM CONSULTING ENGINEERS**”, we don't just offer advice; we provide a comprehensive suite of innovative solutions designed to help you make sound, informed decisions. Whether you are launching a new venture, planning an expansion of an existing project, or seeking to restructure an underperforming business, our engineering expertise ensures your success. Our key services include:",
     "services": [
       {
         "id": "service-1",
@@ -115,7 +115,7 @@
     "intro": {
       "paragraphs": [
         "The statistics are daunting: many promising ventures fail shortly after launch, not due to lack of funding, but because of poor management and inadequate risk planning.",
-        "At “GATE OF WISDOM CONSULTING ENGINEERS”, we offer more than just guidance; we provide a comprehensive engineering framework for project management that ensures your resources are directed correctly.",
+        "At “**GATE OF WISDOM CONSULTING ENGINEERS**”, we offer more than just guidance; we provide a comprehensive engineering framework for project management that ensures your resources are directed correctly.",
         "We help you execute a step-by-step action plan, from initial planning and performance measurement to proactive risk management. The result? A significant reduction in failure rates and the assurance of achieving desired objectives and profitability, so you can launch your next project with total confidence."
       ],
       "services_intro": "We provide you with our engineering and management expertise to ensure the soundness of your investment decisions through our integrated project management consulting services:",
@@ -254,7 +254,7 @@
     "intro": {
       "paragraphs": [
         "Before entering any market or launching a new product, you need more than just guesswork; you need reliable data.",
-        "At “GATE OF WISDOM CONSULTING ENGINEERS”, we provide you with precise market insights built on a comprehensive analysis of market dynamics, consumer behavior, and competitors.",
+        "At “**GATE OF WISDOM CONSULTING ENGINEERS**”, we provide you with precise market insights built on a comprehensive analysis of market dynamics, consumer behavior, and competitors.",
         "Our mission is to help you uncover hidden opportunities, mitigate risks, and develop effective marketing strategies. The result? You make informed investment decisions, meet your customers' immediate needs, and secure a leadership position in the market."
       ],
       "services_intro": "Our market study services ensure you receive:",
@@ -1287,8 +1287,9 @@
     "intro": {
       "paragraphs": [
         "Are you struggling with the gap between your marketing and sales teams? Do you feel operational chaos is hindering your revenue goals?",
-        "At “GATE OF WISDOM CONSULTING ENGINEERS”, we go beyond academic definitions. Our mission is to align your marketing and sales strategies into one seamless, integrated platform.",
-        "We translate long-term market analysis into effective, short-term sales plans, ensuring every lead is converted into a paying customer. The result? Overcoming operational chaos and achieving tangible, sustainable financial growth for your company."
+        "At \"**GATE OF WISDOM CONSULTING ENGINEERS**\", we go beyond academic definitions. Our mission is to align your marketing and sales strategies into one seamless, integrated platform.",
+        "We translate long-term market analysis into effective, short-term sales plans, ensuring every lead is converted into a paying customer.",
+        "The result? Overcoming operational chaos and achieving tangible, sustainable financial growth for your company."
       ],
       "services_intro": "Our marketing and sales restructuring services ensure you receive:",
       "services": [
@@ -1311,237 +1312,155 @@
       ]
     },
     "target_audience": {
-      "title": "Target Audience & Key Attractors",
+      "title": "Target Audience",
       "subtitle": "Who is this for?",
-      "intro": "Our service is designed for existing companies (production or service), whether actively operating or temporarily paused, that face challenges in market performance, have lost market share, or need to modernize their marketing and sales approaches to fit the modern era and technological tools.",
-      "ideal_audience_intro": "Our ideal audience includes:",
+      "intro": "Our services are designed for:",
+      "ideal_audience_intro": "",
       "audiences": [
         {
+          "title": "Existing companies (production or service), whether actively operating or suspended",
+          "description": ""
+        },
+        {
           "title": "Companies with Traditional Methods",
-          "description": "Those still relying on outdated marketing and sales methods (e.g., print ads only) and need to transition to digital marketing and modern approaches."
+          "description": ""
         },
         {
           "title": "Companies Facing Fierce Competition",
-          "description": "Those that need a precise analysis of competitors' strengths and weaknesses to develop new pricing and differentiation strategies to regain their competitive edge."
+          "description": ""
         },
         {
           "title": "Companies Experiencing Stagnant Sales",
-          "description": "Those that need to diagnose problems and obstacles in their marketing and sales departments and reorganize their structure and plans."
+          "description": ""
         },
         {
           "title": "Companies Seeking to Launch New Products",
-          "description": "Those that need accurate market studies and an effective marketing strategy to ensure a successful launch."
+          "description": ""
         },
         {
           "title": "Company Owners & General Managers",
-          "description": "Leaders seeking solutions to increase revenues and profits and ensure the company's sustainable growth."
+          "description": ""
         },
         {
           "title": "Current Sales & Marketing Managers",
-          "description": "Those who may be burdened by daily operations and need external strategic support to restructure departments and define new Performance Indicators (KPIs)."
+          "description": ""
         },
         {
           "title": "Business Development Managers",
-          "description": "Those seeking new insights into the market and future demand to identify expansion opportunities."
+          "description": ""
         }
       ]
     },
     "cases": {
-      "title": "Strategic Insights: Pioneering Lessons from the Middle East",
-      "subtitle": "Real-World Stories: Evidence that embodies the transition of strategy from paper to the field.",
+      "title": "Real-World Stories: Regional Successes & Strategic Insights",
+      "subtitle": "Case studies from the Middle East",
       "items": [
         {
-          "title": "Edita Food Industries:",
-          "subtitle": "The Power of Demand-Creation Marketing (Escaping the Price Trap)",
+          "title": "Edita Food Industries",
+          "subtitle": "The Power of Demand-Creation Marketing – Differentiating from Commodities",
           "issue": "The regional snacks market was overcrowded with generic, low-price products, leading to thin profit margins for all players.",
           "analysis": [
             "Instead of joining a 'Price War', the company invested in Brand Engineering. They launched premium products (like Molto and Todo) and focused their marketing on 'Quality and Social Status.'"
           ],
-          "lesson": "Consumers began asking for products by name and strictly paying 30% more. Sales close the deal, but Marketing elevates the product’s value in the customer's mind."
+          "lesson": "Consumers began asking for products by name and were willing to pay 30% more than competitors' items, transforming Edita into a regional giant.",
+          "sources": [
+            "Forbes Middle East: Edita captured over 60% market share by transforming basic commodities into high-value brands like Molto through emotional branding.",
+            "EFG Hermes Research: Edita maintains high sales volumes even at 30% premium pricing due to superior brand equity.",
+            "AUC Case Studies: Edita is studied as a model for 'Category Creation' - creating perceived need for premium packaged snacks."
+          ]
         },
         {
-          "title": "Noon:",
-          "subtitle": "Aligning Marketing with Local Culture (Cultural Intelligence)",
-          "issue": "When 'Noon' entered the market to compete with global giants like Amazon, the challenge was: How to attract the Arab shopper who prioritizes trust and a localized touch?",
+          "title": "Noon",
+          "subtitle": "Aligning Marketing with Local Culture – Strategic Alignment",
+          "issue": "When Noon entered the market to compete with global giants like Amazon, the challenge was: How to attract the Arab shopper who prioritizes trust and a localized touch?",
           "analysis": [
-            "They achieved Strategic Alignment between Sales and Marketing. While Marketing focused on the 'Noon is one of us' slogan, Sales and Logistics operations prioritized 'Cash on Delivery' and easy returns."
+            "They achieved Strategic Alignment between Sales and Marketing. While Marketing focused on the 'Noon is one of us' slogan, Sales and Logistics prioritized 'Cash on Delivery' and easy returns."
           ],
-          "lesson": "Within a few years, Noon captured a massive market share because it didn't just sell 'products'; it sold 'trust and peace of mind'. Smart Marketing transforms a society's cultural nuances into a competitive advantage."
+          "lesson": "Within a few years, Noon captured a massive market share because it sold 'trust and peace of mind' tailored to the Arab consumer.",
+          "sources": [
+            "HBR Arabia: Noon's hyper-localization strategy with Cash on Delivery bypassed trust issues in Middle East e-commerce.",
+            "Financial Times & Bloomberg: Noon's emotional branding with local identity created ownership feeling among Arab consumers.",
+            "MIT Technology Review: Noon solved last-mile delivery in unstructured addressing systems using local market knowledge."
+          ]
         },
         {
-          "title": "Petromin:",
-          "subtitle": "From Selling 'Oils' to 'Maintenance Solutions' (Sales Pipeline Engineering)",
+          "title": "Petromin",
+          "subtitle": "From Selling Oils to Selling Maintenance Solutions – Sales Pipeline & CLV",
           "issue": "Petromin was merely a lubricant supplier for gas stations, facing fierce price competition from international oil companies.",
           "analysis": [
-            "They completely re-engineered their Sales Pipeline. They transitioned from selling a 'product' (oil) to providing a 'service' (Petromin Express rapid maintenance centers)."
+            "They completely re-engineered their Sales Pipeline, transitioning from selling a product (oil) to providing a service (Petromin Express rapid maintenance centers)."
           ],
-          "lesson": "Instead of convincing a customer to buy a bottle of oil once, the customer now returns every 5,000 km for full service, doubling the Customer Lifetime Value (CLV)."
-        }
-      ]
-    },
-    "growth_guide": {
-      "title": "Growth Engineering Guide",
-      "subtitle": "How to Align Marketing & Sales to Multiply Your Profits?",
-      "phases": [
-        {
-          "title": "Strategic Alignment",
-          "points": [
-            {
-              "title": "Role Definition (Unlocking Overlaps)",
-              "desc": "Clarifying roles; Marketing attracts the 'Audience,' while Sales converts them into 'Customers.'"
-            },
-            {
-              "title": "Mapping the Customer Journey",
-              "desc": "Visualizing the path a customer takes from the moment they discover your company until the contract is signed."
-            }
-          ]
-        },
-        {
-          "title": "Building an Effective Sales Pipeline",
-          "points": [
-            {
-              "title": "Product Awareness & Positioning",
-              "desc": "Highlighting the competitive advantages of your engineering product by showcasing the 'Solutions' it provides, rather than just listing technical specifications."
-            },
-            {
-              "title": "Trust & Validation Stage (The Experience)",
-              "desc": "Providing tangible evidence (such as laboratory test reports, warranty certificates, or prototypes) to prove product quality."
-            },
-            {
-              "title": "Purchase Decision & Fulfillment",
-              "desc": "Streamlining the purchasing process and offering compelling commercial proposals, while ensuring smooth after-sales support."
-            }
-          ]
-        },
-        {
-          "title": "Performance Measurement & Relationships",
-          "points": [
-            {
-              "title": "Digital Performance Metrics",
-              "desc": "Measuring Customer Acquisition Cost (CAC) and Customer Lifetime Value (CLV)."
-            },
-            {
-              "title": "Relationship Automation (CRM)",
-              "desc": "How a digital system prevents the loss of 'Sales Opportunities' caused by oversight or neglect."
-            }
+          "lesson": "Instead of convincing a customer to buy oil once, the customer now returns every 5,000 km for full service, doubling Customer Lifetime Value (CLV).",
+          "sources": [
+            "Harvard Business Review: Petromin's shift to customer-centric service provider is a benchmark for escaping commodity price wars.",
+            "Arqam Capital: Express Care model significantly boosted CLV by capturing end-consumers directly at service points.",
+            "Frost & Sullivan: Recognized for market leadership in quick-service industry through service engineering."
           ]
         }
       ]
     },
-    "checklist": {
-      "title": "Growth Engineering Checklist: Is Your Sales System Operating Efficiently?",
-      "headers": [
-        "Phase",
-        "Questions",
-        "Yes",
-        "No"
-      ],
-      "items": [
-        {
-          "phase": "Strategic Alignment",
-          "question": "Do you have a precise definition of your \"Ideal Customer Profile\", or are you targeting everyone?"
-        },
-        {
-          "phase": "Strategic Alignment",
-          "question": "Are Marketing and Sales roles overlapping in your company, causing accountability gaps?"
-        },
-        {
-          "phase": "Strategic Alignment",
-          "question": "Does your marketing message focus on \"Solving Customer Pains\" or just listing technical specs?"
-        },
-        {
-          "phase": "Sales Pipeline",
-          "question": "Do you have a clear, documented path for customers to follow from awareness to contract?"
-        },
-        {
-          "phase": "Sales Pipeline",
-          "question": "Do you provide tangible proof (test reports, warranties) to convince customers of your quality?"
-        },
-        {
-          "phase": "Sales Pipeline",
-          "question": "Is your purchasing and delivery process simple and fast, or is it hindered by bureaucracy?"
-        },
-        {
-          "phase": "Performance & CRM",
-          "question": "Do you know your exact Customer Acquisition Cost (CAC) and is it economically viable?"
-        },
-        {
-          "phase": "Performance & CRM",
-          "question": "Do you utilize a CRM system to ensure no leads are forgotten or neglected?"
-        },
-        {
-          "phase": "Performance & CRM",
-          "question": "Do you have accurate data on the long-term value each customer brings to your business?"
-        }
-      ]
-    },
-    "comparison": {
-      "title": "Beyond Operational Chaos: Key Differences Between Marketing & Sales",
-      "headers": [
-        "Feature",
-        "Marketing",
-        "Sales"
-      ],
-      "items": [
-        {
-          "feature": "Mission",
-          "marketing": "Creating 'Desire' and building brand awareness in the market.",
-          "sales": "Converting 'Desire' into 'Contracts' and actual revenue."
-        },
-        {
-          "feature": "Goal",
-          "marketing": "Long-term: Market share acquisition and sustainable reputation.",
-          "sales": "Short-term: Meeting sales targets and closing deals."
-        },
-        {
-          "feature": "Focus",
-          "marketing": "Focuses on the 'Audience' and their future needs.",
-          "sales": "Focuses on the 'Individual Customer' and current needs."
-        },
-        {
-          "feature": "Mechanism",
-          "marketing": "Market research, branding, content creation, and PR.",
-          "sales": "Direct communication, negotiation, and closing techniques."
-        },
-        {
-          "feature": "Output",
-          "marketing": "Qualified Leads: People interested in your services.",
-          "sales": "Closed Deals: Legally signed and active partnerships."
-        },
-        {
-          "feature": "Customer Relation",
-          "marketing": "One-to-Many (Indirect).",
-          "sales": "One-to-One (Direct & Personal)."
-        }
-      ]
-    },
-    "food_case": {
-      "title": "Survival Tomorrow: The Story of a Successful Food Industry Company",
-      "subtitle": "Operating Without Marketing - When Sales Generate Income Today, but Marketing Guarantees Survival Tomorrow.",
-      "sections": [
-        {
-          "title": "The Case",
-          "content": "A local food production company boasted that 'sales are excellent, and we don't need marketing.' However, a precise diagnosis revealed a bitter truth: the company was operating on an 'Order-Taking' model rather than a 'Demand-Creation' strategy. When an international competitor entered the market with a marketing campaign focused on (Health & Quality), the company lost 40% of its market share in just 3 months."
-        },
-        {
-          "title": "Why do these companies believe marketing is unnecessary?",
-          "content": "Due to Short-sighted Vision (focusing solely on clearing inventory and collecting daily cash flow) and Conceptual Confusion (viewing marketing as merely ads and extra expenses as long as wholesalers are still placing orders)."
-        },
-        {
-          "title": "The Repercussions (Behind the Scenes)",
-          "content": "Dependency on Wholesaler Power: Without a strong 'Brand' that consumers ask for by name, the factory is at the mercy of wholesalers. If a trader introduces a cheaper competitor, operations could halt immediately. Lack of Loyalty: Customers buy the product because it is 'available', not because they 'trust' the brand."
-        },
-        {
-          "title": "The Losses & Inevitable Fate",
-          "content": "Erosion of Profit Margins to Price Wars, and Missed Expansion Opportunities. The product becomes a generic 'commodity' without an identity. The Moment a Marketing-Savvy competitor enters, the factory loses its position rapidly."
-        }
-      ],
-      "lesson": "If you don't build a Brand that consumers ask for by name, you don't own a market; you own a warehouse waiting for a buyer."
-    },
-    "cta": {
-      "title": "Your Next Project Deserves Certainty.",
-      "description": "Our services do not end with the delivery of a study. We don't just hand you a report and leave; instead, we conduct a (Final Simulation Session) with you to discuss all financial and technical scenarios, ensuring you understand exactly where every Dinar will be spent and how it will return.",
-      "button": "Book a Free Initial Consultation"
+    "additional_cases": [
+      {
+        "title": "The Pure Platform Experience",
+        "subtitle": "When Misleading Marketing Kills the Brand",
+        "case": "The company started as a network marketing platform in Iraq, based on user subscriptions in exchange for fees to obtain discounts or profits by recruiting new members.",
+        "failure_points": [
+          "Unsustainable Business Model (Pyramid Scheme Trap): Relied on attracting new subscribers instead of selling real value.",
+          "Exaggerated Marketing Promises: Promised astronomical and rapid profits, attracting quick-wealth seekers.",
+          "Loss of Legal and Financial Credibility: Faced prosecution from Central Bank of Iraq and Fahas platform.",
+          "The Collapse: Platform ceased operations, thousands lost money, became a major public scandal."
+        ],
+        "summary": "The company launched with massive marketing momentum but collapsed due to absence of real product and reliance on recruitment rather than value creation.",
+        "lesson": "Marketing does not mean visual deception or glittering promises. A successful sales strategy builds sustainable trust and relies on products that meet actual market needs. Marketing without economic and legal feasibility is a bubble destined to burst.",
+        "sources": [
+          {
+            "name": "Central Bank of Iraq (CBI)",
+            "description": "Issued multiple warnings against unlicensed electronic trading platforms operating outside Iraqi financial law."
+          },
+          {
+            "name": "Iraq Securities Commission (ISC)",
+            "description": "Renewed warnings against unlicensed investment firms targeting individuals via social media."
+          },
+          {
+            "name": "Media Reports (2025)",
+            "description": "Documented arrest of Pure Platform's owner following financial fraud allegations."
+          },
+          {
+            "name": "FTC Global Standards",
+            "description": "International guidelines distinguish legal Direct Selling from illegal Pyramid Schemes based on real product value."
+          }
+        ]
+      },
+      {
+        "title": "Excellent National Products vs Inferior Imports",
+        "subtitle": "The Value of Brand in the Customer's Mind",
+        "case": "An Iraqi factory produces high-quality office furniture at competitive prices, but lacks any marketing strategy - no brand identity, no advertising, no professional packaging.",
+        "failure_points": [],
+        "summary": "While the local factory suffers from sales stagnation, the market is flooded with imported products (Turkey, China, Iran) with lower quality but attractive packaging, strong marketing, and known brand names. Iraqi consumers prefer imported products with reputation over unknown local products.",
+        "lesson": "Quality is fundamental, but Smart Marketing elevates product value in the customer's mind. An unknown product (even if superior) does not sell. Marketing transforms your product from an unknown commodity into a trusted brand.",
+        "sources": [
+          {
+            "name": "Iraq Ministry of Planning",
+            "description": "Local factories without specialized marketing departments suffer 40% warehouse overstocking despite product quality."
+          },
+          {
+            "name": "Consumer Psychology Research",
+            "description": "Consumers associate packaging quality and brand strength with internal product quality."
+          },
+          {
+            "name": "Silent Product Syndrome",
+            "description": "High-quality unbranded goods remain invisible without strategic sales funnel and digital presence."
+          }
+        ]
+      }
+    ],
+    "gift": {
+      "title": "Master the Tools of Success Today",
+      "title_ar": "امتلك أدوات النجاح الآن",
+      "description": "Download Your Exclusive, Free \"Gate of Wisdom\" Gift Now: Get Your Growth Engineering Checklist.",
+      "description_ar": "حمّل \"هدية **بوابة الحكمة**\" الحصرية المجانية القابلة للتنزيل الآن: احصل على قائمة تدقيق هندسة النمو.",
+      "button": "Download Growth Engineering Checklist",
+      "button_ar": "حمّل قائمة تدقيق هندسة النمو"
     }
   },
   "crm": {
@@ -1872,7 +1791,7 @@
     },
     "intro": {
       "paragraphs": [
-        "At “GATE OF WISDOM CONSULTING ENGINEERS”, we believe in sharing knowledge as a first step towards building successful partnerships.",
+        "At “**GATE OF WISDOM CONSULTING ENGINEERS**”, we believe in sharing knowledge as a first step towards building successful partnerships.",
         "Our lectures/webinars section is designed to be your primary source for valuable, free information on the latest challenges and opportunities in the business and engineering world.",
         "Join our experts in live online sessions where we deliver strategic insights, lessons learned, and initial tools on vital topics such as project management, performance efficiency, and market strategies.",
         "The result? You gain a deeper understanding of your area of interest, receive free downloadable materials, and most importantly: build the confidence and knowledge needed to make informed business decisions."
@@ -2064,5 +1983,318 @@
         "icon": "Globe"
       }
     ]
+  },
+  "economic_insights": {
+    "hero": {
+      "title": "Economic Studies of Iraq",
+      "subtitle": "The Economic Environment in Iraq: Reliable Data, Deep Investment Insights"
+    },
+    "intro": {
+      "paragraphs": [
+        "Investing in Iraq requires more than just reading general statistics; it demands a precise understanding of the complex economic landscape.",
+        "At “**GATE OF WISDOM CONSULTING ENGINEERS**”, we provide you with a comprehensive analysis of the Iraqi economy's pillars (GDP, inflation, currency reserves), backed by reliable and up-to-date data sources.",
+        "Our mission is to translate this data into clear, strategic insights that help you make sound decisions. The result? You make informed investment choices, mitigate risks, and ensure your projects move forward with total confidence."
+      ],
+      "axes_title": "We provide you with comprehensive economic analyses covering all key axes:",
+      "axes_note": "Note: These are classified into main axes. Clicking on any axis details its topics. Request full details today!",
+      "axes": [
+        {
+          "title": "Macroeconomic Indicators",
+          "description": "Analysis of GDP (Gross Domestic Product), inflation, public debt, and interest rates."
+        },
+        {
+          "title": "Resources & Wealth",
+          "description": "Evaluation of natural resources, energy, agriculture, water resources, and fossil fuels."
+        },
+        {
+          "title": "Financial & Labor Market",
+          "description": "Studies on the banking sector, labor market, unemployment rates, wages, and cost of living."
+        },
+        {
+          "title": "Trade & Imports",
+          "description": "Analysis of the trade balance, exports, imports, and recommendations from international institutions like the IMF."
+        }
+      ]
+    },
+    "target_audience": {
+      "title": "Target Audience & Key Attractors",
+      "subtitle": "Who is this for?",
+      "intro": "Our service is designed for corporations, strategic investors, government bodies, and international organizations that require reliable and up-to-date macroeconomic data to make long-term investment decisions or impactful policy choices.",
+      "ideal_audience_intro": "Our ideal audience includes:",
+      "audiences": [
+        {
+          "title": "Investment Firms & Sovereign Wealth Funds",
+          "description": "Entities requiring a comprehensive assessment of economic risks and investment opportunities in the country before injecting massive investments."
+        },
+        {
+          "title": "Multinational Corporations (MNCs)",
+          "description": "Companies considering entering or expanding within the local market, needing a deep understanding of the economic environment, workforce, tax regulations, and customs."
+        },
+        {
+          "title": "Banks & Financial Institutions",
+          "description": "Organizations requiring a precise analysis of the banking sector, interest rates, inflation, and monetary reserves to manage their financial portfolios and grant loans."
+        },
+        {
+          "title": "Executives & Investment Managers",
+          "description": "Leaders seeking basic figures and economic forecasts for the coming years to determine the company's strategic direction."
+        },
+        {
+          "title": "Management & Government Consultants",
+          "description": "Professionals who need comprehensive and reliable data to support their recommendations to senior management or government entities."
+        },
+        {
+          "title": "Strategic Planning Teams",
+          "description": "Teams in major corporations that use this data to build forecasting models and plan long-term budgets."
+        }
+      ]
+    },
+    "free_materials": {
+      "title": "Iraq's Economic Environment Data Hub",
+      "subtitle": "Expand your business insights with reliable data. Download our free intelligence drops.",
+      "items": [
+        {
+          "title": "The Impact of Macroeconomics",
+          "details": [
+            "An executive report highlighting the key pillars of the Iraqi economy and how they affect your direct investment strategy."
+          ]
+        },
+        {
+          "title": "Iraqi Economic Data Center",
+          "details": [
+            "Instant and free access to the latest critical statistics including GDP, foreign exchange reserves, and inflation trackers."
+          ]
+        },
+        {
+          "title": "Analytical Summary Request",
+          "details": [
+            "Fill out the secure form today and receive a detailed, bespoke analytical summary of key economic indicators affecting your specific sector."
+          ]
+        },
+        {
+          "title": "Initial Strategic Consultation",
+          "details": [
+            "Book your free initial consultation today to discuss the current economic landscape and its direct operational impact on your company."
+          ]
+        }
+      ]
+    },
+    "related_links": {
+      "title": "Related & Supporting Services",
+      "links": [
+        {
+          "title": "Official Government Reports & Indices",
+          "href": "#"
+        },
+        {
+          "title": "Market Study Service",
+          "href": "/en/services/market-studies"
+        },
+        {
+          "title": "Feasibility Studies Service",
+          "href": "/en/services/feasibility-studies"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Make Your Investment Decision Based on Certainty",
+      "description": "We don't just provide data and information; we offer strategic analysis and a roadmap that ensures legal compliance and protects your capital from market volatility. Our team is ready to engineer the optimal investment opportunity for you within Iraq's promising environment.",
+      "button": "Download the Full Report Now"
+    }
+  },
+  "investment_study": {
+    "hero": {
+      "title": "Investment Studies in Iraq",
+      "subtitle": "The Investment Environment in Iraq: Your Gateway to Promising Opportunities & a Prosperous Future"
+    },
+    "intro": {
+      "paragraphs": [
+        "Iraq is currently considered one of the most attractive emerging markets in the region, brimming with immense investment opportunities across diverse sectors such as energy, infrastructure, and industry.",
+        "At “**GATE OF WISDOM CONSULTING ENGINEERS**”, we provide you with deep analytical insights and a clear roadmap for the Iraqi investment landscape. We go beyond surface-level data to offer a comprehensive analysis of risks, latent opportunities, and the legal framework.",
+        "The result? We take calculated steps with you to ensure secure and profitable investments, translating the Iraqi market's potential into tangible financial success for your company. Start your secure investment journey today."
+      ],
+      "axes_title": "Our investment studies services ensure you receive:",
+      "axes_note": "Classified into Core Pillars. Discover actionable intelligence tailored for your sector.",
+      "axes": [
+        {
+          "title": "Analysis of Investment Indicators",
+          "description": "A comprehensive evaluation of basic investment indicators in Iraq including land, natural resources, human resources, and available capital."
+        },
+        {
+          "title": "Understanding Laws & Legislation",
+          "description": "An accurate analysis of attractive investment laws, tax exemptions, privileges, and administrative facilities for granting investment licenses."
+        },
+        {
+          "title": "Comprehensive Environment Assessment",
+          "description": "An in-depth study of the foreign investor's view according to global standards: transparency, infrastructure, banking, credit rating, and IP protection."
+        },
+        {
+          "title": "Analysis of Investment Results",
+          "description": "Analysis of previous investment outcomes in Iraq, completed projects, geographical/sectoral distribution, and public-private partnerships (PPP)."
+        }
+      ]
+    },
+    "target_audience": {
+      "title": "Target Audience & Key Attractors",
+      "subtitle": "Who is this for?",
+      "intro": "Designed for potential investors, financial institutions, government bodies, and multinational corporations that require a comprehensive and reliable assessment of the country's investment environment to make major strategic decisions.",
+      "ideal_audience_intro": "Our ideal audience includes:",
+      "audiences": [
+        {
+          "title": "New Foreign Investors",
+          "description": "Those lacking deep local knowledge who require a comprehensive report on laws, exemptions, and country credit ratings before market entry."
+        },
+        {
+          "title": "Local Companies Seeking Expansion",
+          "description": "Entities requiring detailed analysis of available opportunities, resources, and the qualified workforce to make expansion decisions."
+        },
+        {
+          "title": "Financial Institutions & Banks",
+          "description": "Organizations needing to evaluate the overall investment climate and associated risks for major project financing."
+        },
+        {
+          "title": "Government Entities",
+          "description": "Agencies aiming to assess efforts in attracting investment and identify weaknesses in the local investment environment."
+        },
+        {
+          "title": "Capitals Owners & Executives",
+          "description": "Leaders seeking basic figures and critical indicators to support major long-term investment decisions."
+        },
+        {
+          "title": "Investment Managers & Planners",
+          "description": "Professionals needing detailed data on laws, operational infrastructure, and protection systems."
+        },
+        {
+          "title": "Legal & Financial Advisors",
+          "description": "Experts requiring up-to-date information on local company laws, taxes, customs, and commercial arbitration systems."
+        }
+      ]
+    },
+    "free_materials": {
+      "title": "Investment Data & Insights Hub",
+      "subtitle": "Download exclusive intellectual resources to decode the Iraqi investment landscape.",
+      "items": [
+        {
+          "title": "Investment Outcomes Insight",
+          "details": [
+            "An Analytical Insight into Iraq’s Investment Outcomes Over the Past Two Decades: Critical Lessons Learned for Your Future Decisions."
+          ]
+        },
+        {
+          "title": "Sector Opportunity Analysis",
+          "details": [
+            "Uncover Promising Investment Opportunities in Iraq: A Comprehensive Analysis of the Fastest-Growing & Most Attractive Sectors."
+          ]
+        },
+        {
+          "title": "Target Sector Assessment",
+          "details": [
+            "Your Gateway to Secure Investment: Fill Out the Form Today for a Free Initial Assessment of Your Target Sector's Investment Environment."
+          ]
+        },
+        {
+          "title": "Strategic Micro-Consultation",
+          "details": [
+            "Start with Confidence: Book Your Free Initial Consultation and Our Expert Will Discuss the Available Investment Opportunities with You."
+          ]
+        }
+      ]
+    },
+    "related_links": {
+      "title": "Related & Supporting Services",
+      "links": [
+        {
+          "title": "Legislation Library",
+          "href": "/en/legislation-library"
+        },
+        {
+          "title": "Project Management Service",
+          "href": "/en/services/project-management"
+        },
+        {
+          "title": "Human Resources Service",
+          "href": "/en/services/human-resources"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Make Your Investment Decision Based on Certainty",
+      "description": "We don't just provide data and information; we offer strategic analysis and a roadmap that ensures legal compliance and protects your capital from market volatility. Our team is ready to engineer the optimal investment opportunity for you within Iraq's promising environment.",
+      "button": "Download the Full Report Now"
+    }
+  },
+  "legislation_library": {
+    "hero": {
+      "title": "Legal & Regulatory Library",
+      "subtitle": "Your Trusted Reference for the Iraqi Business Environment"
+    },
+    "intro": {
+      "heading": "مكتبة القوانين والتشريعات: مرجعك الموثوق لبيئة الأعمال في العراق",
+      "heading_en": "Legal & Regulatory Library: Your Trusted Reference for the Iraqi Business Environment",
+      "paragraphs": [
+        "At \"Gate of Wisdom Consulting Engineers\", we understand that legal compliance and a deep grasp of official indicators are the safety valves for any successful investment.",
+        "At \"Gate of Wisdom Consulting Engineers\", we have curated this comprehensive digital library to serve as a compass for investors and decision-makers in tracking legislative and economic shifts in Iraq.",
+        "Our content is organized into three strategic pillars:"
+      ]
+    },
+    "categories": [
+      {
+        "icon": "BookOpen",
+        "title": "Laws & Regulations",
+        "title_ar": "القوانين والتشريعات",
+        "description": "Access the latest laws and regulations in our comprehensive library.",
+        "description_ar": "اطلع على أحدث القوانين والتشريعات في مكتبتنا.",
+        "slug": "laws-regulations",
+        "isReady": true
+      },
+      {
+        "icon": "LineChart",
+        "title": "Statistics & National Reports",
+        "title_ar": "الإحصائيات والتقارير الوطنية",
+        "description": "Explore the latest national statistics and reports in our library.",
+        "description_ar": "اطلع على أحدث الإحصائيات والتقارير الوطنية في مكتبتنا.",
+        "slug": "statistics-reports",
+        "isReady": true
+      },
+      {
+        "icon": "Globe",
+        "title": "Real-World Stories",
+        "title_ar": "قصص من واقعنا",
+        "description": "Regional successes and strategic insights from the field.",
+        "description_ar": "تجارب إقليمية ورؤى استراتيجية.",
+        "slug": "real-world-stories",
+        "isReady": false
+      }
+    ]
+  },
+  "footer": {
+    "newsletter": {
+      "title": "Stay Informed",
+      "description": "Subscribe to our newsletter to receive the latest insights, news, and updates from Gate of Wisdom Consulting Engineers.",
+      "placeholder": "Enter your email address",
+      "button": "Subscribe"
+    },
+    "about": {
+      "title": "Gate of Wisdom",
+      "description": "Consolidated Engineering & Management Services providing expert consulting with a vision for excellence and innovation across the region."
+    },
+    "quickLinks": {
+      "title": "Services",
+      "resources": "Resources"
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "King Fahd Road, Al Olaya District\nRiyadh 12211, Saudi Arabia",
+      "phone": "+966 11 234 5678",
+      "email": "info@gow.com.sa"
+    },
+    "legal": {
+      "copyright": "Gate of Wisdom Consulting Engineers. All rights reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
+    "social": {
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn"
+    }
   }
 }

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import { BoldText } from "@/components/BoldText";
 
 interface PageHeaderProps {
   title: string;
@@ -26,11 +27,11 @@ export function PageHeader({ title, description, bgImageUrl, className }: PageHe
       {/* Content */}
       <div className="relative z-20 max-w-4xl px-4 py-12">
         <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4">
-          {title}
+          <BoldText text={title} />
         </h1>
         {description && (
           <p className="text-lg text-zinc-200 sm:text-xl max-w-2xl mx-auto">
-            {description}
+            <BoldText text={description} />
           </p>
         )}
       </div>

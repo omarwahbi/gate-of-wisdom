@@ -15,9 +15,9 @@ export default async function MainLayout({
 
   return (
     <div className="flex flex-col min-h-screen">
-      <Navbar lang={lang} dictionary={dictionary} />
+      <Navbar lang={lang as "en" | "ar"} dictionary={dictionary} />
       <main className="flex-grow">{children}</main>
-      <Footer lang={lang} dictionary={dictionary} />
+      <Footer lang={lang as "en" | "ar"} dictionary={dictionary} />
     </div>
   );
 }

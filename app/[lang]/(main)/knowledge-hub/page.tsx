@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Video, BookOpen, Users, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { BoldText } from "@/components/BoldText";
 
 interface KnowledgeHubPageProps {
   params: Promise<{
@@ -41,7 +42,7 @@ export default async function KnowledgeHubPage(props: KnowledgeHubPageProps) {
           </h2>
           {hubData.intro.paragraphs.map((p: string, idx: number) => (
             <p key={idx} className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              {p}
+              <BoldText text={p} />
             </p>
           ))}
         </div>

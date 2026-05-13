@@ -1,8 +1,9 @@
 import { getDictionary } from "@/lib/get-dictionary";
 import { PageHeader } from "@/components/PageHeader";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Check, Briefcase, Lightbulb, Activity, Layers, Goal, Rocket, Users, Target, AlertTriangle } from "lucide-react";
+import { BoldText } from "@/components/BoldText";
+import { ServiceGiftSection } from "@/components/ServiceGiftSection";
 
 interface ServicePageProps {
   params: Promise<{
@@ -30,7 +31,7 @@ export default async function MarketStudiesPage(props: ServicePageProps) {
         <div className="container mx-auto px-4 max-w-4xl space-y-8">
           {market_studies.intro.paragraphs.map((p: string, idx: number) => (
             <p key={idx} className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              {p}
+              <BoldText text={p} />
             </p>
           ))}
           
@@ -106,7 +107,7 @@ export default async function MarketStudiesPage(props: ServicePageProps) {
                 <div className="mb-6">
                   <p className="font-semibold mb-2 flex items-center gap-2">
                     <AlertTriangle className="h-5 w-5 text-amber-300" />
-                    <span className="opacity-80 uppercase tracking-wider text-xs">Issue / Situation</span>
+                    <span className="opacity-80 uppercase tracking-wider text-xs">{lang === 'ar' ? 'المشكلة / الحالة' : 'Issue / Situation'}</span>
                   </p>
                   <p className="text-lg leading-relaxed">{cs.issue}</p>
                   
@@ -122,7 +123,9 @@ export default async function MarketStudiesPage(props: ServicePageProps) {
                 <div className="bg-primary-foreground text-primary rounded-xl p-6 mt-6 flex gap-4">
                   <Lightbulb className="h-8 w-8 flex-shrink-0" />
                   <div>
-                    <strong className="block mb-1 text-sm uppercase tracking-wide">The Lesson</strong>
+                    <strong className="block mb-1 text-sm uppercase tracking-wide">
+                      {lang === 'ar' ? 'الدرس المستفاد' : 'The Lesson'}
+                    </strong>
                     <p className="text-lg font-medium leading-relaxed">{cs.lesson}</p>
                   </div>
                 </div>
@@ -132,47 +135,7 @@ export default async function MarketStudiesPage(props: ServicePageProps) {
         </div>
       </section>
 
-      {/* 5. Checklist Table */}
-      <section className="bg-background py-16 md:py-24">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">{market_studies.checklist.title}</h2>
-          </div>
-          
-          <div className="max-w-5xl mx-auto rounded-xl border overflow-hidden shadow-sm">
-            <Table>
-              <TableHeader className="bg-muted">
-                <TableRow>
-                  <TableHead className="w-[200px] text-start font-bold uppercase tracking-wider">{market_studies.checklist.headers[0]}</TableHead>
-                  <TableHead className="text-start font-bold uppercase tracking-wider">{market_studies.checklist.headers[1]}</TableHead>
-                  <TableHead className="w-[100px] text-center font-bold uppercase tracking-wider">{market_studies.checklist.headers[2]}</TableHead>
-                  <TableHead className="w-[100px] text-center font-bold uppercase tracking-wider">{market_studies.checklist.headers[3]}</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {market_studies.checklist.items.map((item: any, idx: number) => (
-                  <TableRow key={idx}>
-                    <TableCell className="font-medium text-start align-top">
-                      <span className="inline-flex items-center rounded-md bg-secondary px-2 py-1 text-xs font-medium text-secondary-foreground ring-1 ring-inset ring-secondary-foreground/10">
-                        {item.phase}
-                      </span>
-                    </TableCell>
-                    <TableCell className="text-start text-base">{item.question}</TableCell>
-                    <TableCell className="text-center align-middle">
-                      <div className="mx-auto h-6 w-6 rounded-md border border-input shadow-sm" />
-                    </TableCell>
-                    <TableCell className="text-center align-middle">
-                      <div className="mx-auto h-6 w-6 rounded-md border border-input shadow-sm" />
-                    </TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </div>
-        </div>
-      </section>
-
-      {/* 6. Market Entry Guide */}
+      {/* 5. Market Entry Guide */}
       <section className="bg-muted py-16 md:py-24">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="mb-12 text-center text-balance max-w-3xl mx-auto">
@@ -207,6 +170,28 @@ export default async function MarketStudiesPage(props: ServicePageProps) {
           </div>
         </div>
       </section>
+
+      {/* 6. Gift / Lead Magnet Section */}
+      <ServiceGiftSection
+        lang={lang}
+        giftTitle={{
+          en: "Market Entry Strategy Checklist",
+          ar: "قائمة تدقيق استراتيجية دخول السوق"
+        }}
+        giftDescription={{
+          en: "Get Your Market Entry Strategy Checklist.",
+          ar: "احصل على قائمة تدقيق استراتيجية دخول السوق."
+        }}
+        useEnvEndpoint={true}
+        emailSubject={{
+          en: "Gate of Wisdom - Market Entry Strategy Checklist",
+          ar: "بوابة الحكمة - قائمة تدقيق استراتيجية دخول السوق"
+        }}
+        emailMessage={{
+          en: "Thank you for downloading the Market Entry Strategy Checklist. Please find the attachment below.",
+          ar: "شكراً لتحميلك قائمة تدقيق استراتيجية دخول السوق. تجد المرفق أدناه."
+        }}
+      />
 
       {/* 7. Final Call to Action */}
       <section className="bg-background py-16 md:py-24 border-t">

@@ -1,8 +1,9 @@
 import { getDictionary } from "@/lib/get-dictionary";
 import { PageHeader } from "@/components/PageHeader";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Check, Lightbulb, AlertTriangle, Users, BookOpen, CloudDownload, FileText, Target, HelpCircle, Briefcase, Building } from "lucide-react";
+import { BoldText } from "@/components/BoldText";
+import { ServiceGiftSection } from "@/components/ServiceGiftSection";
 
 interface ServicePageProps {
   params: Promise<{
@@ -30,7 +31,7 @@ export default async function HumanResourcesPage(props: ServicePageProps) {
         <div className="container mx-auto px-4 max-w-4xl space-y-8">
           {serviceData.intro.paragraphs.map((p: string, idx: number) => (
             <p key={idx} className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              {p}
+              <BoldText text={p} />
             </p>
           ))}
           
@@ -106,7 +107,7 @@ export default async function HumanResourcesPage(props: ServicePageProps) {
                 <div className="mb-6">
                   <p className="font-semibold mb-2 flex items-center gap-2">
                     <AlertTriangle className="h-5 w-5 text-amber-300" />
-                    <span className="opacity-80 uppercase tracking-wider text-xs">Situation / Issue</span>
+                    <span className="opacity-80 uppercase tracking-wider text-xs">{lang === 'ar' ? 'الحالة / المشكلة' : 'Situation / Issue'}</span>
                   </p>
                   <p className="text-lg leading-relaxed">{cs.issue}</p>
                   
@@ -122,7 +123,7 @@ export default async function HumanResourcesPage(props: ServicePageProps) {
                 <div className="bg-primary-foreground text-primary rounded-xl p-6 mt-6 flex gap-4 w-full text-start items-start">
                   <Lightbulb className="h-8 w-8 flex-shrink-0" />
                   <div>
-                    <strong className="block mb-1 text-sm uppercase tracking-wide">The Lesson</strong>
+                    <strong className="block mb-1 text-sm uppercase tracking-wide">{lang === 'ar' ? 'الدرس المستفاد' : 'The Lesson'}</strong>
                     <p className="text-lg font-medium leading-relaxed">{cs.lesson}</p>
                   </div>
                 </div>
@@ -170,47 +171,7 @@ export default async function HumanResourcesPage(props: ServicePageProps) {
         </div>
       </section>
 
-      {/* 6. HR Checklist Table */}
-      <section className="bg-background py-16 md:py-24">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">{serviceData.checklist.title}</h2>
-          </div>
-          
-          <div className="max-w-4xl mx-auto rounded-xl border border-border overflow-hidden shadow-sm bg-card">
-            <Table>
-              <TableHeader className="bg-muted">
-                <TableRow>
-                  <TableHead className="w-[200px] text-start font-bold uppercase tracking-wider">{serviceData.checklist.headers[0]}</TableHead>
-                  <TableHead className="text-start font-bold uppercase tracking-wider">{serviceData.checklist.headers[1]}</TableHead>
-                  <TableHead className="w-[100px] text-center font-bold uppercase tracking-wider">{serviceData.checklist.headers[2]}</TableHead>
-                  <TableHead className="w-[100px] text-center font-bold uppercase tracking-wider">{serviceData.checklist.headers[3]}</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {serviceData.checklist.items.map((item: any, idx: number) => (
-                  <TableRow key={idx}>
-                    <TableCell className="font-medium text-start align-top border-e">
-                       <span className="inline-flex items-center rounded-md bg-secondary px-2 py-1 text-xs font-medium text-secondary-foreground ring-1 ring-inset ring-secondary-foreground/10">
-                        {item.phase}
-                      </span>
-                    </TableCell>
-                    <TableCell className="text-start text-base border-e font-medium">{item.question}</TableCell>
-                    <TableCell className="text-center align-middle border-e bg-secondary/20">
-                      <div className="mx-auto h-6 w-6 rounded-md border border-input shadow-sm bg-background" />
-                    </TableCell>
-                    <TableCell className="text-center align-middle bg-destructive/5">
-                      <div className="mx-auto h-6 w-6 rounded-md border border-input shadow-sm bg-background" />
-                    </TableCell>
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </div>
-        </div>
-      </section>
-
-      {/* 7. Chaos Diagnosis (Warning Signs) */}
+      {/* 6. Chaos Diagnosis (Warning Signs) */}
       <section className="bg-muted py-16 md:py-24">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-12">
@@ -261,11 +222,11 @@ export default async function HumanResourcesPage(props: ServicePageProps) {
                  
                  <div className="space-y-4 flex-1 w-full text-sm">
                    <div className="bg-white dark:bg-black/20 p-4 rounded-lg">
-                      <strong className="block text-primary mb-1 uppercase tracking-wider text-xs">Benefit</strong>
+                      <strong className="block text-primary mb-1 uppercase tracking-wider text-xs">{lang === 'ar' ? 'الفائدة' : 'Benefit'}</strong>
                       <p className="text-muted-foreground leading-relaxed">{tool.benefit}</p>
                    </div>
                    <div className="bg-white dark:bg-black/20 p-4 rounded-lg">
-                      <strong className="block text-primary mb-1 uppercase tracking-wider text-xs">Included</strong>
+                      <strong className="block text-primary mb-1 uppercase tracking-wider text-xs">{lang === 'ar' ? 'المحتوى' : 'Included'}</strong>
                       <p className="text-muted-foreground leading-relaxed">{tool.included}</p>
                    </div>
                  </div>
@@ -295,7 +256,7 @@ export default async function HumanResourcesPage(props: ServicePageProps) {
                   <h4 className="text-xl font-semibold text-foreground leading-relaxed">"{q.q}"</h4>
                   <div className="flex items-start gap-2 bg-secondary/30 p-3 rounded-lg border">
                     <Target className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <p className="text-sm text-muted-foreground"><strong className="text-foreground">Objective:</strong> {q.aim}</p>
+                    <p className="text-sm text-muted-foreground"><strong className="text-foreground">{lang === 'ar' ? 'الهدف:' : 'Objective:'}</strong> {q.aim}</p>
                   </div>
                 </div>
               </div>
@@ -330,6 +291,28 @@ export default async function HumanResourcesPage(props: ServicePageProps) {
           </div>
         </div>
       </section>
+
+      {/* 10. Gift / Lead Magnet Section */}
+      <ServiceGiftSection
+        lang={lang}
+        giftTitle={{
+          en: "HR Management Best Practices Guide",
+          ar: "دليل أفضل ممارسات إدارة الموارد البشرية"
+        }}
+        giftDescription={{
+          en: "Get Your HR Management Best Practices Guide.",
+          ar: "احصل على دليل أفضل ممارسات إدارة الموارد البشرية."
+        }}
+        useEnvEndpoint={true}
+        emailSubject={{
+          en: "Gate of Wisdom - HR Management Best Practices Guide",
+          ar: "بوابة الحكمة - دليل أفضل ممارسات إدارة الموارد البشرية"
+        }}
+        emailMessage={{
+          en: "Thank you for downloading the HR Management Best Practices Guide. Please find the attachment below.",
+          ar: "شكراً لتحميلك دليل أفضل ممارسات إدارة الموارد البشرية. تجد المرفق أدناه."
+        }}
+      />
 
       {/* 11. Final Call to Action */}
       <section className="bg-background pb-16 md:pb-24">
