@@ -1,7 +1,7 @@
 import { getDictionary } from "@/lib/get-dictionary";
 import { PageHeader } from "@/components/PageHeader";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { BookOpen, LineChart, Globe, ArrowRight } from "lucide-react";
+import { BookOpen, LineChart, Globe, ArrowRight, Ruler, Leaf } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { BoldText } from "@/components/BoldText";
@@ -22,7 +22,9 @@ export default async function LegislationLibraryPage(props: LegislationLibraryPa
   const iconMap: Record<string, any> = {
     BookOpen: BookOpen,
     LineChart: LineChart,
-    Globe: Globe
+    Globe: Globe,
+    Ruler: Ruler,
+    Leaf: Leaf
   };
 
   return (
@@ -31,7 +33,7 @@ export default async function LegislationLibraryPage(props: LegislationLibraryPa
       <PageHeader
         title={hubData.hero.title}
         description={hubData.hero.subtitle}
-        bgImageUrl="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070&auto=format&fit=crop"
+        bgImageUrl="/images/legislation-library/laws-regulations.jpg"
       />
 
       {/* Introduction */}

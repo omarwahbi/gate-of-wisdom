@@ -31,7 +31,7 @@ export default async function BICenterPage(props: BICenterPageProps) {
       <PageHeader 
         title={hubData.hero.title}
         description={hubData.hero.subtitle}
-        bgImageUrl="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=2070&auto=format&fit=crop"
+        bgImageUrl="/images/bi-center/bi-center-hero.jpg"
       />
 
       {/* Introduction */}
@@ -54,7 +54,7 @@ export default async function BICenterPage(props: BICenterPageProps) {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {hubData.categories.map((cat: any, idx: number) => {
               const Icon = iconMap[cat.icon] || BookOpen;
-              const isReady = cat.slug === 'economic-insights' || cat.slug === 'investment-study';
+              const isReady = cat.slug === 'economic-insights' || cat.slug === 'investment-study' || cat.slug === 'international-indicators';
 
               const CardBody = (
                   <Card className={cn("h-full border-border transition-all duration-300 flex flex-col relative overflow-hidden group/card", isReady ? "hover:border-primary/50 hover:shadow-lg bg-card hover:-translate-y-1" : "bg-muted/50 cursor-not-allowed")}>

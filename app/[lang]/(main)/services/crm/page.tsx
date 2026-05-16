@@ -23,7 +23,7 @@ export default async function CRMPage(props: ServicePageProps) {
       <PageHeader 
         title={serviceData.hero.title}
         description={serviceData.hero.subtitle}
-        bgImageUrl="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
+        bgImageUrl="/images/services/crm.jpg"
       />
 
       {/* 2. Introduction & Services */}
@@ -258,6 +258,7 @@ export default async function CRMPage(props: ServicePageProps) {
           en: "Get Your CRM Implementation Guide.",
           ar: "احصل على دليل تطبيق إدارة علاقات العملاء."
         }}
+        downloadUrl={`${process.env.NEXT_PUBLIC_CLOUDFLARE_R2_URL}/files/services-gifts/07-crm-system-checklist.pdf`}
         useEnvEndpoint={true}
         emailSubject={{
           en: "Gate of Wisdom - CRM Implementation Guide",
@@ -270,7 +271,7 @@ export default async function CRMPage(props: ServicePageProps) {
       />
 
       {/* 8. Final Call to Action */}
-      <section className="bg-background pb-16 md:pb-24">
+      <section className="bg-background py-16 md:py-24 flex items-center">
         <div className="container mx-auto px-4 text-center max-w-3xl bg-primary text-primary-foreground rounded-3xl p-8 md:p-12 shadow-xl shadow-primary/10 relative overflow-hidden">
           <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay"></div>
           <div className="relative z-10">
@@ -278,9 +279,12 @@ export default async function CRMPage(props: ServicePageProps) {
             <p className="text-lg opacity-90 mb-8 leading-relaxed max-w-2xl mx-auto">
               {serviceData.cta.description}
             </p>
-            <button className="bg-white text-primary hover:bg-gray-100 text-lg py-4 px-10 rounded-full font-bold transition-transform hover:scale-105 active:scale-95 shadow-md">
+            <a
+              href={`/${lang}/contact`}
+              className="inline-block bg-white text-primary hover:bg-gray-100 text-lg py-4 px-10 rounded-full font-bold transition-transform hover:scale-105 active:scale-95 shadow-md"
+            >
               {serviceData.cta.button}
-            </button>
+            </a>
           </div>
         </div>
       </section>

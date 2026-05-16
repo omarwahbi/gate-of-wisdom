@@ -51,7 +51,8 @@ export function Navbar({ lang, dictionary }: NavbarProps) {
     { title: navigation.knowledgeHub, href: `/${lang}/knowledge-hub`, hasDropdown: true },
     { title: navigation.biCenter, href: `/${lang}/bi-center`, hasDropdown: true },
     { title: navigation.legislationLibrary, href: `/${lang}/legislation-library`, hasDropdown: true },
-    { title: navigation.successStories, href: `/${lang}/success-stories` },
+    { title: navigation.successStories, href: `/${lang}/success-stories`, hasDropdown: false },
+    { title: navigation.contact, href: `/${lang}/contact`, hasDropdown: false },
   ];
 
   return (
@@ -61,7 +62,7 @@ export function Navbar({ lang, dictionary }: NavbarProps) {
         <div className="flex items-center space-s-8">
           <Link href={`/${lang}`} className="flex items-center">
             <Image
-              src="/Gate_of_Wisdom_Logo.svg"
+              src={lang === "ar" ? "/LOGO_WEB_AR.svg" : "/LOGO_WEB_EN.svg"}
               alt="Gate of Wisdom Logo"
               width={200}
               height={200}
@@ -83,7 +84,7 @@ export function Navbar({ lang, dictionary }: NavbarProps) {
                       {item.hasDropdown ? (
                         <>
                           <NavigationMenuTrigger
-                            className={cn("bg-transparent", isActive && "text-primary")}
+                            className={cn("bg-transparent font-bold", isActive && "text-primary")}
                             onClick={() => router.push(item.href)}
                           >
                             {item.title}
@@ -98,22 +99,31 @@ export function Navbar({ lang, dictionary }: NavbarProps) {
                                 : "w-[200px] md:w-[250px] grid-cols-1"
                             )}>
                               {item.href.includes("services") && dictionary.services_hub ? (
-                                dictionary.services_hub.services.map((subItem: any, i: number) => (
-                                  <li key={subItem.slug}>
-                                    <NavigationMenuLink
-                                      render={
-                                        <Link
-                                          href={`${item.href}/${subItem.slug}`}
-                                          className="block select-none rounded-md px-4 py-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                                        />
-                                      }
-                                    >
-                                      <div className="text-sm font-medium leading-none font-heading">{subItem.title}</div>
-                                    </NavigationMenuLink>
-                                  </li>
-                                ))
+                                dictionary.services_hub.services.map((subItem: any, i: number) => {
+                                  const subHref = `${item.href}/${subItem.slug}`;
+                                  const isSubActive = pathname === subHref;
+                                  return (
+                                    <li key={subItem.slug}>
+                                      <NavigationMenuLink
+                                        render={
+                                          <Link
+                                            href={subHref}
+                                            className={cn(
+                                              "block select-none rounded-md px-4 py-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+                                              isSubActive && "bg-accent text-accent-foreground font-semibold"
+                                            )}
+                                          />
+                                        }
+                                      >
+                                        <div className="text-sm font-medium leading-none font-heading">{subItem.title}</div>
+                                      </NavigationMenuLink>
+                                    </li>
+                                  );
+                                })
                               ) : item.href.includes("knowledge-hub") && dictionary.knowledge_hub ? (
                                 dictionary.knowledge_hub.categories.map((subItem: any, i: number) => {
+                                  const subHref = `${item.href}/${subItem.slug}`;
+                                  const isSubActive = pathname === subHref;
                                   const isReady = subItem.slug === 'lectures';
                                   return (
                                     <li key={subItem.slug}>
@@ -121,8 +131,11 @@ export function Navbar({ lang, dictionary }: NavbarProps) {
                                         render={
                                           isReady ? (
                                             <Link
-                                              href={`${item.href}/${subItem.slug}`}
-                                              className="block select-none rounded-md px-4 py-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                                              href={subHref}
+                                              className={cn(
+                                                "block select-none rounded-md px-4 py-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+                                                isSubActive && "bg-accent text-accent-foreground font-semibold"
+                                              )}
                                             />
                                           ) : (
                                             <div className="flex items-center justify-between select-none rounded-md px-4 py-3 leading-none no-underline outline-none transition-colors cursor-not-allowed opacity-60 bg-muted/30 hover:bg-muted/50 group" />
@@ -130,7 +143,7 @@ export function Navbar({ lang, dictionary }: NavbarProps) {
                                         }
                                       >
                                           {isReady ? (
-                                            <div className="text-sm font-medium leading-none font-heading">{subItem.title}</div>
+                                            <div className={cn("text-sm font-medium leading-none font-heading", isSubActive && "font-bold")}>{subItem.title}</div>
                                           ) : (
                                             <>
                                               <div className="text-sm font-medium leading-none font-heading pointer-events-none">{subItem.title}</div>
@@ -145,15 +158,20 @@ export function Navbar({ lang, dictionary }: NavbarProps) {
                                 })
                               ) : item.href.includes("bi-center") && dictionary.bi_center ? (
                                 dictionary.bi_center.categories.map((subItem: any, i: number) => {
-                                  const isReady = subItem.slug === 'economic-insights' || subItem.slug === 'investment-study';
+                                  const subHref = `${item.href}/${subItem.slug}`;
+                                  const isSubActive = pathname === subHref;
+                                  const isReady = subItem.slug === 'economic-insights' || subItem.slug === 'investment-study' || subItem.slug === 'international-indicators';
                                   return (
                                     <li key={subItem.slug}>
                                       <NavigationMenuLink
                                         render={
                                           isReady ? (
                                             <Link
-                                              href={`${item.href}/${subItem.slug}`}
-                                              className="block select-none rounded-md px-4 py-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                                              href={subHref}
+                                              className={cn(
+                                                "block select-none rounded-md px-4 py-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+                                                isSubActive && "bg-accent text-accent-foreground font-semibold"
+                                              )}
                                             />
                                           ) : (
                                             <div className="flex items-center justify-between select-none rounded-md px-4 py-3 leading-none no-underline outline-none transition-colors cursor-not-allowed opacity-60 bg-muted/30 hover:bg-muted/50 group" />
@@ -161,7 +179,7 @@ export function Navbar({ lang, dictionary }: NavbarProps) {
                                         }
                                       >
                                           {isReady ? (
-                                            <div className="text-sm font-medium leading-none font-heading">{subItem.title}</div>
+                                            <div className={cn("text-sm font-medium leading-none font-heading", isSubActive && "font-bold")}>{subItem.title}</div>
                                           ) : (
                                             <>
                                               <div className="text-sm font-medium leading-none font-heading pointer-events-none">{subItem.title}</div>
@@ -176,6 +194,8 @@ export function Navbar({ lang, dictionary }: NavbarProps) {
                                 })
                               ) : item.href.includes("legislation-library") && dictionary.legislation_library ? (
                                 dictionary.legislation_library.categories.map((subItem: any, i: number) => {
+                                  const subHref = `${item.href}/${subItem.slug}`;
+                                  const isSubActive = pathname === subHref;
                                   const isReady = subItem.isReady;
                                   return (
                                     <li key={subItem.slug}>
@@ -183,8 +203,11 @@ export function Navbar({ lang, dictionary }: NavbarProps) {
                                         render={
                                           isReady ? (
                                             <Link
-                                              href={`${item.href}/${subItem.slug}`}
-                                              className="block select-none rounded-md px-4 py-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                                              href={subHref}
+                                              className={cn(
+                                                "block select-none rounded-md px-4 py-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+                                                isSubActive && "bg-accent text-accent-foreground font-semibold"
+                                              )}
                                             />
                                           ) : (
                                             <div className="flex items-center justify-between select-none rounded-md px-4 py-3 leading-none no-underline outline-none transition-colors cursor-not-allowed opacity-60 bg-muted/30 hover:bg-muted/50 group" />
@@ -192,7 +215,7 @@ export function Navbar({ lang, dictionary }: NavbarProps) {
                                         }
                                       >
                                           {isReady ? (
-                                            <div className="text-sm font-medium leading-none font-heading">{subItem.title}</div>
+                                            <div className={cn("text-sm font-medium leading-none font-heading", isSubActive && "font-bold")}>{subItem.title}</div>
                                           ) : (
                                             <>
                                               <div className="text-sm font-medium leading-none font-heading pointer-events-none">{subItem.title}</div>
@@ -229,7 +252,7 @@ export function Navbar({ lang, dictionary }: NavbarProps) {
                           render={
                             <Link
                               href={item.href}
-                              className={cn(navigationMenuTriggerStyle(), "bg-transparent hover:bg-transparent focus:bg-transparent data-[active]:bg-transparent data-[state=open]:bg-transparent", isActive && "text-primary")}
+                              className={cn(navigationMenuTriggerStyle(), "bg-transparent hover:bg-transparent focus:bg-transparent data-[active]:bg-transparent data-[state=open]:bg-transparent font-bold", isActive && "text-primary")}
                             />
                           }
                         >

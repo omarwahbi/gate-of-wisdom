@@ -3,6 +3,7 @@ import { PageHeader } from "@/components/PageHeader";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, Lightbulb, AlertTriangle, Users, Target, BookOpen, Download } from "lucide-react";
 import { BoldText } from "@/components/BoldText";
+import { ServiceGiftSection } from "@/components/ServiceGiftSection";
 
 interface MarketingSalesPageProps {
   params: Promise<{
@@ -22,7 +23,7 @@ export default async function MarketingSalesPage(props: MarketingSalesPageProps)
       <PageHeader
         title={marketing_and_sales.hero.title}
         description={marketing_and_sales.hero.subtitle}
-        bgImageUrl="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop"
+        bgImageUrl="/images/services/marketing-sales.jpg"
       />
 
       {/* 2. Introduction */}
@@ -240,23 +241,28 @@ export default async function MarketingSalesPage(props: MarketingSalesPageProps)
         </div>
       </section>
 
-      {/* 6. Gift / CTA Section */}
-      <section className="bg-muted py-16 md:py-24">
-        <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              {lang === 'ar' ? marketing_and_sales.gift.title_ar : marketing_and_sales.gift.title}
-            </h2>
-            <p className="text-lg text-muted-foreground mb-8">
-              {lang === 'ar' ? marketing_and_sales.gift.description_ar : marketing_and_sales.gift.description}
-            </p>
-            <button className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:bg-primary/90 transition-colors shadow-lg">
-              <Download className="h-5 w-5" />
-              {lang === 'ar' ? marketing_and_sales.gift.button_ar : marketing_and_sales.gift.button}
-            </button>
-          </div>
-        </div>
-      </section>
+      {/* 6. Gift / Lead Magnet Section */}
+      <ServiceGiftSection
+        lang={lang}
+        giftTitle={{
+          en: "Marketing & Sales Growth Checklist",
+          ar: "قائمة تدقيق نمو المبيعات والتسويق"
+        }}
+        giftDescription={{
+          en: "Get Your Marketing & Sales Growth Checklist.",
+          ar: "احصل على قائمة تدقيق نمو المبيعات والتسويق."
+        }}
+        downloadUrl={`${process.env.NEXT_PUBLIC_CLOUDFLARE_R2_URL}/files/services-gifts/06-marketing-sales-checklist.pdf`}
+        useEnvEndpoint={true}
+        emailSubject={{
+          en: "Gate of Wisdom - Marketing & Sales Growth Checklist",
+          ar: "بوابة الحكمة - قائمة تدقيق نمو المبيعات والتسويق"
+        }}
+        emailMessage={{
+          en: "Thank you for downloading the Marketing & Sales Growth Checklist. Please find the attachment below.",
+          ar: "شكراً لتحميلك قائمة تدقيق نمو المبيعات والتسويق. تجد المرفق أدناه."
+        }}
+      />
     </main>
   );
 }

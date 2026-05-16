@@ -23,7 +23,7 @@ export default async function HumanResourcesPage(props: ServicePageProps) {
       <PageHeader 
         title={serviceData.hero.title}
         description={serviceData.hero.subtitle}
-        bgImageUrl="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
+        bgImageUrl="/images/services/human-resources.jpg"
       />
 
       {/* 2. Introduction */}
@@ -303,6 +303,7 @@ export default async function HumanResourcesPage(props: ServicePageProps) {
           en: "Get Your HR Management Best Practices Guide.",
           ar: "احصل على دليل أفضل ممارسات إدارة الموارد البشرية."
         }}
+        downloadUrl={`${process.env.NEXT_PUBLIC_CLOUDFLARE_R2_URL}/files/services-gifts/05-hr-system-checklist.pdf`}
         useEnvEndpoint={true}
         emailSubject={{
           en: "Gate of Wisdom - HR Management Best Practices Guide",
@@ -315,7 +316,7 @@ export default async function HumanResourcesPage(props: ServicePageProps) {
       />
 
       {/* 11. Final Call to Action */}
-      <section className="bg-background pb-16 md:pb-24">
+      <section className="bg-background py-16 md:py-24 flex items-center">
         <div className="container mx-auto px-4 text-center max-w-3xl bg-primary text-primary-foreground rounded-3xl p-8 md:p-12 shadow-xl shadow-primary/10 relative overflow-hidden">
           <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay"></div>
           <div className="relative z-10">
@@ -323,9 +324,12 @@ export default async function HumanResourcesPage(props: ServicePageProps) {
             <p className="text-lg opacity-90 mb-8 leading-relaxed max-w-2xl mx-auto">
               {serviceData.cta.description}
             </p>
-            <button className="bg-white text-primary hover:bg-gray-100 text-lg py-4 px-10 rounded-full font-bold transition-transform hover:scale-105 active:scale-95 shadow-md">
+            <a
+              href={`/${lang}/contact`}
+              className="inline-block bg-white text-primary hover:bg-gray-100 text-lg py-4 px-10 rounded-full font-bold transition-transform hover:scale-105 active:scale-95 shadow-md"
+            >
               {serviceData.cta.button}
-            </button>
+            </a>
           </div>
         </div>
       </section>

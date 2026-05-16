@@ -18,7 +18,7 @@ export default function FeasibilityStudiesContent({ lang, serviceData }: Feasibi
       <PageHeader
         title={serviceData.hero.title}
         description={serviceData.hero.subtitle}
-        bgImageUrl="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop"
+        bgImageUrl="/images/services/feasibility-studies.jpg"
       />
 
       {/* 2. Introduction */}
@@ -184,15 +184,21 @@ export default function FeasibilityStudiesContent({ lang, serviceData }: Feasibi
                 </CardHeader>
                 <CardContent className="space-y-4 text-sm">
                   <div>
-                    <strong className="text-foreground block mb-1">Scenario / السيناريو</strong>
+                    <strong className="text-foreground block mb-1">
+                      {lang === 'ar' ? 'السيناريو' : 'Scenario'}
+                    </strong>
                     <p className="text-muted-foreground">{tale.scenario}</p>
                   </div>
                   <div>
-                    <strong className="text-foreground block mb-1">Hidden Risk / المخاطرة الخفية</strong>
+                    <strong className="text-foreground block mb-1">
+                      {lang === 'ar' ? 'المخاطرة الخفية' : 'Hidden Risk'}
+                    </strong>
                     <p className="text-muted-foreground">{tale.hidden_risk}</p>
                   </div>
                   <div>
-                    <strong className="text-foreground block mb-1">Result / النتيجة</strong>
+                    <strong className="text-foreground block mb-1">
+                      {lang === 'ar' ? 'النتيجة' : 'Result'}
+                    </strong>
                     <p className="text-muted-foreground">{tale.result}</p>
                   </div>
                 </CardContent>
@@ -206,21 +212,22 @@ export default function FeasibilityStudiesContent({ lang, serviceData }: Feasibi
       <ServiceGiftSection
         lang={lang}
         giftTitle={{
-          en: "Project Launch Readiness Checklist",
-          ar: "قائمة تدقيق جاهزية إطلاق المشروع"
+          en: "Feasibility Study Checklist",
+          ar: "قائمة تدقيق دراسة الجدوى"
         }}
         giftDescription={{
-          en: "Get Your Project Launch Readiness Checklist.",
-          ar: "احصل على قائمة تدقيق جاهزية إطلاق المشروع."
+          en: "Get Your Feasibility Study Checklist.",
+          ar: "احصل على قائمة تدقيق دراسة الجدوى."
         }}
+        downloadUrl={`${process.env.NEXT_PUBLIC_CLOUDFLARE_R2_URL}/files/services-gifts/03-feasibility-study-checklist.pdf`}
         useEnvEndpoint={true}
         emailSubject={{
-          en: "Gate of Wisdom - Project Launch Readiness Checklist",
-          ar: "بوابة الحكمة - قائمة تدقيق جاهزية إطلاق المشروع"
+          en: "Gate of Wisdom - Feasibility Study Checklist",
+          ar: "بوابة الحكمة - قائمة تدقيق دراسة الجدوى"
         }}
         emailMessage={{
-          en: "Thank you for downloading the Project Launch Readiness Checklist. Please find the attachment below.",
-          ar: "شكراً لتحميلك قائمة تدقيق جاهزية إطلاق المشروع. تجد المرفق أدناه."
+          en: "Thank you for downloading the Feasibility Study Checklist. Please find the attachment below.",
+          ar: "شكراً لتحميلك قائمة تدقيق دراسة الجدوى. تجد المرفق أدناه."
         }}
       />
 
@@ -246,7 +253,7 @@ export default function FeasibilityStudiesContent({ lang, serviceData }: Feasibi
       </section>
 
       {/* 9. Final Call to Action */}
-      <section className="bg-background py-16 md:py-24 border-t">
+      <section className="bg-background py-16 md:py-24 border-t flex items-center">
         <div className="container mx-auto px-4 text-center max-w-3xl bg-primary text-primary-foreground rounded-3xl p-8 md:p-12 shadow-xl shadow-primary/10 relative overflow-hidden">
           <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay"></div>
           <div className="relative z-10">
@@ -254,9 +261,12 @@ export default function FeasibilityStudiesContent({ lang, serviceData }: Feasibi
             <p className="text-lg opacity-90 mb-8 leading-relaxed max-w-2xl mx-auto">
               {serviceData.cta.description}
             </p>
-            <button className="bg-white text-primary hover:bg-gray-100 text-lg py-4 px-10 rounded-full font-bold transition-transform hover:scale-105 active:scale-95 shadow-md">
+            <a
+              href={`/${lang}/contact`}
+              className="inline-block bg-white text-primary hover:bg-gray-100 text-lg py-4 px-10 rounded-full font-bold transition-transform hover:scale-105 active:scale-95 shadow-md"
+            >
               {serviceData.cta.button}
-            </button>
+            </a>
           </div>
         </div>
       </section>

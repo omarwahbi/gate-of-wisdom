@@ -1,18 +1,8 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
-import { match as matchLocale } from "@formatjs/intl-localematcher";
-import Negotiator from "negotiator";
 
 const locales = ["en", "ar"];
-const defaultLocale = "en";
-
-function getLocale(request: NextRequest): string {
-  const negotiatorHeaders: Record<string, string> = {};
-  request.headers.forEach((value, key) => (negotiatorHeaders[key] = value));
-
-  const languages = new Negotiator({ headers: negotiatorHeaders }).languages();
-  return matchLocale(languages, locales, defaultLocale);
-}
+const defaultLocale = "ar";
 
 export function proxy(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
@@ -31,9 +21,8 @@ export function proxy(request: NextRequest) {
   );
 
   if (pathnameIsMissingLocale) {
-    const locale = getLocale(request);
     return NextResponse.redirect(
-      new URL(`/${locale}${pathname}`, request.url)
+      new URL(`/${defaultLocale}${pathname}`, request.url)
     );
   }
 }

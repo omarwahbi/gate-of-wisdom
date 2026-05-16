@@ -23,7 +23,7 @@ export default async function MarketStudiesPage(props: ServicePageProps) {
       <PageHeader 
         title={market_studies.hero.title}
         description={market_studies.hero.subtitle}
-        bgImageUrl="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop"
+        bgImageUrl="/images/services/market-studies.jpg"
       />
 
       {/* 2. Introduction */}
@@ -182,6 +182,7 @@ export default async function MarketStudiesPage(props: ServicePageProps) {
           en: "Get Your Market Entry Strategy Checklist.",
           ar: "احصل على قائمة تدقيق استراتيجية دخول السوق."
         }}
+        downloadUrl={`${process.env.NEXT_PUBLIC_CLOUDFLARE_R2_URL}/files/services-gifts/02-market-research-checklist.pdf`}
         useEnvEndpoint={true}
         emailSubject={{
           en: "Gate of Wisdom - Market Entry Strategy Checklist",
@@ -194,7 +195,7 @@ export default async function MarketStudiesPage(props: ServicePageProps) {
       />
 
       {/* 7. Final Call to Action */}
-      <section className="bg-background py-16 md:py-24 border-t">
+      <section className="bg-background py-16 md:py-24 border-t flex items-center">
         <div className="container mx-auto px-4 text-center max-w-3xl bg-primary text-primary-foreground rounded-3xl p-8 md:p-12 shadow-xl shadow-primary/10 relative overflow-hidden">
           <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay"></div>
           <div className="relative z-10">
@@ -202,9 +203,12 @@ export default async function MarketStudiesPage(props: ServicePageProps) {
             <p className="text-lg opacity-90 mb-8 leading-relaxed max-w-2xl mx-auto">
               {market_studies.cta.description}
             </p>
-            <button className="bg-white text-primary hover:bg-gray-100 text-lg py-4 px-10 rounded-full font-bold transition-transform hover:scale-105 active:scale-95 shadow-md">
+            <a
+              href={`/${lang}/contact`}
+              className="inline-block bg-white text-primary hover:bg-gray-100 text-lg py-4 px-10 rounded-full font-bold transition-transform hover:scale-105 active:scale-95 shadow-md"
+            >
               {market_studies.cta.button}
-            </button>
+            </a>
           </div>
         </div>
       </section>

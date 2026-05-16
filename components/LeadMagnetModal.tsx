@@ -21,6 +21,7 @@ interface FormData {
   name: string;
   phone: string;
   email: string;
+  company: string;
 }
 
 const STORAGE_KEY = "gate_of_wisdom_lead_submissions";
@@ -36,7 +37,7 @@ export function LeadMagnetModal({
   emailSubject,
   emailMessage,
 }: LeadMagnetModalProps) {
-  const [formData, setFormData] = useState<FormData>({ name: "", phone: "", email: "" });
+  const [formData, setFormData] = useState<FormData>({ name: "", phone: "", email: "", company: "" });
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -54,7 +55,7 @@ export function LeadMagnetModal({
     }
     // Reset form when modal is closed and reopened
     if (!isOpen) {
-      setFormData({ name: "", phone: "", email: "" });
+      setFormData({ name: "", phone: "", email: "", company: "" });
       setError(null);
       setIsSubmitting(false);
     }
@@ -76,17 +77,9 @@ export function LeadMagnetModal({
     setError(null);
     setIsSubmitting(true);
 
-    // Validate form
-    if (!formData.name.trim() || !formData.phone.trim() || !formData.email.trim()) {
-      setError(lang === "ar" ? "يرجى ملء جميع الحقول" : "Please fill in all fields");
-      setIsSubmitting(false);
-      return;
-    }
-
-    // Validate email format
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(formData.email)) {
-      setError(lang === "ar" ? "يرجى إدخال بريد إلكتروني صحيح" : "Please enter a valid email address");
+    // Validate form - name and phone are required
+    if (!formData.name.trim() || !formData.phone.trim()) {
+      setError(lang === "ar" ? "يرجى ملء الحقول المطلوبة" : "Please fill in the required fields");
       setIsSubmitting(false);
       return;
     }
@@ -104,12 +97,12 @@ export function LeadMagnetModal({
           },
           body: new URLSearchParams({
             name: formData.name,
-            email: formData.email,
+            email: formData.email || "Not provided",
+            company: formData.company || "Not provided",
             phone: formData.phone,
             gift: giftTitle,
             lang,
             _host: window.location.hostname,
-            _next: window.location.href,
             _subject: emailSubject || `Gate of Wisdom - ${giftTitle} Download`,
           }),
         });
@@ -125,6 +118,7 @@ export function LeadMagnetModal({
         JSON.stringify({
           name: formData.name,
           email: formData.email,
+          company: formData.company,
           phone: formData.phone,
           timestamp: new Date().toISOString(),
           gift: giftTitle,
@@ -265,10 +259,36 @@ export function LeadMagnetModal({
 
                 <div>
                   <label
+                    htmlFor={`company-${lang}`}
+                    className="block text-sm font-medium mb-2 text-foreground"
+                  >
+                    {lang === "ar" ? "الشركة / المؤسسة" : "Company / Organization"}
+                  </label>
+                  <input
+                    id={`company-${lang}`}
+                    type="text"
+                    value={formData.company}
+                    onChange={(e) =>
+                      setFormData({ ...formData, company: e.target.value })
+                    }
+                    className={cn(
+                      "w-full px-4 py-3 rounded-lg border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary/50",
+                      lang === "ar" ? "text-right" : "text-left"
+                    )}
+                    placeholder={
+                      lang === "ar" ? "أدخل اسم الشركة" : "Enter your company name"
+                    }
+                    disabled={isSubmitting}
+                    dir={lang === "ar" ? "rtl" : "ltr"}
+                  />
+                </div>
+
+                <div>
+                  <label
                     htmlFor={`phone-${lang}`}
                     className="block text-sm font-medium mb-2 text-foreground"
                   >
-                    {lang === "ar" ? "رقم الهاتف" : "Phone Number"}
+                    {lang === "ar" ? "رقم الهاتف" : "Phone Number"} <span className="text-destructive">*</span>
                   </label>
                   <div className={cn(
                     "relative",
@@ -335,20 +355,24 @@ export function LeadMagnetModal({
             </>
           ) : (
             <div className="text-center space-y-6">
-              <div className="h-20 w-20 rounded-full bg-green-100 dark:bg-green-900/30 mx-auto flex items-center justify-center">
-                <svg
-                  className="h-10 w-10 text-green-600 dark:text-green-400"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M5 13l4 4L19 7"
-                  />
-                </svg>
+              {/* Success Icon */}
+              <div className="relative inline-block mx-auto">
+                <div className="absolute inset-0 rounded-full border-2 border-green-500/30 animate-ping" />
+                <div className="relative h-16 w-16 rounded-full bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center shadow-lg shadow-green-500/30">
+                  <svg
+                    className="h-7 w-7 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    />
+                  </svg>
+                </div>
               </div>
 
               <div className="space-y-4">
@@ -366,13 +390,16 @@ export function LeadMagnetModal({
                 </p>
               </div>
 
-              <button
-                onClick={handleDownload}
+              <a
+                href={downloadUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                download
                 className="w-full inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-4 rounded-xl font-semibold hover:bg-primary/90 transition-colors shadow-lg"
               >
                 <Download className="h-5 w-5" />
                 {lang === "ar" ? "حمّل الآن" : "Download Now"}
-              </button>
+              </a>
 
               <button
                 onClick={onClose}

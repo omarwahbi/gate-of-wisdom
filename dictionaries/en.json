@@ -5,7 +5,8 @@
     "knowledgeHub": "Knowledge Hub",
     "biCenter": "BI Center",
     "legislationLibrary": "Legislation Library",
-    "successStories": "Success Stories"
+    "successStories": "Success Stories",
+    "contact": "Contact Us"
   },
   "common": {
     "language": "English",
@@ -2082,10 +2083,6 @@
       "title": "Related & Supporting Services",
       "links": [
         {
-          "title": "Official Government Reports & Indices",
-          "href": "#"
-        },
-        {
           "title": "Market Study Service",
           "href": "/en/services/market-studies"
         },
@@ -2232,6 +2229,7 @@
       "heading_en": "Legal & Regulatory Library: Your Trusted Reference for the Iraqi Business Environment",
       "paragraphs": [
         "At \"Gate of Wisdom Consulting Engineers\", we understand that legal compliance and a deep grasp of official indicators are the safety valves for any successful investment.",
+        "At \"Gate of Wisdom Consulting Engineers\", we understand that legal compliance and a deep grasp of official indicators are the safety valves for any successful investment.",
         "At \"Gate of Wisdom Consulting Engineers\", we have curated this comprehensive digital library to serve as a compass for investors and decision-makers in tracking legislative and economic shifts in Iraq.",
         "Our content is organized into three strategic pillars:"
       ]
@@ -2256,15 +2254,59 @@
         "isReady": true
       },
       {
-        "icon": "Globe",
-        "title": "Real-World Stories",
-        "title_ar": "قصص من واقعنا",
-        "description": "Regional successes and strategic insights from the field.",
-        "description_ar": "تجارب إقليمية ورؤى استراتيجية.",
-        "slug": "real-world-stories",
-        "isReady": false
+        "icon": "Ruler",
+        "title": "Engineering Standards & Building Codes",
+        "title_ar": "الإطار المرجعي للمعايير الهندسية وكودات البناء",
+        "description": "Comprehensive reference of Iraqi building codes and technical specifications for all project phases.",
+        "description_ar": "قائمة مرجعية شاملة لمدونات البناء العراقية والمواصفات الفنية لجميع مراحل المشروع.",
+        "slug": "engineering-standards",
+        "isReady": true
+      },
+      {
+        "icon": "Leaf",
+        "title": "Environmental Determinants Laws",
+        "title_ar": "قوانين المحددات البيئية",
+        "description": "Integrated framework of Iraqi environmental laws, regulations ensuring compliance and sustainability.",
+        "description_ar": "حزمة متكاملة من القوانين البيئية العراقية لضمان الامتثال والاستدامة.",
+        "slug": "environmental-determinants",
+        "isReady": true
       }
     ]
+  },
+  "contact_page": {
+    "hero": {
+      "title": "Contact Us",
+      "description": "We're here to help you make informed investment decisions. Book your free consultation or contact our team of experts at Gate of Wisdom Consulting Engineers."
+    },
+    "form": {
+      "title": "Book Your Free Consultation",
+      "subtitle": "Fill out the form and our team will contact you within 24 business hours",
+      "labels": {
+        "name": "Full Name",
+        "phone": "Phone Number",
+        "email": "Email Address",
+        "service": "Service Type",
+        "message": "Your Message"
+      },
+      "placeholders": {
+        "name": "Enter your name",
+        "phone": "Enter your phone",
+        "email": "Enter your email",
+        "service": "Select a service",
+        "message": "Write your message here..."
+      },
+      "submit": "Send Request"
+    },
+    "info": {
+      "title": "Contact Information",
+      "subtitle": "Reach us through any of the following channels",
+      "address_label": "Address",
+      "phone_label": "Phone",
+      "email_label": "Email",
+      "hours_label": "Business Hours",
+      "hours_value": "Sunday - Thursday: 9:00 AM - 6:00 PM",
+      "follow_label": "Follow Us"
+    }
   },
   "footer": {
     "newsletter": {

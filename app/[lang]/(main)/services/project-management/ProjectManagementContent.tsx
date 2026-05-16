@@ -21,7 +21,7 @@ export default function ProjectManagementContent({ lang, dictionary }: ProjectMa
       <PageHeader
         title={project_management.hero.title}
         description={project_management.hero.subtitle}
-        bgImageUrl="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop"
+        bgImageUrl="/images/services/project-management.jpg"
       />
 
       {/* 2. Introduction */}
@@ -212,6 +212,7 @@ export default function ProjectManagementContent({ lang, dictionary }: ProjectMa
           en: "Get Your Project Launch Readiness Checklist.",
           ar: "احصل على قائمة تدقيق جاهزية إطلاق المشروع."
         }}
+        downloadUrl={`${process.env.NEXT_PUBLIC_CLOUDFLARE_R2_URL}/files/services-gifts/01-project-readiness-checklist.pdf`}
         useEnvEndpoint={true}
         emailSubject={{
           en: "Gate of Wisdom - Project Launch Readiness Checklist",

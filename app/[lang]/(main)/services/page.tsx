@@ -21,12 +21,12 @@ const icons = [Briefcase, LineChart, Target, Layers, Users, BarChart, HeartHands
 // Geometry configurations mapped to service indices
 const geometries = [
   "rounded-full", // Circle
-  "rounded-2xl rotate-45 scale-90", // Diamond
-  "rounded-tr-[50px] rounded-bl-[50px] rounded-tl-xl rounded-br-xl", // Leaf
+  "rounded-2xl rotate-45", // Diamond
+  "rounded-[40px]", // Soft shape
   "rounded-full", // Circle
-  "rounded-none rotate-12 scale-90", // Tilted Square
+  "rounded-2xl rotate-12", // Tilted Square
   "rounded-2xl", // Soft Square
-  "rounded-full scale-95" // Circle
+  "rounded-full" // Circle
 ];
 
 export default async function ServicesPage(props: ServicesPageProps) {
@@ -54,53 +54,53 @@ export default async function ServicesPage(props: ServicesPageProps) {
 
       {/* Services Grid Section */}
       <section className="container mx-auto px-4 pt-16">
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 md:gap-8">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 md:gap-8 justify-items-center">
           {services_hub.services.map((service, index) => {
             const Icon = icons[index % icons.length];
             const baseShape = geometries[index % geometries.length];
+            const isLastCard = index === services_hub.services.length - 1;
 
             return (
               <Link
                 key={service.slug}
                 href={`/${lang}/services/${service.slug}`}
-                className="group relative flex aspect-square w-full items-center justify-center overflow-hidden rounded-3xl border border-primary/20 bg-card p-6 shadow-sm transition-all duration-500 hover:shadow-xl hover:border-transparent"
+                className={cn(
+                  "group relative flex aspect-square w-full max-w-md items-center justify-center overflow-hidden rounded-3xl border border-primary/20 bg-card p-6 shadow-sm transition-all duration-300 hover:shadow-xl hover:border-transparent",
+                  isLastCard && "lg:col-start-2"
+                )}
               >
-                {/* 
-                  The Kinetic Geometric Shape 
-                  Starts as a stylized geometric polygon/circle in the center with bg-primary/10
-                  On hover: scales to cover the entire container (200%), snaps back to standard un-rotated bounds, and turns into bg-primary.
-                */}
+                {/* Kinetic Geometric Shape - covers entire card on hover */}
                 <div
                   className={cn(
-                    "absolute inset-0 z-0 m-auto flex h-[120px] w-[120px] items-center justify-center bg-primary/10 transition-all duration-700 ease-[cubic-bezier(0.23,1,0.32,1)]",
+                    "absolute z-0 flex items-center justify-center bg-primary/10 transition-all duration-500 ease-out",
                     baseShape,
-                    // Hover overrides to unrotate and scale up radically
-                    "group-hover:h-[250%] group-hover:w-[250%] group-hover:rotate-0 group-hover:rounded-none group-hover:bg-primary"
+                    // Initial: large shape covering most of card
+                    "h-[240px] w-[240px]",
+                    // Hover: expands to cover full card area
+                    "group-hover:h-[400px] group-hover:w-[400px] group-hover:bg-primary"
                   )}
                 />
 
-                {/* Content Layer (z-10 guarantees it stays above the shape) */}
+                {/* Content Layer */}
                 <div className="relative z-10 flex h-full w-full flex-col items-center text-center">
-                  
                   {/* Initial State: Icon + Short Title */}
-                  <div className="absolute inset-0 flex flex-col items-center justify-center transition-all duration-500 ease-out group-hover:-translate-y-8 group-hover:scale-95 group-hover:opacity-0">
+                  <div className="absolute inset-0 flex flex-col items-center justify-center transition-all duration-300 ease-out group-hover:-translate-y-6 group-hover:scale-90 group-hover:opacity-0">
                     <Icon className="mb-4 h-12 w-12 text-primary" strokeWidth={1.5} />
                     <span className="max-w-[200px] text-xl font-bold leading-snug text-card-foreground">
                       {service.title}
                     </span>
                   </div>
 
-                  {/* Hover State: Revealed Text & Kinetic Sentence */}
-                  <div className="absolute inset-0 flex flex-col items-center justify-center space-y-4 px-2 pt-8 text-primary-foreground opacity-0 transition-all duration-500 ease-out translate-y-8 group-hover:translate-y-0 group-hover:opacity-100">
+                  {/* Hover State: Revealed Text */}
+                  <div className="absolute inset-0 flex flex-col items-center justify-center space-y-3 px-4 pt-8 text-primary-foreground opacity-0 transition-all duration-300 ease-out translate-y-4 group-hover:translate-y-0 group-hover:opacity-100">
                     <h3 className="text-xl font-bold leading-tight">
                       {service.title}
                     </h3>
                     <div className="h-px w-12 bg-primary-foreground/30" />
-                    <p className="max-w-[240px] text-[15px] font-medium leading-relaxed text-primary-foreground/95">
+                    <p className="max-w-[220px] text-[14px] font-medium leading-relaxed text-primary-foreground/95">
                       {service.description}
                     </p>
-                    {/* Fake action arrow pointing matching LTR/RTL dir */}
-                    <span className="mt-4 inline-flex items-center text-sm font-semibold tracking-wider text-primary-foreground">
+                    <span className="mt-2 inline-flex items-center text-sm font-semibold tracking-wider text-primary-foreground">
                       <span className="me-2 rtl:hidden">Explore &rarr;</span>
                       <span className="hidden rtl:inline">اكتشف &larr;</span>
                     </span>

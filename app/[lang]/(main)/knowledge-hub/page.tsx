@@ -31,7 +31,7 @@ export default async function KnowledgeHubPage(props: KnowledgeHubPageProps) {
       <PageHeader 
         title={hubData.hero.title}
         description={hubData.hero.subtitle}
-        bgImageUrl="https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=2070&auto=format&fit=crop"
+        bgImageUrl="/images/knowledge-hub/knowledge-hub-hero.jpg"
       />
 
       {/* Introduction */}

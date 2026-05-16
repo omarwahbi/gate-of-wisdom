@@ -215,7 +215,7 @@ export default async function SuccessStoriesPage(props: SuccessStoriesPageProps)
             ? "خلف كل قصة نجاح أو عثرة تجارية تكمن دروس لا تقدر بثمن. في \"**بوابة الحكمة للإستشارات الهندسية**\"، لا نكتفي بتقديم النظريات، بل نستخلص العبر من تجارب الشركات التي واجهت تحديات حقيقية في بيئتنا الإقليمية. هذا القسم هو مختبرنا المعرفي، حيث نحلل نجاحات شركات مثل (كريم، أرامكس، وزين) لنكتشف (الخبرة المحلية) التي هزمت العولمة، ونشرح أسباب تعثر عمالقة مثل (نوكيا وكوداك) لنتعلم كيف نحمي استثماراتنا من مفاجآت التغيير. إنها دعوة لتتعلم من تجارب الآخرين، لتبني نجاحك الخاص على أسس من اليقين والحكمة."
             : "Behind every success story or business setback lies an invaluable lesson. At \"Gate of Wisdom Consulting Engineers\", we go beyond theory to distill wisdom from the experiences of companies that faced real challenges in our regional environment. This section is our Knowledge Lab, where we analyze the triumphs of companies like (Careem, Aramex, and Zain) to discover the (Local Expertise) that outpaced globalization. We also dissect the setbacks of giants like (Nokia and Kodak) to learn how to shield our investments from the surprises of change. It is an invitation to learn from others' experiences, so you can build your own success on a foundation of certainty and wisdom."
         }
-        bgImageUrl="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop"
+        bgImageUrl="/images/success-stories/success-stories-hero.jpg"
       />
 
       {/* Case Studies Grid */}
