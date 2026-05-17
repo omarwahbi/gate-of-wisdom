@@ -13,8 +13,6 @@ interface ContactPageProps {
   footer: any;
 }
 
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/mzdwppgn";
-
 export function ContactPageContent({ lang, pageData, footer }: ContactPageProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -29,7 +27,7 @@ export function ContactPageContent({ lang, pageData, footer }: ContactPageProps)
     const data = Object.fromEntries(formData.entries());
 
     try {
-      const response = await fetch(FORMSPREE_ENDPOINT, {
+      const response = await fetch(process.env.NEXT_PUBLIC_CONTACT_FORMSPREE_ENDPOINT!, {
         method: "POST",
         headers: {
           "Accept": "application/json",
