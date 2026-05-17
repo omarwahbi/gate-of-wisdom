@@ -1,6 +1,7 @@
-import { generatePageMetadata } from "@/lib/seo";
+import { generatePageMetadata, getPageJsonLd } from "@/lib/seo";
 import { getDictionary } from "@/lib/get-dictionary";
 import { PageHeader } from "@/components/PageHeader";
+import { JsonLd } from "@/components/JsonLd";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, Briefcase, Lightbulb, Activity, Layers, Goal, Rocket, Users, Target, AlertTriangle } from "lucide-react";
 import { BoldText } from "@/components/BoldText";
@@ -23,9 +24,11 @@ export default async function MarketStudiesPage(props: ServicePageProps) {
   const { lang } = params;
   const dictionary = await getDictionary(lang);
   const { market_studies } = dictionary;
+  const schemas = getPageJsonLd("market_studies", lang, "services/market-studies");
 
   return (
     <main className="flex min-h-screen flex-col w-full text-start">
+      <JsonLd schemas={schemas} />
       {/* 1. Hero Section */}
       <PageHeader 
         title={market_studies.hero.title}

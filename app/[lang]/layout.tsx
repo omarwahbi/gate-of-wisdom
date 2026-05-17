@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { organizationJsonLd, webSiteJsonLd } from "@/lib/json-ld";
 import "../globals.css";
 
 const futura = localFont({
@@ -87,6 +88,7 @@ export async function generateMetadata({
         ar: `${SITE_URL}/ar`,
       },
     },
+    manifest: "/manifest.webmanifest",
     icons: {
       icon: [
         { url: "/favicon.ico", sizes: "32x32" },
@@ -98,6 +100,10 @@ export async function generateMetadata({
     },
   };
 }
+
+export const viewport = {
+  themeColor: "#c49a6c",
+};
 
 export async function generateStaticParams() {
   return [{ lang: "en" }, { lang: "ar" }];
@@ -116,6 +122,17 @@ export default async function RootLayout({
 
   return (
     <html lang={lang} dir={dir} className={`${futura.variable} ${tajawal.variable}`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([
+              organizationJsonLd(lang as "en" | "ar"),
+              webSiteJsonLd(lang as "en" | "ar"),
+            ]),
+          }}
+        />
+      </head>
       <body className={`${fontClass} font-sans min-h-screen flex flex-col`}>
         {children}
       </body>

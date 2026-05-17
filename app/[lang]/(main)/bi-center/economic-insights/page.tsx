@@ -1,5 +1,6 @@
-import { generatePageMetadata } from "@/lib/seo";
+import { generatePageMetadata, getPageJsonLd } from "@/lib/seo";
 import { getDictionary } from "@/lib/get-dictionary";
+import { JsonLd } from "@/components/JsonLd";
 import { PageHeader } from "@/components/PageHeader";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { LineChart, Target, PieChart, Coins, Briefcase, Landmark, ExternalLink, ShieldCheck, Download, BarChart, Database, Target as TargetIcon } from "lucide-react";
@@ -25,9 +26,11 @@ export default async function EconomicInsightsPage(props: EconomicInsightsProps)
   const { lang } = params;
   const dictionary = await getDictionary(lang);
   const { economic_insights: pageData } = dictionary;
+  const schemas = getPageJsonLd("economic_insights", lang, "bi-center/economic-insights");
 
   return (
     <main className="flex min-h-screen flex-col w-full text-start">
+      <JsonLd schemas={schemas} />
       {/* 1. Hero Section */}
       <PageHeader
         title={pageData.hero.title}

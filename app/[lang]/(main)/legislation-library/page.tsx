@@ -1,5 +1,6 @@
-import { generatePageMetadata } from "@/lib/seo";
+import { generatePageMetadata, getPageJsonLd } from "@/lib/seo";
 import { getDictionary } from "@/lib/get-dictionary";
+import { JsonLd } from "@/components/JsonLd";
 import { PageHeader } from "@/components/PageHeader";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { BookOpen, LineChart, Globe, ArrowRight, Ruler, Leaf } from "lucide-react";
@@ -23,6 +24,7 @@ export default async function LegislationLibraryPage(props: LegislationLibraryPa
   const { lang } = params;
   const dictionary = await getDictionary(lang);
   const { legislation_library: hubData } = dictionary;
+  const schemas = getPageJsonLd("legislation_library", lang, "legislation-library");
 
   // Map icon names to actual Lucide components
   const iconMap: Record<string, any> = {
@@ -35,6 +37,7 @@ export default async function LegislationLibraryPage(props: LegislationLibraryPa
 
   return (
     <main className="flex min-h-screen flex-col w-full text-start">
+      <JsonLd schemas={schemas} />
       {/* Hero Section */}
       <PageHeader
         title={hubData.hero.title}

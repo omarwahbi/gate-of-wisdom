@@ -1,5 +1,5 @@
-import { generatePageMetadata } from "@/lib/seo";
-import { getDictionary } from "@/lib/get-dictionary";
+import { generatePageMetadata, getPageJsonLd } from "@/lib/seo";
+import { JsonLd } from "@/components/JsonLd";
 import { PageHeader } from "@/components/PageHeader";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -53,9 +53,11 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
 
 export default async function EnvironmentalDeterminantsPage({ params }: { params: Promise<{ lang: "en" | "ar" }> }) {
   const { lang } = await params;
+  const schemas = getPageJsonLd("environmental_determinants", lang, "legislation-library/environmental-determinants");
 
   return (
     <main className="flex min-h-screen flex-col w-full text-start">
+      <JsonLd schemas={schemas} />
       {/* Hero Section */}
       <PageHeader
         title={lang === "ar" ? "قوانين المحددات البيئية" : "Laws of Environmental Determinants"}

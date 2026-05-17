@@ -1,5 +1,6 @@
-import { generatePageMetadata } from "@/lib/seo";
+import { generatePageMetadata, getPageJsonLd } from "@/lib/seo";
 import { getDictionary } from "@/lib/get-dictionary";
+import { JsonLd } from "@/components/JsonLd";
 import { StatisticsReportsContent } from "./StatisticsReportsContent";
 
 interface StatisticsReportsPageProps {
@@ -17,6 +18,12 @@ export default async function StatisticsReportsPage(props: StatisticsReportsPage
   const params = await props.params;
   const { lang } = params;
   const dictionary = await getDictionary(lang);
+  const schemas = getPageJsonLd("statistics_reports", lang, "legislation-library/statistics-reports");
 
-  return <StatisticsReportsContent lang={lang} dictionary={dictionary} />;
+  return (
+    <>
+      <JsonLd schemas={schemas} />
+      <StatisticsReportsContent lang={lang} dictionary={dictionary} />
+    </>
+  );
 }

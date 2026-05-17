@@ -2342,12 +2342,12 @@
   "seo": {
     "home": {
       "title": "Gate of Wisdom Consulting Engineers",
-      "description": "Gate of Wisdom Consulting Engineers — Iraqi consulting firm specializing in feasibility studies, market research, project management, CRM, HR, and business intelligence for investment decisions.",
+      "description": "Gate of Wisdom — Iraqi consulting firm specializing in feasibility studies, market research, project management, and business intelligence.",
       "keywords": "consulting engineers Iraq, feasibility studies Iraq, market research Iraq, project management Baghdad, business intelligence Iraq, CRM solutions Iraq, HR consulting Iraq, investment consulting Iraq"
     },
     "services": {
       "title": "Professional Consulting Services",
-      "description": "Comprehensive consulting services covering project management, market studies, feasibility studies, performance efficiency, human resources, marketing & sales, and CRM solutions.",
+      "description": "Consulting services: project management, market studies, feasibility studies, performance efficiency, HR, marketing & sales, and CRM.",
       "keywords": "consulting services Iraq, project management, market studies, feasibility studies, performance efficiency, human resources, marketing, CRM"
     },
     "project_management": {
@@ -2402,12 +2402,12 @@
     },
     "economic_insights": {
       "title": "Economic Insights & Analysis",
-      "description": "Economic insights and analysis for Iraq — GDP trends, sector performance, and strategic recommendations grounded in official data from the Central Bank and Ministry of Planning.",
+      "description": "Economic insights for Iraq — GDP trends, sector performance, and strategic recommendations from Central Bank and Ministry of Planning data.",
       "keywords": "economic insights Iraq, GDP analysis Iraq, economic indicators, Central Bank Iraq data, investment analysis"
     },
     "international_indicators": {
       "title": "International Investment Indicators",
-      "description": "International investment indicators and cross-country comparisons — Ease of Doing Business, global competitiveness, and risk assessments for informed investment decisions.",
+      "description": "International investment indicators — Ease of Doing Business, global competitiveness, and risk assessments for informed decisions.",
       "keywords": "international indicators Iraq, doing business index, investment indicators, global competitiveness, country risk assessment"
     },
     "investment_study": {
@@ -2417,7 +2417,7 @@
     },
     "legislation_library": {
       "title": "Legislation Library",
-      "description": "Legislation Library — access Iraqi laws, regulations, engineering standards, environmental determinants, and official statistics to ensure compliance and protect your investment.",
+      "description": "Access Iraqi laws, regulations, engineering standards, environmental determinants, and official statistics to ensure compliance.",
       "keywords": "Iraqi legislation, laws Iraq, regulations Iraq, legal compliance, Iraqi law database"
     },
     "engineering_standards": {

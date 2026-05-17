@@ -1,5 +1,6 @@
-import { generatePageMetadata } from "@/lib/seo";
+import { generatePageMetadata, getPageJsonLd } from "@/lib/seo";
 import { getDictionary } from "@/lib/get-dictionary";
+import { JsonLd } from "@/components/JsonLd";
 import { PageHeader } from "@/components/PageHeader";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { LineChart, Landmark, Globe, ArrowRight, BookOpen } from "lucide-react";
@@ -23,6 +24,7 @@ export default async function BICenterPage(props: BICenterPageProps) {
   const { lang } = params;
   const dictionary = await getDictionary(lang);
   const { bi_center: hubData } = dictionary;
+  const schemas = getPageJsonLd("bi_center", lang, "bi-center");
 
   // Map icon names to actual Lucide components
   const iconMap: Record<string, any> = {
@@ -33,8 +35,9 @@ export default async function BICenterPage(props: BICenterPageProps) {
 
   return (
     <main className="flex min-h-screen flex-col w-full text-start">
+      <JsonLd schemas={schemas} />
       {/* Hero Section */}
-      <PageHeader 
+      <PageHeader
         title={hubData.hero.title}
         description={hubData.hero.subtitle}
         bgImageUrl="/images/bi-center/bi-center-hero.jpg"

@@ -1,6 +1,7 @@
 import Image from "next/image";
-import { generatePageMetadata } from "@/lib/seo";
+import { generatePageMetadata, getPageJsonLd } from "@/lib/seo";
 import { getDictionary } from "@/lib/get-dictionary";
+import { JsonLd } from "@/components/JsonLd";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { BoldText } from "@/components/BoldText";
 
@@ -18,9 +19,11 @@ export default async function HomePage(props: PageProps) {
   const { lang } = params;
   const dictionary = await getDictionary(lang);
   const { home } = dictionary;
+  const schemas = getPageJsonLd("home", lang, "");
 
   return (
     <main className="flex min-h-screen flex-col">
+      <JsonLd schemas={schemas} />
       {/* Hero Section */}
       <section className="relative flex min-h-[80vh] w-full items-center justify-center overflow-hidden">
         {/* Background Image */}

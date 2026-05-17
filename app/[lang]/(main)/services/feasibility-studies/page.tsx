@@ -1,6 +1,7 @@
-import { generatePageMetadata } from "@/lib/seo";
+import { generatePageMetadata, getPageJsonLd } from "@/lib/seo";
 import { getDictionary } from "@/lib/get-dictionary";
 import FeasibilityStudiesContent from "./FeasibilityStudiesContent";
+import { JsonLd } from "@/components/JsonLd";
 
 interface ServicePageProps {
   params: Promise<{
@@ -18,6 +19,12 @@ export default async function FeasibilityStudiesPage(props: ServicePageProps) {
   const { lang } = params;
   const dictionary = await getDictionary(lang);
   const { feasibility_studies: serviceData } = dictionary;
+  const schemas = getPageJsonLd("feasibility_studies", lang, "services/feasibility-studies");
 
-  return <FeasibilityStudiesContent lang={lang} serviceData={serviceData} />;
+  return (
+    <>
+      <JsonLd schemas={schemas} />
+      <FeasibilityStudiesContent lang={lang} serviceData={serviceData} />
+    </>
+  );
 }

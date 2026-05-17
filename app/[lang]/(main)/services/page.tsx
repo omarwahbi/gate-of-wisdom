@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { generatePageMetadata } from "@/lib/seo";
+import { generatePageMetadata, getPageJsonLd } from "@/lib/seo";
 import { getDictionary } from "@/lib/get-dictionary";
+import { JsonLd } from "@/components/JsonLd";
 import { cn } from "@/lib/utils";
 import {
   Briefcase,
@@ -40,9 +41,11 @@ export default async function ServicesPage(props: ServicesPageProps) {
   const { lang } = params;
   const dictionary = await getDictionary(lang);
   const { services_hub } = dictionary;
+  const schemas = getPageJsonLd("services", lang, "services");
 
   return (
     <main className="flex min-h-screen flex-col bg-background py-16 md:py-24">
+      <JsonLd schemas={schemas} />
       {/* Header Section */}
       <section className="container mx-auto px-4 text-start">
         <div className="mx-auto max-w-4xl space-y-6">

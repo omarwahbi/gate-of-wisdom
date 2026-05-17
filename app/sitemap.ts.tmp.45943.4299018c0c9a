@@ -1,0 +1,47 @@
+import type { MetadataRoute } from "next";
+
+const SITE_URL = "https://gateofwisdom.com.iq";
+
+const pages = [
+  { path: "", priority: 1.0, changeFreq: "monthly" as const },
+  { path: "services", priority: 0.9, changeFreq: "weekly" as const },
+  { path: "services/project-management", priority: 0.8, changeFreq: "monthly" as const },
+  { path: "services/market-studies", priority: 0.8, changeFreq: "monthly" as const },
+  { path: "services/feasibility-studies", priority: 0.8, changeFreq: "monthly" as const },
+  { path: "services/performance-efficiency", priority: 0.8, changeFreq: "monthly" as const },
+  { path: "services/human-resources", priority: 0.8, changeFreq: "monthly" as const },
+  { path: "services/marketing-sales", priority: 0.8, changeFreq: "monthly" as const },
+  { path: "services/crm", priority: 0.8, changeFreq: "monthly" as const },
+  { path: "knowledge-hub", priority: 0.8, changeFreq: "weekly" as const },
+  { path: "knowledge-hub/lectures", priority: 0.7, changeFreq: "weekly" as const },
+  { path: "bi-center", priority: 0.8, changeFreq: "weekly" as const },
+  { path: "bi-center/economic-insights", priority: 0.7, changeFreq: "weekly" as const },
+  { path: "bi-center/international-indicators", priority: 0.7, changeFreq: "monthly" as const },
+  { path: "bi-center/investment-study", priority: 0.7, changeFreq: "monthly" as const },
+  { path: "legislation-library", priority: 0.8, changeFreq: "monthly" as const },
+  { path: "legislation-library/engineering-standards", priority: 0.7, changeFreq: "monthly" as const },
+  { path: "legislation-library/environmental-determinants", priority: 0.7, changeFreq: "monthly" as const },
+  { path: "legislation-library/laws-regulations", priority: 0.7, changeFreq: "monthly" as const },
+  { path: "legislation-library/statistics-reports", priority: 0.7, changeFreq: "monthly" as const },
+  { path: "success-stories", priority: 0.7, changeFreq: "monthly" as const },
+  { path: "contact", priority: 0.5, changeFreq: "monthly" as const },
+];
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const langs = ["en", "ar"];
+
+  return pages.flatMap((page) =>
+    langs.map((lang) => ({
+      url: `${SITE_URL}/${lang}/${page.path}`,
+      lastModified: "2025-05-01",
+      changeFrequency: page.changeFreq,
+      priority: page.priority,
+      alternates: {
+        languages: {
+          en: `${SITE_URL}/en/${page.path}`,
+          ar: `${SITE_URL}/ar/${page.path}`,
+        },
+      },
+    }))
+  );
+}

@@ -1,5 +1,6 @@
-import { generatePageMetadata } from "@/lib/seo";
+import { generatePageMetadata, getPageJsonLd } from "@/lib/seo";
 import { getDictionary } from "@/lib/get-dictionary";
+import { JsonLd } from "@/components/JsonLd";
 import { PageHeader } from "@/components/PageHeader";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Briefcase, TrendingUp, AlertTriangle, Users, Building2, Factory, ShoppingCart, Smartphone, Truck, Wrench, Plane, Train } from "lucide-react";
@@ -37,6 +38,7 @@ export default async function SuccessStoriesPage(props: SuccessStoriesPageProps)
   const params = await props.params;
   const { lang } = params;
   const dictionary = await getDictionary(lang);
+  const schemas = getPageJsonLd("success_stories", lang, "success-stories");
 
   const caseStudies: CaseStudy[] = [
     {
@@ -214,6 +216,7 @@ export default async function SuccessStoriesPage(props: SuccessStoriesPageProps)
 
   return (
     <main className="flex min-h-screen flex-col w-full text-start">
+      <JsonLd schemas={schemas} />
       {/* Hero Section */}
       <PageHeader
         title={lang === 'ar' ? "قصص من واقعنا: تجارب إقليمية ورؤى استراتيجية" : "Real-World Stories: Regional Successes & Strategic Insights"}

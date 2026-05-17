@@ -1,5 +1,6 @@
-import { generatePageMetadata } from "@/lib/seo";
+import { generatePageMetadata, getPageJsonLd } from "@/lib/seo";
 import { getDictionary } from "@/lib/get-dictionary";
+import { JsonLd } from "@/components/JsonLd";
 import { PageHeader } from "@/components/PageHeader";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, Target, Video, Users, BookOpen, Gift, Map, Bookmark, LayoutTemplate, Briefcase, FileText, CheckSquare, BarChart, CalendarClock, Presentation } from "lucide-react";
@@ -23,9 +24,11 @@ export default async function LecturesPage(props: KnowledgeHubLecturesProps) {
   const { lang } = params;
   const dictionary = await getDictionary(lang);
   const { lectures: pageData } = dictionary;
+  const schemas = getPageJsonLd("lectures", lang, "knowledge-hub/lectures");
 
   return (
     <main className="flex min-h-screen flex-col w-full text-start">
+      <JsonLd schemas={schemas} />
       {/* 1. Hero Section */}
       <PageHeader
         title={pageData.hero.title}

@@ -1,5 +1,6 @@
-import { generatePageMetadata } from "@/lib/seo";
+import { generatePageMetadata, getPageJsonLd } from "@/lib/seo";
 import { getDictionary } from "@/lib/get-dictionary";
+import { JsonLd } from "@/components/JsonLd";
 import { LawsRegulationsContent } from "./LawsRegulationsContent";
 
 interface LawsRegulationsPageProps {
@@ -17,6 +18,12 @@ export default async function LawsRegulationsPage(props: LawsRegulationsPageProp
   const params = await props.params;
   const { lang } = params;
   const dictionary = await getDictionary(lang);
+  const schemas = getPageJsonLd("laws_regulations", lang, "legislation-library/laws-regulations");
 
-  return <LawsRegulationsContent lang={lang} dictionary={dictionary} />;
+  return (
+    <>
+      <JsonLd schemas={schemas} />
+      <LawsRegulationsContent lang={lang} dictionary={dictionary} />
+    </>
+  );
 }

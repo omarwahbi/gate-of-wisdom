@@ -1,6 +1,7 @@
-import { generatePageMetadata } from "@/lib/seo";
+import { generatePageMetadata, getPageJsonLd } from "@/lib/seo";
 import { getDictionary } from "@/lib/get-dictionary";
 import { PageHeader } from "@/components/PageHeader";
+import { JsonLd } from "@/components/JsonLd";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, Lightbulb, Target, Users, BookOpen, AlertTriangle, Crosshair, Map, Activity, ShieldAlert, Cpu } from "lucide-react";
 import { BoldText } from "@/components/BoldText";
@@ -23,9 +24,11 @@ export default async function CRMPage(props: ServicePageProps) {
   const { lang } = params;
   const dictionary = await getDictionary(lang);
   const { crm: serviceData } = dictionary;
+  const schemas = getPageJsonLd("crm", lang, "services/crm");
 
   return (
     <main className="flex min-h-screen flex-col w-full text-start">
+      <JsonLd schemas={schemas} />
       {/* 1. Hero Section */}
       <PageHeader 
         title={serviceData.hero.title}

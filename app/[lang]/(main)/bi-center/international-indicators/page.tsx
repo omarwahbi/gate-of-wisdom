@@ -1,5 +1,6 @@
-import { generatePageMetadata } from "@/lib/seo";
+import { generatePageMetadata, getPageJsonLd } from "@/lib/seo";
 import { getDictionary } from "@/lib/get-dictionary";
+import { JsonLd } from "@/components/JsonLd";
 import { PageHeader } from "@/components/PageHeader";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, Target, Shield, TrendingUp, Globe, Server, Brain, Zap, Users, BookOpen, ExternalLink, Download, Database, Building2, Wifi, Smartphone, Cpu, Coins, Heart, GraduationCap, Home, Plane, Leaf, Lock, Scale, Newspaper, CreditCard } from "lucide-react";
@@ -23,6 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
 export default async function InternationalIndicesPage(props: InternationalIndicesProps) {
   const { lang } = await props.params;
   const dictionary = await getDictionary(lang);
+  const schemas = getPageJsonLd("international_indicators", lang, "bi-center/international-indicators");
 
   const categories = [
     {
@@ -175,6 +177,7 @@ export default async function InternationalIndicesPage(props: InternationalIndic
 
   return (
     <main className="flex min-h-screen flex-col w-full text-start">
+      <JsonLd schemas={schemas} />
       {/* 1. Hero Section */}
       <PageHeader
         title={lang === 'ar' ? "موقع العراق في المؤشرات والتصنيفات الدولية" : "Iraq's Standing in International Benchmarks & Rankings"}

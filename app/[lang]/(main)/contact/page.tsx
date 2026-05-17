@@ -1,5 +1,6 @@
-import { generatePageMetadata } from "@/lib/seo";
+import { generatePageMetadata, getPageJsonLd } from "@/lib/seo";
 import { getDictionary } from "@/lib/get-dictionary";
+import { JsonLd } from "@/components/JsonLd";
 import { ContactPageContent } from "./ContactPageContent";
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
@@ -12,6 +13,12 @@ export default async function ContactPage(props: { params: Promise<{ lang: "en" 
   const { lang } = params;
   const dictionary = await getDictionary(lang);
   const { contact_page: pageData, footer } = dictionary;
+  const schemas = getPageJsonLd("contact", lang, "contact");
 
-  return <ContactPageContent lang={lang} pageData={pageData} footer={footer} />;
+  return (
+    <>
+      <JsonLd schemas={schemas} />
+      <ContactPageContent lang={lang} pageData={pageData} footer={footer} />
+    </>
+  );
 }
