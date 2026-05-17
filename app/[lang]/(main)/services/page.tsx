@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { generatePageMetadata } from "@/lib/seo";
 import { getDictionary } from "@/lib/get-dictionary";
 import { cn } from "@/lib/utils";
 import {
@@ -28,6 +29,11 @@ const geometries = [
   "rounded-2xl", // Soft Square
   "rounded-full" // Circle
 ];
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
+  return generatePageMetadata("services", lang as "en" | "ar", "services");
+}
 
 export default async function ServicesPage(props: ServicesPageProps) {
   const params = await props.params;

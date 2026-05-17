@@ -1,3 +1,4 @@
+import { generatePageMetadata } from "@/lib/seo";
 import { getDictionary } from "@/lib/get-dictionary";
 import { PageHeader } from "@/components/PageHeader";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -25,6 +26,11 @@ interface CaseStudy {
   linkedService: string;
   linkedServiceLabel: string;
   linkedServiceLabel_ar: string;
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
+  return generatePageMetadata("success_stories", lang as "en" | "ar", "success-stories");
 }
 
 export default async function SuccessStoriesPage(props: SuccessStoriesPageProps) {

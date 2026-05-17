@@ -1,3 +1,4 @@
+import { generatePageMetadata } from "@/lib/seo";
 import { getDictionary } from "@/lib/get-dictionary";
 import { PageHeader } from "@/components/PageHeader";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -12,6 +13,11 @@ interface InternationalIndicesProps {
   params: Promise<{
     lang: "en" | "ar";
   }>;
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
+  return generatePageMetadata("international_indicators", lang as "en" | "ar", "bi-center/international-indicators");
 }
 
 export default async function InternationalIndicesPage(props: InternationalIndicesProps) {

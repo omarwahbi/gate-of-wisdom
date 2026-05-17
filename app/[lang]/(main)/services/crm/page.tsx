@@ -1,3 +1,4 @@
+import { generatePageMetadata } from "@/lib/seo";
 import { getDictionary } from "@/lib/get-dictionary";
 import { PageHeader } from "@/components/PageHeader";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -10,6 +11,11 @@ interface ServicePageProps {
   params: Promise<{
     lang: "en" | "ar";
   }>;
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
+  return generatePageMetadata("crm", lang as "en" | "ar", "services/crm");
 }
 
 export default async function CRMPage(props: ServicePageProps) {

@@ -1,3 +1,4 @@
+import { generatePageMetadata } from "@/lib/seo";
 import { getDictionary } from "@/lib/get-dictionary";
 import { PageHeader } from "@/components/PageHeader";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -9,6 +10,11 @@ interface MarketingSalesPageProps {
   params: Promise<{
     lang: "en" | "ar";
   }>;
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
+  return generatePageMetadata("marketing_sales", lang as "en" | "ar", "services/marketing-sales");
 }
 
 export default async function MarketingSalesPage(props: MarketingSalesPageProps) {

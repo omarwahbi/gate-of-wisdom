@@ -4,12 +4,38 @@ import { notFound } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { LeadMagnet } from "@/components/LeadMagnet";
+import { generatePageMetadata } from "@/lib/seo";
+import type { Metadata } from "next";
+
+const SLUG_TO_SEO_KEY: Record<string, string> = {
+  "project-management": "project_management",
+  "market-studies": "market_studies",
+  "feasibility-studies": "feasibility_studies",
+  "performance-efficiency": "performance_efficiency",
+  "human-resources": "human_resources",
+  "marketing-sales": "marketing_sales",
+  "crm": "crm",
+};
 
 interface ServicePageProps {
   params: Promise<{
     lang: string;
     slug: string;
   }>;
+}
+
+export async function generateMetadata({ params }: ServicePageProps): Promise<Metadata> {
+  const { lang, slug } = await params;
+  const seoKey = SLUG_TO_SEO_KEY[slug];
+  if (!seoKey) return {};
+  return generatePageMetadata(seoKey as any, lang as "en" | "ar", `services/${slug}`);
+}
+
+export async function generateStaticParams() {
+  return Object.keys(SLUG_TO_SEO_KEY).flatMap((slug) => [
+    { lang: "en", slug },
+    { lang: "ar", slug },
+  ]);
 }
 
 export default async function ServicePage(props: ServicePageProps) {

@@ -1,5 +1,11 @@
+import { generatePageMetadata } from "@/lib/seo";
 import { getDictionary } from "@/lib/get-dictionary";
 import { ContactPageContent } from "./ContactPageContent";
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
+  return generatePageMetadata("contact", lang as "en" | "ar", "contact");
+}
 
 export default async function ContactPage(props: { params: Promise<{ lang: "en" | "ar" }> }) {
   const params = await props.params;

@@ -1,3 +1,4 @@
+import { generatePageMetadata } from "@/lib/seo";
 import { getDictionary } from "@/lib/get-dictionary";
 import { PageHeader } from "@/components/PageHeader";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -12,6 +13,11 @@ interface InvestmentStudyProps {
   params: Promise<{
     lang: "en" | "ar";
   }>;
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
+  return generatePageMetadata("investment_study", lang as "en" | "ar", "bi-center/investment-study");
 }
 
 export default async function InvestmentStudyPage(props: InvestmentStudyProps) {

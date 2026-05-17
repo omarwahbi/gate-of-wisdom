@@ -2338,5 +2338,117 @@
       "twitter": "Twitter",
       "linkedin": "LinkedIn"
     }
+  },
+  "seo": {
+    "home": {
+      "title": "Gate of Wisdom Consulting Engineers",
+      "description": "Gate of Wisdom Consulting Engineers — Iraqi consulting firm specializing in feasibility studies, market research, project management, CRM, HR, and business intelligence for investment decisions.",
+      "keywords": "consulting engineers Iraq, feasibility studies Iraq, market research Iraq, project management Baghdad, business intelligence Iraq, CRM solutions Iraq, HR consulting Iraq, investment consulting Iraq"
+    },
+    "services": {
+      "title": "Professional Consulting Services",
+      "description": "Comprehensive consulting services covering project management, market studies, feasibility studies, performance efficiency, human resources, marketing & sales, and CRM solutions.",
+      "keywords": "consulting services Iraq, project management, market studies, feasibility studies, performance efficiency, human resources, marketing, CRM"
+    },
+    "project_management": {
+      "title": "Project Management Consulting",
+      "description": "Expert project management consulting in Iraq — strategic scheduling, risk mitigation, and cost control to deliver projects on time and within budget.",
+      "keywords": "project management consulting Iraq, project scheduling, risk management, cost control, project delivery Iraq"
+    },
+    "market_studies": {
+      "title": "Market Studies & Research",
+      "description": "In-depth market studies and research for the Iraqi market — consumer behavior analysis, competitive intelligence, and market entry strategies.",
+      "keywords": "market studies Iraq, market research Baghdad, consumer behavior Iraq, competitive analysis, market entry strategy"
+    },
+    "feasibility_studies": {
+      "title": "Technical & Economic Feasibility Studies",
+      "description": "Rigorous technical and economic feasibility studies for investment projects in Iraq — financial modeling, risk assessment, and go/no-go recommendations.",
+      "keywords": "feasibility studies Iraq, economic feasibility, technical feasibility, investment analysis Iraq, financial modeling"
+    },
+    "performance_efficiency": {
+      "title": "Performance Efficiency Assessment",
+      "description": "Organizational performance efficiency assessment — identify bottlenecks, optimize operations, and drive measurable improvement across your business.",
+      "keywords": "performance efficiency Iraq, organizational assessment, operational efficiency, business optimization Iraq"
+    },
+    "human_resources": {
+      "title": "Human Resources Management",
+      "description": "Strategic human resources management consulting — organizational structuring, talent management, compensation systems, and workforce planning.",
+      "keywords": "HR consulting Iraq, human resources management, talent management, organizational structuring, workforce planning Iraq"
+    },
+    "marketing_sales": {
+      "title": "Marketing & Sales Strategy",
+      "description": "Data-driven marketing and sales strategy consulting — brand engineering, sales funnel optimization, and customer acquisition for the Iraqi market.",
+      "keywords": "marketing strategy Iraq, sales consulting, brand engineering, customer acquisition Iraq, sales optimization"
+    },
+    "crm": {
+      "title": "CRM Solutions",
+      "description": "Customer Relationship Management solutions — centralize customer data, streamline operations, and build lasting relationships that drive revenue growth.",
+      "keywords": "CRM solutions Iraq, customer relationship management, CRM implementation, customer data management Iraq"
+    },
+    "knowledge_hub": {
+      "title": "Knowledge Hub",
+      "description": "Access lectures, workshops, and expert content on engineering, consulting, and investment strategies tailored for the Iraqi market.",
+      "keywords": "knowledge hub Iraq, consulting lectures, engineering workshops, investment insights Iraq"
+    },
+    "lectures": {
+      "title": "Expert Lectures & Workshops",
+      "description": "Join expert-led lectures and workshops on project management, feasibility studies, market analysis, and engineering best practices for the Iraqi market.",
+      "keywords": "consulting lectures Iraq, workshops Baghdad, engineering seminars, project management training Iraq"
+    },
+    "bi_center": {
+      "title": "Business Intelligence Center",
+      "description": "Business Intelligence Center — economic insights, investment analysis, and international indicators to support data-driven investment decisions in Iraq.",
+      "keywords": "business intelligence Iraq, BI center, economic analysis, investment data Iraq"
+    },
+    "economic_insights": {
+      "title": "Economic Insights & Analysis",
+      "description": "Economic insights and analysis for Iraq — GDP trends, sector performance, and strategic recommendations grounded in official data from the Central Bank and Ministry of Planning.",
+      "keywords": "economic insights Iraq, GDP analysis Iraq, economic indicators, Central Bank Iraq data, investment analysis"
+    },
+    "international_indicators": {
+      "title": "International Investment Indicators",
+      "description": "International investment indicators and cross-country comparisons — Ease of Doing Business, global competitiveness, and risk assessments for informed investment decisions.",
+      "keywords": "international indicators Iraq, doing business index, investment indicators, global competitiveness, country risk assessment"
+    },
+    "investment_study": {
+      "title": "Investment Readiness Assessment",
+      "description": "Investment readiness assessment — evaluate your project against economic, legal, operational, and market dimensions before committing capital in Iraq.",
+      "keywords": "investment readiness Iraq, investment assessment, pre-investment analysis, feasibility assessment Iraq"
+    },
+    "legislation_library": {
+      "title": "Legislation Library",
+      "description": "Legislation Library — access Iraqi laws, regulations, engineering standards, environmental determinants, and official statistics to ensure compliance and protect your investment.",
+      "keywords": "Iraqi legislation, laws Iraq, regulations Iraq, legal compliance, Iraqi law database"
+    },
+    "engineering_standards": {
+      "title": "Engineering Standards & Building Codes",
+      "description": "Iraqi engineering standards and building codes — the complete reference list of national codes for construction, safety, and project compliance.",
+      "keywords": "Iraqi engineering standards, building codes Iraq, construction codes, safety standards Iraq, Iraqi code compliance"
+    },
+    "environmental_determinants": {
+      "title": "Environmental Determinants & Regulations",
+      "description": "Environmental determinants and regulations for projects in Iraq — environmental compliance, impact assessment, and sustainability requirements.",
+      "keywords": "environmental regulations Iraq, environmental compliance, EIA Iraq, sustainability standards, environmental law Iraq"
+    },
+    "laws_regulations": {
+      "title": "Iraqi Laws & Regulations",
+      "description": "Comprehensive database of Iraqi laws and regulations — investment law, labor law, tax law, companies law, and more, with free download.",
+      "keywords": "Iraqi laws, regulations Iraq, investment law Iraq, labor law Iraq, tax law, companies law Iraq"
+    },
+    "statistics_reports": {
+      "title": "National Reports & Statistics",
+      "description": "Official national reports and statistics from the Central Bank of Iraq and Ministry of Planning — economic data, trade reports, and financial bulletins.",
+      "keywords": "Iraq statistics, economic reports Iraq, Central Bank reports, national data Iraq, trade statistics"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "description": "Get in touch with Gate of Wisdom Consulting Engineers — book a free initial consultation, visit our Baghdad office, or reach us by phone and email.",
+      "keywords": "contact Gate of Wisdom, consulting Iraq contact, Baghdad consulting firm, free consultation Iraq"
+    },
+    "success_stories": {
+      "title": "Success Stories & Strategic Insights",
+      "description": "Real-world case studies and strategic insights from regional business successes and failures — lessons from Careem, Aramex, Zain, and more.",
+      "keywords": "success stories Iraq, business case studies, Careem case study, Aramex case study, regional business insights"
+    }
   }
 }

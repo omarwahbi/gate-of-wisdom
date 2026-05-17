@@ -1,3 +1,4 @@
+import { generatePageMetadata } from "@/lib/seo";
 import { getDictionary } from "@/lib/get-dictionary";
 import { PageHeader } from "@/components/PageHeader";
 import { Card, CardContent } from "@/components/ui/card";
@@ -44,6 +45,11 @@ const environmentalLaws: EnvironmentalLaw[] = [
   { number: 25, title: "System for the Preservation of Water Resources No. (2)", title_ar: "نظام الحفاظ على الموارد المائية رقم (2)", source: "وزارة البيئة", source_ar: "وزارة البيئة", year: "2001" },
   { number: 26, title: "Ambient Air Quality Protection from Pollution System No. (4)", title_ar: "نظام حماية الهواء المحيط من التلوث رقم (4)", source: "وزارة البيئة", source_ar: "وزارة البيئة", year: "2012" },
 ];
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
+  return generatePageMetadata("environmental_determinants", lang as "en" | "ar", "legislation-library/environmental-determinants");
+}
 
 export default async function EnvironmentalDeterminantsPage({ params }: { params: Promise<{ lang: "en" | "ar" }> }) {
   const { lang } = await params;

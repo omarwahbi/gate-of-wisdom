@@ -1,3 +1,4 @@
+import { generatePageMetadata } from "@/lib/seo";
 import { getDictionary } from "@/lib/get-dictionary";
 import { PageHeader } from "@/components/PageHeader";
 import { Card, CardContent } from "@/components/ui/card";
@@ -53,6 +54,11 @@ const iraqiStandards: StandardItem[] = [
   { number: 34, title: "Technical Specifications for Electrical Works", title_ar: "المواصفات الفنية للأعمال الكهربائية", source: "وزارة الاعمار والإسكان، وزارة التخطيط", source_ar: "وزارة الاعمار والإسكان، وزارة التخطيط", year: "2015" },
   { number: 35, title: "Technical Specifications for Civil Works", title_ar: "المواصفات الفنية للأعمال المدنية", source: "وزارة الاعمار والإسكان، وزارة التخطيط", source_ar: "وزارة الاعمار والإسكان، وزارة التخطيط", year: "2017" },
 ];
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
+  return generatePageMetadata("engineering_standards", lang as "en" | "ar", "legislation-library/engineering-standards");
+}
 
 export default async function EngineeringStandardsPage({ params }: { params: Promise<{ lang: "en" | "ar" }> }) {
   const { lang } = await params;

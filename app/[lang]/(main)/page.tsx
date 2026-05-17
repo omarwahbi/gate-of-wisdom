@@ -1,10 +1,16 @@
 import Image from "next/image";
+import { generatePageMetadata } from "@/lib/seo";
 import { getDictionary } from "@/lib/get-dictionary";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { BoldText } from "@/components/BoldText";
 
 interface PageProps {
   params: Promise<{ lang: "en" | "ar" }>;
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params;
+  return generatePageMetadata("home", lang as "en" | "ar", "");
 }
 
 export default async function HomePage(props: PageProps) {
