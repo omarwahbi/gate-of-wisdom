@@ -1,6 +1,4 @@
-import { generatePageMetadata, getPageJsonLd } from "@/lib/seo";
 import { getDictionary } from "@/lib/get-dictionary";
-import { JsonLd } from "@/components/JsonLd";
 import { PageHeader } from "@/components/PageHeader";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Target, ExternalLink, ShieldCheck, Download, Database, Scale, Building, TrendingUp, BarChart2, FileText, Search, Briefcase } from "lucide-react";
@@ -8,7 +6,6 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { BoldText } from "@/components/BoldText";
 import { ServiceGiftSection } from "@/components/ServiceGiftSection";
-import { FinalCTA } from "@/components/FinalCTA";
 
 interface InvestmentStudyProps {
   params: Promise<{
@@ -16,21 +13,14 @@ interface InvestmentStudyProps {
   }>;
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
-  const { lang } = await params;
-  return generatePageMetadata("investment_study", lang as "en" | "ar", "bi-center/investment-study");
-}
-
 export default async function InvestmentStudyPage(props: InvestmentStudyProps) {
   const params = await props.params;
   const { lang } = params;
   const dictionary = await getDictionary(lang);
   const { investment_study: pageData } = dictionary;
-  const schemas = getPageJsonLd("investment_study", lang, "bi-center/investment-study");
 
   return (
     <main className="flex min-h-screen flex-col w-full text-start">
-      <JsonLd schemas={schemas} />
       {/* 1. Hero Section */}
       <PageHeader
         title={pageData.hero.title}
@@ -56,7 +46,6 @@ export default async function InvestmentStudyPage(props: InvestmentStudyProps) {
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="mb-12 text-center max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">{pageData.intro.axes_title}</h2>
-
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -116,7 +105,7 @@ export default async function InvestmentStudyPage(props: InvestmentStudyProps) {
 
       {/* 5. Data Hub Free Materials */}
       <section className="bg-primary text-primary-foreground py-16 md:py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/textures/cubes.png')] opacity-10 mix-blend-overlay"></div>
+        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay"></div>
         <div className="container mx-auto px-4 max-w-6xl relative z-10">
           <div className="mb-16 text-center max-w-3xl mx-auto">
             <span className="inline-flex items-center gap-2 rounded-full bg-white/20 px-4 py-2 text-sm font-bold tracking-wider uppercase mb-6 shadow-sm">
@@ -190,7 +179,27 @@ export default async function InvestmentStudyPage(props: InvestmentStudyProps) {
       />
 
       {/* 8. Final Call to Action */}
-      <FinalCTA lang={lang} title={pageData.cta.title} description={pageData.cta.description} buttonLabel={pageData.cta.button} />
+      <section className="bg-background py-16 md:py-24 pt-8 flex items-center">
+        <div className="container mx-auto px-4 text-center max-w-4xl bg-primary text-primary-foreground rounded-3xl p-8 md:p-16 shadow-xl shadow-primary/10 relative overflow-hidden">
+          <div className="absolute top-0 end-0 w-64 h-64 bg-white/10 rounded-full blur-3xl transform translate-x-1/3 -translate-y-1/3"></div>
+          <div className="relative z-10">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 flex items-center justify-center gap-3">
+              <ShieldCheck className="w-10 h-10" />
+              {pageData.cta.title}
+            </h2>
+            <p className="text-lg md:text-xl opacity-90 mb-10 leading-relaxed">
+              {pageData.cta.description}
+            </p>
+            <a
+              href={`/${lang}/contact`}
+              className="inline-block bg-white text-primary hover:bg-gray-100 text-lg py-4 px-10 rounded-full font-bold transition-transform hover:scale-105 active:scale-95 shadow-md flex items-center gap-3 mx-auto"
+            >
+              <Download className="w-5 h-5" />
+              {pageData.cta.button}
+            </a>
+          </div>
+        </div>
+      </section>
 
     </main>
   );
