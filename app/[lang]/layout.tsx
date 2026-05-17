@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { organizationJsonLd, webSiteJsonLd } from "@/lib/json-ld";
-import "../globals.css";
+import { LanguageHtml } from "@/components/LanguageHtml";
 
 const futura = localFont({
   src: "../../fonts/FuturaStdMedium.otf",
@@ -109,7 +109,7 @@ export async function generateStaticParams() {
   return [{ lang: "en" }, { lang: "ar" }];
 }
 
-export default async function RootLayout({
+export default async function LangLayout({
   children,
   params,
 }: {
@@ -117,24 +117,22 @@ export default async function RootLayout({
   params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
-  const dir = lang === "ar" ? "rtl" : "ltr";
   const fontClass = lang === "ar" ? tajawal.variable : futura.variable;
 
   return (
-    <html lang={lang} dir={dir} className={`${futura.variable} ${tajawal.variable}`}>
-      <body className={`${fontClass} font-sans min-h-screen flex flex-col`}>
-        <script
-          type="application/ld+json"
-          suppressHydrationWarning
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify([
-              organizationJsonLd(lang as "en" | "ar"),
-              webSiteJsonLd(lang as "en" | "ar"),
-            ]),
-          }}
-        />
-        {children}
-      </body>
-    </html>
+    <div className={`${fontClass} font-sans`}>
+      <LanguageHtml lang={lang} />
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify([
+            organizationJsonLd(lang as "en" | "ar"),
+            webSiteJsonLd(lang as "en" | "ar"),
+          ]),
+        }}
+      />
+      {children}
+    </div>
   );
 }

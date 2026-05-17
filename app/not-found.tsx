@@ -1,11 +1,8 @@
 import Link from "next/link";
-import "./globals.css";
 
 export default function NotFound() {
   return (
-    <html lang="en" dir="ltr">
-      <body className="font-sans min-h-screen flex flex-col bg-background text-foreground">
-        <main className="flex min-h-screen flex-col items-center justify-center px-4">
+    <main className="flex min-h-screen flex-col items-center justify-center px-4">
           <div className="max-w-lg text-center space-y-8">
             <div className="mb-8">
               <Link href="/en" className="text-2xl font-bold text-primary">
@@ -45,8 +42,6 @@ export default function NotFound() {
               </Link>
             </div>
           </div>
-        </main>
-      </body>
-    </html>
+    </main>
   );
 }
