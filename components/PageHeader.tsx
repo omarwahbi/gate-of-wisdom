@@ -11,7 +11,7 @@ interface PageHeaderProps {
 
 export function PageHeader({ title, description, bgImageUrl, className }: PageHeaderProps) {
   return (
-    <div className={cn("relative min-h-[40vh] w-full flex items-center justify-center text-center", className)}>
+    <div className={cn("relative min-h-[60vh] w-full flex items-center justify-center text-center", className)}>
       {bgImageUrl && (
         <div className="absolute inset-0 z-0">
           <Image

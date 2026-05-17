@@ -122,9 +122,10 @@ export default async function RootLayout({
 
   return (
     <html lang={lang} dir={dir} className={`${futura.variable} ${tajawal.variable}`}>
-      <head>
+      <body className={`${fontClass} font-sans min-h-screen flex flex-col`}>
         <script
           type="application/ld+json"
+          suppressHydrationWarning
           dangerouslySetInnerHTML={{
             __html: JSON.stringify([
               organizationJsonLd(lang as "en" | "ar"),
@@ -132,8 +133,6 @@ export default async function RootLayout({
             ]),
           }}
         />
-      </head>
-      <body className={`${fontClass} font-sans min-h-screen flex flex-col`}>
         {children}
       </body>
     </html>
