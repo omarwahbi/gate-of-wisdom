@@ -5,6 +5,7 @@ import { ArrowRight, Briefcase, TrendingUp, AlertTriangle, Users, Building2, Fac
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { BoldText } from "@/components/BoldText";
+import { FinalCTA } from "@/components/FinalCTA";
 
 interface SuccessStoriesPageProps {
   params: Promise<{
@@ -295,61 +296,13 @@ export default async function SuccessStoriesPage(props: SuccessStoriesPageProps)
         </div>
       </section>
 
-      {/* Unified Thank You / CTA Section */}
-      <section className="bg-muted py-16 md:py-24">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              <BoldText text={lang === 'ar'
-                ? "شكراً لاهتمامك بالرؤى الهندسية والاستشارية من **بوابة الحكمة**!"
-                : "Thank You for Your Interest in Engineering & Consulting Insights from Gate of Wisdom!"
-              } />
-            </h2>
-
-            <div className="bg-card rounded-2xl p-8 shadow-lg border border-border mb-8">
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                {lang === 'ar'
-                  ? "نأمل أن تكون هذه المواد بمثابة الأدوات الفورية التي تحتاجها لبدء رحلتك نحو الكفاءة والنمو."
-                  : "We hope these materials serve as the immediate tools you need to start your journey toward efficiency and growth."
-                }
-              </p>
-            </div>
-
-            <div className="space-y-4">
-              <p className="text-lg font-medium text-foreground">
-                {lang === 'ar'
-                  ? "تواصل مع خبرائنا لمناقشة كيف يمكن لهذه الدروس أن تؤثر على استراتيجياتكم الاستثمارية"
-                  : "Connect with Our Experts to Discuss How These Lessons Impact Your Investment Strategy"
-                }
-              </p>
-
-              <div className="flex flex-wrap justify-center gap-4">
-                <button className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors">
-                  {lang === 'ar' ? 'اكتب لنا' : 'Write Us'}
-                </button>
-                <button className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-6 py-3 rounded-xl font-semibold hover:bg-secondary/90 transition-colors">
-                  {lang === 'ar' ? 'اتصل بنا' : 'Call Us'}
-                </button>
-                <Link
-                  href={`/${lang}/services`}
-                  className="inline-flex items-center gap-2 border border-primary text-primary px-6 py-3 rounded-xl font-semibold hover:bg-primary/10 transition-colors"
-                >
-                  {lang === 'ar' ? 'اعرف المزيد' : 'Learn More'}
-                </Link>
-              </div>
-
-              <div className="pt-6 border-t border-border mt-8">
-                <Link
-                  href={`/${lang}/contact`}
-                  className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:bg-primary/90 transition-colors shadow-lg"
-                >
-                  {lang === 'ar' ? 'احجز استشارة أولية مجانية' : 'Book a Free Initial Consultation'}
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Final Call to Action */}
+      <FinalCTA
+        lang={lang}
+        title={lang === 'ar' ? 'الدروس وحدها لا تكفي، التطبيق هو الفرق' : 'Lessons Alone Aren\'t Enough — Execution Is the Difference'}
+        description={lang === 'ar' ? 'خلف كل قصة نجاح منهجية واضحة. فريقنا مستعد لمساعدتك في تحويل هذه الرؤى إلى استراتيجيات تنفيذية تحمي استثمارك وتضمن نموه.' : 'Behind every success story is a clear methodology. Our team is ready to help you turn these insights into executable strategies that protect your investment and drive growth.'}
+        border
+      />
     </main>
   );
 }

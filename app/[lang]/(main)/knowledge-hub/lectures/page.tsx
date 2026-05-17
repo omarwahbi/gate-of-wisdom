@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Check, Target, Video, Users, BookOpen, Gift, Map, Bookmark, LayoutTemplate, Briefcase, FileText, CheckSquare, BarChart, CalendarClock, Presentation } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { BoldText } from "@/components/BoldText";
+import { FinalCTA } from "@/components/FinalCTA";
 
 interface KnowledgeHubLecturesProps {
   params: Promise<{
@@ -219,26 +220,7 @@ export default async function LecturesPage(props: KnowledgeHubLecturesProps) {
       </section>
 
       {/* 7. Final Call to Action */}
-      <section className="bg-background py-16 md:py-24 pt-8 flex items-center">
-        <div className="container mx-auto px-4 text-center max-w-3xl bg-primary text-primary-foreground rounded-3xl p-8 md:p-12 shadow-xl shadow-primary/10 relative overflow-hidden">
-          <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay"></div>
-          <div className="relative z-10">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 flex items-center justify-center gap-3">
-              <Presentation className="w-8 h-8" />
-              {pageData.cta.title}
-            </h2>
-            <p className="text-lg opacity-90 mb-8 leading-relaxed max-w-2xl mx-auto">
-              {pageData.cta.description}
-            </p>
-            <a
-              href={`/${lang}/contact`}
-              className="inline-block bg-white text-primary hover:bg-gray-100 text-lg py-4 px-10 rounded-full font-bold transition-transform hover:scale-105 active:scale-95 shadow-md"
-            >
-              {pageData.cta.button}
-            </a>
-          </div>
-        </div>
-      </section>
+      <FinalCTA lang={lang} title={pageData.cta.title} description={pageData.cta.description} buttonLabel={pageData.cta.button} />
 
     </main>
   );

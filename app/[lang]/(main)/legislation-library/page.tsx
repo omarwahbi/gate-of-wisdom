@@ -57,6 +57,7 @@ export default async function LegislationLibraryPage(props: LegislationLibraryPa
             {hubData.categories.map((cat: any, idx: number) => {
               const Icon = iconMap[cat.icon] || BookOpen;
               const isReady = cat.isReady;
+              const isLast = idx === hubData.categories.length - 1;
 
               const CardBody = (
                 <Card className={cn(
@@ -121,11 +122,11 @@ export default async function LegislationLibraryPage(props: LegislationLibraryPa
               );
 
               return isReady ? (
-                <Link key={idx} href={`/${lang}/legislation-library/${cat.slug}`} className="h-full block">
+                <Link key={idx} href={`/${lang}/legislation-library/${cat.slug}`} className={cn("h-full block", isLast && "md:col-start-2")}>
                   {CardBody}
                 </Link>
               ) : (
-                <div key={idx} className="h-full relative group">
+                <div key={idx} className={cn("h-full relative group", isLast && "md:col-start-2")}>
                   {CardBody}
                 </div>
               );

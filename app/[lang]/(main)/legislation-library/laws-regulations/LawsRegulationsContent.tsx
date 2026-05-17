@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Download, Mail, FileText, Shield, Briefcase } from "lucide-react";
 import { BoldText } from "@/components/BoldText";
+import { FinalCTA } from "@/components/FinalCTA";
 import { LeadMagnetModal } from "@/components/LeadMagnetModal";
 import { useState } from "react";
 import Link from "next/link";
@@ -193,94 +194,8 @@ export function LawsRegulationsContent({ lang, dictionary }: LawsRegulationsCont
           </div>
         </section>
 
-        {/* Legal Understanding Section */}
-        <section className="bg-primary/5 py-16 md:py-24 border-t">
-          <div className="container mx-auto px-4 max-w-4xl text-center">
-            <Shield className="w-16 h-16 text-primary mx-auto mb-6" />
-            <h3 className="text-2xl md:text-3xl font-bold mb-6 text-foreground">
-              {lang === "ar"
-                ? "فهم القانون هو حجر الزاوية لأمان استثمارك"
-                : "Legal Understanding is the Foundation of Your Investment Security"
-              }
-            </h3>
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              <BoldText text={lang === 'ar'
-                ? 'المعلومات والبيانات الرسمية هي البداية فقط، والقيمة الحقيقية تكمن في تحويل هذه النصوص إلى استراتيجيات عمل آمنة. نحن في "بوابة الحكمة للإستشارات الهندسية" نساعدك على تفسير هذه التشريعات وضمان الامتثال التام لها بما يحمي مشروعك من المخاطر القانونية والبيروقراطية.'
-                : 'Official information and data are only the beginning; the real value lies in transforming these regulations into secure business strategies. At "Gate of Wisdom Consulting Engineers", we help you interpret these legislations and ensure full compliance, protecting your project from legal and bureaucratic risks.'
-              } />
-            </p>
-            <p className="text-lg font-medium text-foreground mb-8">
-              {lang === 'ar'
-                ? 'هل تحتاج إلى استشارة تخصصية حول أثر هذه القوانين على مشروعك؟'
-                : 'Do you need a specialized consultation on how these laws impact your project?'
-              }
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <button className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors">
-                {lang === 'ar' ? 'اكتب لنا' : 'Write Us'}
-              </button>
-              <button className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-6 py-3 rounded-xl font-semibold hover:bg-secondary/90 transition-colors">
-                {lang === 'ar' ? 'اتصل بنا' : 'Call Us'}
-              </button>
-              <button className="inline-flex items-center gap-2 border border-primary text-primary px-6 py-3 rounded-xl font-semibold hover:bg-primary/10 transition-colors">
-                {lang === 'ar' ? 'اعرف المزيد' : 'Learn More'}
-              </button>
-            </div>
-          </div>
-        </section>
-
-        {/* Unified Thank You / CTA Section */}
-        <section className="bg-muted py-16 md:py-24">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                <BoldText text={lang === 'ar'
-                  ? "شكراً لاهتمامك بالرؤى الهندسية والاستشارية من **بوابة الحكمة**!"
-                  : "Thank You for Your Interest in Engineering & Consulting Insights from Gate of Wisdom!"
-                } />
-              </h2>
-
-              <div className="bg-card rounded-2xl p-8 shadow-lg border border-border mb-8">
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  {lang === 'ar'
-                    ? "نأمل أن تكون هذه المواد بمثابة الأدوات الفورية التي تحتاجها لبدء رحلتك نحو الكفاءة والنمو."
-                    : "We hope these materials serve as the immediate tools you need to start your journey toward efficiency and growth."
-                  }
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <p className="text-lg font-medium text-foreground">
-                  {lang === 'ar'
-                    ? "تواصل مع خبرائنا لمناقشة كيف يمكن لهذه الدروس أن تؤثر على استراتيجياتكم الاستثمارية"
-                    : "Connect with Our Experts to Discuss How These Lessons Impact Your Investment Strategy"
-                  }
-                </p>
-
-                <div className="flex flex-wrap justify-center gap-4">
-                  <button className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors">
-                    {lang === 'ar' ? 'اكتب لنا' : 'Write Us'}
-                  </button>
-                  <button className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-6 py-3 rounded-xl font-semibold hover:bg-secondary/90 transition-colors">
-                    {lang === 'ar' ? 'اتصل بنا' : 'Call Us'}
-                  </button>
-                  <button className="inline-flex items-center gap-2 border border-primary text-primary px-6 py-3 rounded-xl font-semibold hover:bg-primary/10 transition-colors">
-                    {lang === 'ar' ? 'اعرف المزيد' : 'Learn More'}
-                  </button>
-                </div>
-
-                <div className="pt-6 border-t border-border mt-8">
-                  <Link
-                    href={`/${lang}/contact`}
-                    className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:bg-primary/90 transition-colors shadow-lg"
-                  >
-                    {lang === 'ar' ? 'احجز استشارة أولية مجانية' : 'Book a Free Initial Consultation'}
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Legal Understanding & CTA Section */}
+        <FinalCTA lang={lang} title={lang === 'ar' ? 'فهم القانون هو حجر الزاوية لأمان استثمارك' : 'Legal Understanding is the Foundation of Your Investment Security'} description={lang === 'ar' ? 'المعلومات والبيانات الرسمية هي البداية فقط، والقيمة الحقيقية تكمن في تحويل هذه النصوص إلى استراتيجيات عمل آمنة. نحن في "بوابة الحكمة للإستشارات الهندسية" نساعدك على تفسير هذه التشريعات وضمان الامتثال التام لها بما يحمي مشروعك من المخاطر القانونية والبيروقراطية.' : 'Official information and data are only the beginning; the real value lies in transforming these regulations into secure business strategies. At "Gate of Wisdom Consulting Engineers", we help you interpret these legislations and ensure full compliance, protecting your project from legal and bureaucratic risks.'} icon={<Shield className="w-12 h-12" />} />
       </main>
 
       {/* Lead Magnet Modal */}

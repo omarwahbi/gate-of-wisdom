@@ -83,14 +83,14 @@ export default async function MarketingSalesPage(props: MarketingSalesPageProps)
           </div>
 
           {/* CTA */}
-          <div className="max-w-3xl mt-12 p-8 bg-primary/10 rounded-2xl border border-primary/20">
+          {/* <div className="max-w-3xl mt-12 p-8 bg-primary/10 rounded-2xl border border-primary/20">
             <p className="text-lg md:text-xl text-foreground leading-relaxed">
               {lang === 'ar'
                 ? "دعونا نساعدكم على إعادة رسم مسار شركتكم نحو ريادة السوق وتحقيق أهداف المبيعات المستهدفة. تواصلوا معنا اليوم لمناقشة كيف يمكننا تحويل أساليب التسويق والمبيعات لديكم إلى محرك أساسي للنمو."
                 : "Let us help you redraw your company's path toward market leadership and achieve targeted sales objectives. Contact us today to discuss how we can transform your marketing and sales approaches into a key engine for growth."
               }
             </p>
-          </div>
+          </div> */}
         </div>
       </section>
 

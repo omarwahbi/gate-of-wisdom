@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Check, Lightbulb, Target, Users, BookOpen, AlertTriangle, Crosshair, Map, Activity, ShieldAlert, Cpu } from "lucide-react";
 import { BoldText } from "@/components/BoldText";
 import { ServiceGiftSection } from "@/components/ServiceGiftSection";
+import { FinalCTA } from "@/components/FinalCTA";
 
 interface ServicePageProps {
   params: Promise<{
@@ -271,23 +272,7 @@ export default async function CRMPage(props: ServicePageProps) {
       />
 
       {/* 8. Final Call to Action */}
-      <section className="bg-background py-16 md:py-24 flex items-center">
-        <div className="container mx-auto px-4 text-center max-w-3xl bg-primary text-primary-foreground rounded-3xl p-8 md:p-12 shadow-xl shadow-primary/10 relative overflow-hidden">
-          <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay"></div>
-          <div className="relative z-10">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">{serviceData.cta.title}</h2>
-            <p className="text-lg opacity-90 mb-8 leading-relaxed max-w-2xl mx-auto">
-              {serviceData.cta.description}
-            </p>
-            <a
-              href={`/${lang}/contact`}
-              className="inline-block bg-white text-primary hover:bg-gray-100 text-lg py-4 px-10 rounded-full font-bold transition-transform hover:scale-105 active:scale-95 shadow-md"
-            >
-              {serviceData.cta.button}
-            </a>
-          </div>
-        </div>
-      </section>
+      <FinalCTA lang={lang} title={serviceData.cta.title} description={serviceData.cta.description} buttonLabel={serviceData.cta.button} />
     </main>
   );
 }

@@ -2,8 +2,9 @@ import { getDictionary } from "@/lib/get-dictionary";
 import { PageHeader } from "@/components/PageHeader";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Leaf, Shield, Mail } from "lucide-react";
+import { Leaf, Shield } from "lucide-react";
 import { BoldText } from "@/components/BoldText";
+import { FinalCTA } from "@/components/FinalCTA";
 import { LeadMagnetModal } from "./LeadMagnetModal";
 
 interface EnvironmentalLaw {
@@ -130,26 +131,14 @@ export default async function EnvironmentalDeterminantsPage({ params }: { params
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-primary/5 py-16 md:py-24 border-t">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
-          <Shield className="w-16 h-16 text-primary mx-auto mb-6" />
-          <h3 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">
-            {lang === "ar"
-              ? "تحتاج إلى استشارة متخصصة؟"
-              : "Need Specialized Consultation?"}
-          </h3>
-          <p className="text-lg text-muted-foreground mb-8">
-            {lang === "ar"
-              ? "فريقنا من الخبراء مستعد لمساعدتك في تطبيق هذه المعايير على مشروعك"
-              : "Our team of experts is ready to help you apply these standards to your project"}
-          </p>
-          <Button size="lg" className="gap-2">
-            <Mail className="w-4 h-4" />
-            {lang === "ar" ? "تواصل معنا" : "Contact Us"}
-          </Button>
-        </div>
-      </section>
+      {/* Final Call to Action */}
+      <FinalCTA
+        lang={lang}
+        title={lang === "ar" ? "الامتثال البيئي هو ضمانة استثمارك" : "Environmental Compliance Is Your Investment Safeguard"}
+        description={lang === "ar" ? "فريقنا من الخبراء مستعد لمساعدتك في تطبيق هذه المحددات البيئية على مشروعك لضمان الامتثال الكامل والحماية من المخاطر القانونية والتشغيلية." : "Our team of experts is ready to help you apply these environmental determinants to your project, ensuring full compliance and protection from legal and operational risks."}
+        icon={<Shield className="w-12 h-12" />}
+        border
+      />
 
       {/* Lead Magnet Modal - Client Component */}
       <LeadMagnetModal lang={lang} />

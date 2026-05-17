@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Download, Mail, FileText, BarChart3, Shield } from "lucide-react";
 import { BoldText } from "@/components/BoldText";
+import { FinalCTA } from "@/components/FinalCTA";
 import { LeadMagnetModal } from "@/components/LeadMagnetModal";
 import { useState } from "react";
 import Link from "next/link";
@@ -134,7 +135,7 @@ export function StatisticsReportsContent({ lang, dictionary }: StatisticsReports
         </section>
 
         {/* Gift / Lead Magnet Section */}
-        <section className="bg-background py-16 md:py-24">
+        {/* <section className="bg-background py-16 md:py-24">
           <div className="container mx-auto px-4">
             <div className="max-w-2xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -150,7 +151,7 @@ export function StatisticsReportsContent({ lang, dictionary }: StatisticsReports
                 } />
               </p>
 
-              {/* Lead Magnet Modal Trigger */}
+
               <div className="bg-card rounded-2xl p-8 shadow-lg border border-border">
                 <p className="text-sm text-muted-foreground mb-6">
                   {lang === 'ar'
@@ -179,96 +180,10 @@ export function StatisticsReportsContent({ lang, dictionary }: StatisticsReports
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
-        {/* Data Engineering Section */}
-        <section className="bg-primary/5 py-16 md:py-24 border-t">
-          <div className="container mx-auto px-4 max-w-4xl text-center">
-            <BarChart3 className="w-16 h-16 text-primary mx-auto mb-6" />
-            <h3 className="text-2xl md:text-3xl font-bold mb-6 text-foreground">
-              {lang === "ar"
-                ? "الأرقام لا تكذب، لكنها تحتاج إلى من يقرأ ما خلفها"
-                : "Numbers Don't Lie, But They Need Someone to Read Between the Lines"
-              }
-            </h3>
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              <BoldText text={lang === 'ar'
-                ? 'البيانات والإحصائيات الرسمية هي الوقود الحقيقي لنجاح دراسات الجدوى وخطط النمو. في "بوابة الحكمة للإستشارات الهندسية"، نحن لا نكتفي بجمع الأرقام، بل نقوم بـ هندسة البيانات لتحويلها إلى فرص استثمارية ملموسة وخطط عمل واقعية.'
-                : "Official data and statistics are the real fuel for successful feasibility studies and growth plans. At \"Gate of Wisdom Consulting Engineers\", we don't just collect figures; we engineer data to transform it into tangible investment opportunities and realistic action plans."
-              } />
-            </p>
-            <p className="text-lg font-medium text-foreground mb-8">
-              {lang === 'ar'
-                ? 'هل تريد معرفة كيف تؤثر هذه الإحصائيات على حصتك السوقية أو جدوى مشروعك القادم؟'
-                : 'Do you want to know how these statistics impact your market share or the feasibility of your next project?'
-              }
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <button className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors">
-                {lang === 'ar' ? 'اكتب لنا' : 'Write Us'}
-              </button>
-              <button className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-6 py-3 rounded-xl font-semibold hover:bg-secondary/90 transition-colors">
-                {lang === 'ar' ? 'اتصل بنا' : 'Call Us'}
-              </button>
-              <button className="inline-flex items-center gap-2 border border-primary text-primary px-6 py-3 rounded-xl font-semibold hover:bg-primary/10 transition-colors">
-                {lang === 'ar' ? 'اعرف المزيد' : 'Learn More'}
-              </button>
-            </div>
-          </div>
-        </section>
-
-        {/* Unified Thank You / CTA Section */}
-        <section className="bg-muted py-16 md:py-24">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                <BoldText text={lang === 'ar'
-                  ? "شكراً لاهتمامك بالرؤى الهندسية والاستشارية من **بوابة الحكمة**!"
-                  : "Thank You for Your Interest in Engineering & Consulting Insights from Gate of Wisdom!"
-                } />
-              </h2>
-
-              <div className="bg-card rounded-2xl p-8 shadow-lg border border-border mb-8">
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  {lang === 'ar'
-                    ? "نأمل أن تكون هذه المواد بمثابة الأدوات الفورية التي تحتاجها لبدء رحلتك نحو الكفاءة والنمو."
-                    : "We hope these materials serve as the immediate tools you need to start your journey toward efficiency and growth."
-                  }
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <p className="text-lg font-medium text-foreground">
-                  {lang === 'ar'
-                    ? "تواصل مع خبرائنا لمناقشة كيف يمكن لهذه الأرقام أن تؤثر على استراتيجياتكم الاستثمارية"
-                    : "Connect with Our Experts to Discuss How These Figures Impact Your Investment Strategy"
-                  }
-                </p>
-
-                <div className="flex flex-wrap justify-center gap-4">
-                  <button className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-xl font-semibold hover:bg-primary/90 transition-colors">
-                    {lang === 'ar' ? 'اكتب لنا' : 'Write Us'}
-                  </button>
-                  <button className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-6 py-3 rounded-xl font-semibold hover:bg-secondary/90 transition-colors">
-                    {lang === 'ar' ? 'اتصل بنا' : 'Call Us'}
-                  </button>
-                  <button className="inline-flex items-center gap-2 border border-primary text-primary px-6 py-3 rounded-xl font-semibold hover:bg-primary/10 transition-colors">
-                    {lang === 'ar' ? 'اعرف المزيد' : 'Learn More'}
-                  </button>
-                </div>
-
-                <div className="pt-6 border-t border-border mt-8">
-                  <Link
-                    href={`/${lang}/contact`}
-                    className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:bg-primary/90 transition-colors shadow-lg"
-                  >
-                    {lang === 'ar' ? 'احجز استشارة أولية مجانية' : 'Book a Free Initial Consultation'}
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Data Engineering & CTA Section */}
+        <FinalCTA lang={lang} title={lang === 'ar' ? 'الأرقام لا تكذب، لكنها تحتاج إلى من يقرأ ما خلفها' : "Numbers Don't Lie, But They Need Someone to Read Between the Lines"} description={lang === 'ar' ? 'البيانات والإحصائيات الرسمية هي الوقود الحقيقي لنجاح دراسات الجدوى وخطط النمو. في "بوابة الحكمة للإستشارات الهندسية"، نحن لا نكتفي بجمع الأرقام، بل نقوم بـ هندسة البيانات لتحويلها إلى فرص استثمارية ملموسة وخطط عمل واقعية.' : 'Official data and statistics are the real fuel for successful feasibility studies and growth plans. At "Gate of Wisdom Consulting Engineers", we don\'t just collect figures; we engineer data to transform it into tangible investment opportunities and realistic action plans.'} icon={<BarChart3 className="w-12 h-12" />} />
       </main>
 
       {/* Lead Magnet Modal */}

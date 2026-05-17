@@ -7,8 +7,12 @@ const futura = localFont({
   variable: "--font-futura",
 });
 
-const calibri = localFont({
-  src: "../../fonts/Calibri.ttf",
+const tajawal = localFont({
+  src: [
+    { path: "../../fonts/Tajawal-Regular.ttf", weight: "400", style: "normal" },
+    { path: "../../fonts/Tajawal-Medium.ttf", weight: "500", style: "normal" },
+    { path: "../../fonts/Tajawal-Bold.ttf", weight: "700", style: "normal" },
+  ],
   variable: "--font-calibri",
 });
 
@@ -30,10 +34,10 @@ export default async function RootLayout({
 }) {
   const { lang } = await params;
   const dir = lang === "ar" ? "rtl" : "ltr";
-  const fontClass = lang === "ar" ? calibri.variable : futura.variable;
+  const fontClass = lang === "ar" ? tajawal.variable : futura.variable;
 
   return (
-    <html lang={lang} dir={dir} className={`${futura.variable} ${calibri.variable}`}>
+    <html lang={lang} dir={dir} className={`${futura.variable} ${tajawal.variable}`}>
       <body className={`${fontClass} font-sans min-h-screen flex flex-col`}>
         {children}
       </body>

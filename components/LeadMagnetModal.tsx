@@ -96,14 +96,18 @@ export function LeadMagnetModal({
             "Content-Type": "application/x-www-form-urlencoded",
           },
           body: new URLSearchParams({
-            name: formData.name,
-            email: formData.email || "Not provided",
-            company: formData.company || "Not provided",
-            phone: formData.phone,
-            gift: giftTitle,
-            lang,
-            _host: window.location.hostname,
-            _subject: emailSubject || `Gate of Wisdom - ${giftTitle} Download`,
+            ...Object.fromEntries(
+              Object.entries({
+                name: formData.name,
+                email: formData.email,
+                company: formData.company,
+                phone: formData.phone,
+                gift: giftTitle,
+                lang,
+                _host: window.location.hostname,
+                _subject: emailSubject || `Gate of Wisdom - ${giftTitle} Download`,
+              }).filter(([_, v]) => v && v.trim() !== "")
+            ),
           }),
         });
 
@@ -192,7 +196,7 @@ export function LeadMagnetModal({
                     htmlFor={`name-${lang}`}
                     className="block text-sm font-medium mb-2 text-foreground"
                   >
-                    {lang === "ar" ? "الاسم الكامل" : "Full Name"}
+                    {lang === "ar" ? "الاسم الكامل" : "Full Name"} <span className="text-destructive">*</span>
                   </label>
                   <div className={cn(
                     "relative",
@@ -216,6 +220,43 @@ export function LeadMagnetModal({
                       placeholder={
                         lang === "ar" ? "أدخل اسمك" : "Enter your name"
                       }
+                      required
+                      disabled={isSubmitting}
+                      dir={lang === "ar" ? "rtl" : "ltr"}
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label
+                    htmlFor={`phone-${lang}`}
+                    className="block text-sm font-medium mb-2 text-foreground"
+                  >
+                    {lang === "ar" ? "رقم الهاتف" : "Phone Number"} <span className="text-destructive">*</span>
+                  </label>
+                  <div className={cn(
+                    "relative",
+                    lang === "ar" ? "flex flex-row-reverse" : ""
+                  )}>
+                    <Phone className={cn(
+                      "absolute top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground",
+                      lang === "ar" ? "end-3" : "start-3"
+                    )} />
+                    <input
+                      id={`phone-${lang}`}
+                      type="tel"
+                      value={formData.phone}
+                      onChange={(e) =>
+                        setFormData({ ...formData, phone: e.target.value })
+                      }
+                      className={cn(
+                        "w-full px-4 py-3 rounded-lg border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary/50",
+                        lang === "ar" ? "pe-10 text-right" : "ps-10"
+                      )}
+                      placeholder={
+                        lang === "ar" ? "أدخل رقم هاتفك" : "Enter your phone"
+                      }
+                      required
                       disabled={isSubmitting}
                       dir={lang === "ar" ? "rtl" : "ltr"}
                     />
@@ -281,41 +322,6 @@ export function LeadMagnetModal({
                     disabled={isSubmitting}
                     dir={lang === "ar" ? "rtl" : "ltr"}
                   />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor={`phone-${lang}`}
-                    className="block text-sm font-medium mb-2 text-foreground"
-                  >
-                    {lang === "ar" ? "رقم الهاتف" : "Phone Number"} <span className="text-destructive">*</span>
-                  </label>
-                  <div className={cn(
-                    "relative",
-                    lang === "ar" ? "flex flex-row-reverse" : ""
-                  )}>
-                    <Phone className={cn(
-                      "absolute top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground",
-                      lang === "ar" ? "end-3" : "start-3"
-                    )} />
-                    <input
-                      id={`phone-${lang}`}
-                      type="tel"
-                      value={formData.phone}
-                      onChange={(e) =>
-                        setFormData({ ...formData, phone: e.target.value })
-                      }
-                      className={cn(
-                        "w-full px-4 py-3 rounded-lg border border-input bg-background focus:outline-none focus:ring-2 focus:ring-primary/50",
-                        lang === "ar" ? "pe-10 text-right" : "ps-10"
-                      )}
-                      placeholder={
-                        lang === "ar" ? "أدخل رقم هاتفك" : "Enter your phone"
-                      }
-                      disabled={isSubmitting}
-                      dir={lang === "ar" ? "rtl" : "ltr"}
-                    />
-                  </div>
                 </div>
 
                 {error && (
