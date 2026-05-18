@@ -31,7 +31,7 @@ export function PageHeader({ title, description, bgImageUrl, className }: PageHe
           <BoldText text={title} />
         </h1>
         {description && (
-          <p className="text-lg text-zinc-200 sm:text-xl max-w-2xl mx-auto">
+          <p className="text-sm text-zinc-200 sm:text-base max-w-2xl mx-auto leading-relaxed">
             <BoldText text={description} />
           </p>
         )}

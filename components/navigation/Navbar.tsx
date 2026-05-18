@@ -308,31 +308,50 @@ export function Navbar({ lang, dictionary }: NavbarProps) {
                 <Menu className="h-6 w-6" />
                 <span className="sr-only">Toggle menu</span>
               </SheetTrigger>
-              <SheetContent side={lang === "ar" ? "right" : "left"} className="w-80">
-                <SheetHeader>
-                  <SheetTitle className="text-start">Gate of Wisdom</SheetTitle>
-                </SheetHeader>
-                <nav className="flex flex-col space-y-4 mt-8 text-start">
-                  {navItems.map((item) => {
-                    const isActive = item.href === `/${lang}`
-                      ? pathname === item.href
-                      : pathname === item.href || pathname.startsWith(`${item.href}/`);
+              <SheetContent side={lang === "ar" ? "right" : "left"} className="w-[85vw] sm:w-80 p-0" showCloseButton={false}>
+                <div className="flex flex-col h-full">
+                  <SheetHeader className="px-6 py-5 border-b border-border shrink-0">
+                    <SheetTitle className="text-start flex items-center gap-3">
+                      <Image
+                        src={lang === "ar" ? "/LOGO_WEB_AR.svg" : "/LOGO_WEB_EN.svg"}
+                        alt="Gate of Wisdom"
+                        width={140}
+                        height={40}
+                        className="h-10 w-auto object-contain"
+                      />
+                    </SheetTitle>
+                  </SheetHeader>
+                  <nav className="flex flex-col overflow-y-auto flex-1 py-4 px-2 text-start">
+                    {navItems.map((item) => {
+                      const isActive = item.href === `/${lang}`
+                        ? pathname === item.href
+                        : pathname === item.href || pathname.startsWith(`${item.href}/`);
 
-                    return (
-                      <Link
-                        key={item.href}
-                        href={item.href}
-                        className={cn(
-                          "text-lg font-medium transition-colors hover:text-primary",
-                          isActive ? "text-primary font-semibold" : "text-muted-foreground"
-                        )}
-                        onClick={() => setIsOpen(false)}
-                      >
-                        {item.title}
-                      </Link>
-                    )
-                  })}
-                </nav>
+                      return (
+                        <Link
+                          key={item.href}
+                          href={item.href}
+                          className={cn(
+                            "flex items-center gap-3 px-4 py-3.5 rounded-lg text-base font-medium transition-colors",
+                            isActive
+                              ? "text-primary bg-primary/10 font-semibold"
+                              : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
+                          )}
+                          onClick={() => setIsOpen(false)}
+                        >
+                          <span className={cn(
+                            "w-1.5 h-1.5 rounded-full shrink-0",
+                            isActive ? "bg-primary" : "bg-muted-foreground/40"
+                          )} />
+                          {item.title}
+                        </Link>
+                      )
+                    })}
+                  </nav>
+                  <div className="px-6 py-4 border-t border-border shrink-0 text-sm text-muted-foreground text-start">
+                    {lang === 'ar' ? 'بوابة الحكمة للاستشارات الهندسية' : 'Gate of Wisdom Consulting Engineers'}
+                  </div>
+                </div>
               </SheetContent>
             </Sheet>
           </div>

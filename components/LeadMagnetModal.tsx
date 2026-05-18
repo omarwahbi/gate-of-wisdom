@@ -158,20 +158,23 @@ export function LeadMagnetModal({
       {/* Modal */}
       <div
         className={cn(
-          "relative z-10 w-full max-w-lg bg-card rounded-2xl shadow-2xl border border-border overflow-hidden",
+          "relative z-10 w-full max-w-lg bg-card rounded-2xl shadow-2xl border border-border overflow-hidden flex flex-col max-h-[90vh]",
           lang === "ar" ? "text-right" : "text-left"
         )}
       >
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 p-2 rounded-full hover:bg-muted transition-colors z-20"
+          className={cn(
+            "absolute top-4 p-2 rounded-full hover:bg-muted transition-colors z-20",
+            lang === "ar" ? "left-4" : "right-4"
+          )}
         >
           <X className="h-5 w-5 text-muted-foreground" />
         </button>
 
         {/* Header */}
-        <div className="bg-primary/10 px-6 py-8 border-b border-border">
+        <div className="bg-primary/10 px-6 py-6 border-b border-border shrink-0">
           <div className="flex items-center justify-center mb-4">
             <div className="h-16 w-16 rounded-2xl bg-primary text-primary-foreground flex items-center justify-center">
               <Download className="h-8 w-8" />
@@ -183,7 +186,7 @@ export function LeadMagnetModal({
         </div>
 
         {/* Content */}
-        <div className="px-6 py-8">
+        <div className="px-6 py-8 overflow-y-auto">
           {!isSubmitted ? (
             <>
               <p className="text-muted-foreground text-center mb-6">

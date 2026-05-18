@@ -143,13 +143,13 @@ export default async function CRMPage(props: ServicePageProps) {
                    ))}
                 </div>
 
-                <div className="bg-white text-primary rounded-2xl p-6 flex gap-5 w-full text-start items-start shadow-xl shadow-black/10 transition-transform hover:scale-[1.01]">
-                  <Lightbulb className="h-10 w-10 flex-shrink-0" />
+                <div className="bg-primary-foreground text-primary rounded-xl p-6 mt-6 flex gap-4">
+                  <Lightbulb className="h-8 w-8 flex-shrink-0" />
                   <div>
-                    <strong className="block mb-1 text-sm uppercase tracking-wider text-muted-foreground">
+                    <strong className="block mb-1 text-sm uppercase tracking-wide">
                       {lang === 'ar' ? 'الدرس المستفاد' : 'The Lesson'}
                     </strong>
-                    <p className="text-xl font-bold leading-relaxed">{cs.lesson}</p>
+                    <p className="text-lg font-medium leading-relaxed">{cs.lesson}</p>
                   </div>
                 </div>
               </div>
