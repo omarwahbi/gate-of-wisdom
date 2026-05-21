@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import localFont from "next/font/local";
 import { organizationJsonLd, webSiteJsonLd } from "@/lib/json-ld";
 import { LanguageHtml } from "@/components/LanguageHtml";
@@ -132,6 +133,20 @@ export default async function LangLayout({
           ]),
         }}
       />
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-71TCM1WT1H"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-71TCM1WT1H');
+        `}
+      </Script>
       {children}
     </div>
   );
